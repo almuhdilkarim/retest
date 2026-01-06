@@ -1,0 +1,3661 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\rafif
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 64
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 32
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 432
+    content: "\e[?9001h\e[?1004h"
+  - delay: 57
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[7;1H\e[?25h"
+  - delay: 86
+    content: 'PS C:\Users\rafif> '
+  - delay: 848
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93mm\e[?25h"
+  - delay: 457
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 756
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;20Hmys\e[?25h"
+  - delay: 346
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[7;20Hmysq\e[?25h"
+  - delay: 418
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[7;20Hmysql\e[?25h"
+  - delay: 886
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;20Hmysql \e[?25h"
+  - delay: 709
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;20Hmysql \e[37m-\e[?25h"
+  - delay: 705
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;20Hmysql  \b\e[?25h"
+  - delay: 401
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;20Hmysql \e[37m_\e[?25h"
+  - delay: 303
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;20Hmysql \e[37m_u\e[?25h"
+  - delay: 191
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;20Hmysql \e[37m_u \e[?25h"
+  - delay: 332
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[7;20Hmysql \e[37m_u r\e[?25h"
+  - delay: 272
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;20Hmysql \e[37m_u ro\e[?25h"
+  - delay: 148
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;20Hmysql \e[37m_u roo\e[?25h"
+  - delay: 150
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root\e[?25h"
+  - delay: 228
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root \e[?25h"
+  - delay: 703
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root _\e[?25h"
+  - delay: 224
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root _p\e[?25h"
+  - delay: 786
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root _ \b\e[?25h"
+  - delay: 130
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root  \b\e[?25h"
+  - delay: 296
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root -\e[?25h"
+  - delay: 1021
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[7;20Hmysql \e[37m_u root \e[90m-p\e[?25h"
+  - delay: 503
+    content: "\e[m"
+  - delay: 23
+    content: "\r\n"
+  - delay: 30
+    content: "C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe from 12.0.2-MariaDB, client 15.2 for Win64 (AMD64), source revision aab83aecdca15738d114cf5a2f223f1d12e4e6bd\r\n\e[?25lCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HUsage: C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe [OPTIONS] [database]\e[17;1HDefault options are read from the following files in the given order:\r\nC:\\WINDOWS\\my.ini C:\\WINDOWS\\my.cnf C:\\my.ini C:\\my.cnf C:\\Program Files\\MariaDB 12.0\\my.ini C:\\Program Files\\MariaDB 12.0\\my.cnf C:\\Program Files\\MariaDB 12.0\\data\\my.ini C:\\Program Files\\MariaDB 12.0\\data\\my.cnf \r\nThe following groups are read: mysql mariadb-client client client-server client-mariadb\r\nThe following options may be given as the first argument:\r\n--print-defaults          Print the program argument list and exit.\r\n--no-defaults             Don't read default options from any option file.\r\nThe following specify which files/extra groups are read (specified before remaining options):\r\n--defaults-file=#         Only read default options from the giv\e[?25h\r\n\e[31;64Hven file #.\r\n--defaults-extra-file=#   Read this file after the global files \r\n\e[31;64H are read.\r\n--defaults-group-suffix=# Additionally read default groups with \r\n\e[31;64H # appended as a suffix.\r\n\n  -?, --help          Display this help and exit.\r\n  -I, --help          Synonym for -?\r\n  --abort-source-on-error\e[1C\r\n                      Abort 'source filename' operations in case\r\n\e[31;64He of errors\r\n  --auto-rehash       Enable automatic rehashing. One doesn't ne\r\n\e[31;64Heed to use\r\n                      'rehash' to get table and field completion\r\n\e[31;64Hn, but startup\e[?25l\r\n                      and reconnecting may take a longer time.  \e[32;63H\e[?25h\r\n                      (Defaults to on; use --skip-auto-rehash to\r\n\e[31;64Ho disable.)\r\n  -A, --no-auto-rehash\e[1C\r\n                      No automatic rehashing. One has to use 're\r\n\e[31;64Hehash' to get\r\n                      table and field completion. This gives a q\r\n\e[31;64Hquicker start of\r\n                      mysql and disables rehashing on reconnect.\e[32;64H\r\n  --auto-vertical-output\e[1C\r\n                      Automatically switch to vertical output mo\r\n\e[31;64Hode if the\e[?25l\r\n                      result is wider than the terminal width.  \e[32;63H\e[?25h\r\n  -B, --batch\e[7C  Don't use history file. Disable interactiv\r\n\e[31;64Hve behavior.\r\n                      (Enables --silent.)\r\n  --binary-as-hex     Print binary data as hex\r\n  --binary-mode       Binary mode allows certain character seque\r\n\e[31;64Hences to be\r\n                      processed as data that would otherwise be \r\n\e[31;64H treated with a\r\n                      special meaning by the parser. Specificall\r\n\e[31;64Hly, this switch\r\n                      turns off parsing of all client commands e\r\n\e[31;64Hexcept \\C and\r\n                      DELIMITER in non-interactive mode (i.e., w\r\n\e[31;64Hwhen binary mode\r\n\e[18C    is combined with either 1) piped input, 2)\r\n\e[31;64H) the --batch\r\n                      mysql option, or 3) the 'source' command).\r\n\e[31;64H. Also, in\r\n                      binary mode, occurrences of '\\r\\n' and ASC\r\n\e[31;64HCII '\\0' are\r\n                      preserved within strings, whereas by defau\r\n\e[31;64Hult, '\\r\\n' is\r\n                      translated to '\\n' and '\\0' is disallowed \r\n\e[31;64H in user input.\r\n  --character-sets-dir=name\e[1C\e[?25l\r\n                      Directory for character set files.        \e[32;57H\e[?25h\r\n  --column-names      Write column names in results.\r\n                      (Defaults to on; use --skip-column-names t\r\n\e[31;64Hto disable.)\r\n  -N, --skip-column-names\e[1C\e[?25l\r\n                      Don't write column names in results.      \e[32;59H\e[?25h\r\n  --column-type-info  Display column type information.\r\n  -c, --comments      Preserve comments. Send comments to the se\r\n\e[31;64Herver. The\r\n                      default is --skip-comments (discard commen\r\n\e[31;64Hnts), enable\r\n                      with --comments.\r\n  -C, --compress      Use compression in server/client protocol.\e[32;64H\r\n  --connect-expired-password\e[1C\r\n                      Notify the server that this client is prep\r\n\e[31;64Hpared to handle\r\n                      expired password sandbox mode even if --ba\r\n\e[31;64Hatch was\r\n                      specified.\r\n  --connect-timeout=# Number of seconds before connection timeou\r\n\e[31;64Hut.\r\n  -D, --database=name Database to use.\r\n  -#, --debug[=#]     This is a non-debug version. Catch this an\r\n\e[31;64Hnd exit.\r\n  --debug-check       Check memory and open file usage at exit. \e[32;64H\r\n  -T, --debug-info    Print some debug info at exit.\r\n  --default-auth=name Default authentication client-side plugin \r\n\e[31;64H to use.\r\n  --default-character-set=name\e[1C\r\n                      Set the default character set.\r\n  --delimiter=name    Delimiter to be used.\r\n  --enable-cleartext-plugin \r\n                      Obsolete option. Exists only for MySQL com\r\n\e[31;64Hmpatibility.\r\n  -e, --execute=name  Execute command and quit. (Disables --forc\r\n\e[31;64Hce and history\r\n                      file.)\r\n  -f, --force         Continue even if we get an SQL error. Sets\e[32;64H\r\n                      abort-source-on-error to 0\r\n  -h, --host=name     Connect to host. Defaults in the following\r\n\e[31;64Hg order:\r\n                      $MARIADB_HOST, $MYSQL_HOST, and then local\r\n\e[31;64Hlhost\r\n  -H, --html          Produce HTML output.\e[?25l\r\n  -i, --ignore-spaces Ignore space after function names.        \e[32;57H\e[?25h\r\n  --init-command=name SQL Command to execute when connecting to \r\n\e[31;64H MariaDB server.\r\n                      Will automatically be re-executed when rec\r\n\e[31;64Hconnecting.\r\n  --line-numbers      Write line numbers for errors.\r\n                      (Defaults to on; use --skip-line-numbers t\r\n\e[31;64Hto disable.)\r\n  -L, --skip-line-numbers\e[1C\e[?25l\r\n                      Don't write line number for errors.       \e[32;58H\e[?25h\r\n  --local-infile      Enable LOAD DATA LOCAL INFILE.\r\n  --max-allowed-packet=#\e[1C\r\n\e[3C                   The maximum packet length to send to or re\r\n\e[31;64Heceive from\r\n                      server.\r\n  --max-join-size=#   Automatic limit for rows in a join when us\r\n\e[31;64Hsing\r\n                      --safe-updates.\r\n  -G, --named-commands\e[1C\r\n                      Enable named commands. Named commands mean\r\n\e[31;64Hn this program's\r\n                      internal commands; see mysql> help . When \r\n\e[31;64H enabled, the\r\n                      named commands can be used from any line o\r\n\e[31;64Hof the query,\r\n                      otherwise only from the first line, before\r\n\e[31;64He an enter.\r\n                      Disable with --disable-named-commands. Thi\r\n\e[31;64His option is\r\n                      disabled by default.\r\n  --net-buffer-length=#\e[1C\r\n                      The buffer size for TCP/IP and socket comm\r\n\e[31;64Hmunication.\r\n  -b, --no-beep       Turn off beep on error.\r\n  -o, --one-database  Ignore statements except those that occur \r\n\e[31;64H while the\r\n                      default database is the one named at the c\r\n\e[31;64Hcommand line.\r\n  --pager[=name]      Pager to use to display results. If you do\r\n\e[31;64Hon't supply an\r\n                      option, the default pager is taken from yo\r\n\e[31;64Hour ENV variable\r\n                      PAGER. Valid pagers are less, more, cat [>\r\n\e[31;64H> filename],\r\n                      etc. See interactive help (\\h) also. This \r\n\e[31;64H option does not\r\n                      work in batch mode. Disable with --disable\r\n\e[31;64He-pager. This\r\n                      option is disabled by default.\r\n  -p, --password[=name]\e[1C\r\n                      Password to use when connecting to server.\r\n\e[31;64H. If password is\e[?25l\r\n                      not given it's asked from the tty.        \e[32;57H\e[?25h\e[?25l\r\n  -W, --pipe          Use named pipes to connect to server.     \e[32;60H\e[?25h\e[?25l\r\n  --plugin-dir=name   Directory for client-side plugins.        \e[32;57H\e[?25h\r\n  -P, --port=#        Port number to use for connection or 0 for\r\n\e[31;64Hr default to, in\r\n                      order of preference, my.cnf, $MYSQL_TCP_PO\r\n\e[31;64HORT,\e[?25l\r\n                      /etc/services, built-in default (3306).   \e[32;62H\e[?25h\r\n  --print-query-on-error\e[1C\r\n                      Print the query if there was an error. Is \r\n\e[31;64H only enabled in\r\n                      --batch mode if verbose is not set (as the\r\n\e[31;64Hen the query\r\n                      would be printed anyway)\r\n                      (Defaults to on; use --skip-print-query-on\r\n\e[31;64Hn-error to disable.)\e[?25l\r\n  --progress-reports  Get progress reports for long running     \e[32;61H\e[?25hcomm\r\n\e[31;64Hmands (like\r\n                      ALTER TABLE)\r\n                      (Defaults to on; use --skip-progress-repor\r\n\e[31;64Hrts to disable.)\r\n  --prompt=name       Set the command line prompt to this value.\e[32;64H\r\n  --protocol=name     The protocol to use for connection (tcp, s\r\n\e[31;64Hsocket, pipe).\r\n  -q, --quick         Don't cache result, print it row by row. T\r\n\e[31;64HThis may slow\r\n                      down the server if the output is suspended\r\n\e[31;64Hd. Doesn't use\r\n                      history file.\r\n  --quick-max-column-width=#\e[1C\r\n                      Maximum number of characters displayed in \r\n\e[31;64H a column header\r\n                      when using --quick\r\n  -r, --raw           Write fields without conversion. Used with\r\n\e[31;64Hh --batch.\e[?25l\r\n  --reconnect         Reconnect if the connection is lost.      \e[32;59H\e[?25h\r\n                      (Defaults to on; use --skip-reconnect to d\r\n\e[31;64Hdisable.)\r\n  -U, --safe-updates  Only allow UPDATE and DELETE that uses key\r\n\e[31;64Hys.\e[?25l\r\n  -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.    \e[32;61H\e[?25h\r\n  --sandbox           Disallow commands that access the file sys\r\n\e[31;64Hstem (except \\P\r\n                      without an argument and \\e).\r\n  --script-dir=name   Set an alternative directory path for sear\r\n\e[31;64Hrching scripts\r\n                      invoked via the source command.\r\n  --secure-auth       Refuse client connecting to server if it u\r\n\e[31;64Huses old\r\n                      (pre-4.1.1) protocol.\r\n  --select-limit=#    Automatic limit for SELECT when using --sa\r\n\e[31;64Hafe-updates.\r\n  --server-arg=name   Send embedded server this as a parameter. \e[32;64H\e[?25l\r\n  --show-query-costs  Show query cost after every statement.    \e[32;61H\e[?25h\e[?25l\r\n  --show-warnings     Show warnings after every statement.      \e[32;59H\e[?25h\r\n  --sigint-ignore     Ignore SIGINT (CTRL-C).\r\n  -s, --silent        Be more silent. Print results with a tab a\r\n\e[31;64Has separator,\r\n                      each row on new line.\e[?25l\r\n  -S, --socket=name   The socket file to use for connection.    \e[32;61H\e[?25h\r\n  --ssl               Enable SSL for connection (automatically e\r\n\e[31;64Henabled with\r\n                      other flags).\r\n                      (Defaults to on; use --skip-ssl to disable\r\n\e[31;64He.)\r\n  --ssl-ca=name       CA file in PEM format (check OpenSSL docs,\r\n\e[31;64H, implies\r\n                      --ssl).\r\n  --ssl-capath=name   CA directory (check OpenSSL docs, implies \r\n\e[31;64H --ssl).\e[?25l\r\n  --ssl-cert=name     X509 cert in PEM format (implies --ssl).  \e[32;63H\e[?25h\e[?25l\r\n  --ssl-cipher=name   SSL cipher to use (implies --ssl).        \e[32;57H\e[?25h\e[?25l\r\n  --ssl-key=name      X509 key in PEM format (implies --ssl).   \e[32;62H\e[?25h\r\n  --ssl-crl=name      Certificate revocation list (implies --ssl\r\n\e[31;64Hl).\r\n  --ssl-crlpath=name  Certificate revocation list path (implies \r\n\e[31;64H --ssl).\r\n  --tls-version=name  TLS protocol version for secure connection\r\n\e[31;64Hn.\r\n  --ssl-fp=name       Server certificate fingerprint (implies --\r\n\e[31;64H-ssl).\r\n  --ssl-fplist=name   File with accepted server certificate fing\r\n\e[31;64Hgerprints, one\r\n                      per line (implies --ssl).\r\n  --ssl-verify-server-cert\e[1C\r\n                      Verify server's certificate to prevent man\r\n\e[31;64Hn-in-the-middle\r\n                      attacks\r\n                      (Defaults to on; use --skip-ssl-verify-ser\r\n\e[31;64Hrver-cert to disable.)\r\n  -t, --table         Output in table format.\r\n  --tee=name          Append everything into outfile. See intera\r\n\e[31;64Hactive help (\\h)\r\n                      also. Does not work in batch mode. Disable\r\n\e[31;64He with\r\n                      --disable-tee. This option is disabled by \r\n\e[31;64H default.\r\n  -n, --unbuffered    Flush buffer after each query.\e[?25l\r\n  -u, --user=name     User for login if not current user.       \e[32;58H\e[?25h\r\n  -v, --verbose       Write more. (-v -v -v gives the table outp\r\n\e[31;64Hput format).\e[?25l\r\n  -V, --version       Output version information and exit.      \e[32;59H\e[?25h\r\n  -E, --vertical      Print the output of a query (rows) vertica\r\n\e[31;64Hally.\e[?25l\r\n  -w, --wait          Wait and retry if connection is down.     \e[32;60H\e[?25h\r\n  -X, --xml           Produce XML output.\r\n\nVariables (--variable-name=value)\r\nand boolean options {FALSE|TRUE}  Value (after reading options) \e[32;64H\r\n--------------------------------- ------------------------------\r\n\e[31;64H-----------\r\nabort-source-on-error             FALSE\r\nauto-rehash                       TRUE\r\nauto-vertical-output              FALSE\r\nbinary-as-hex                     FALSE\r\nbinary-mode                       FALSE\r\ncharacter-sets-dir                (No default value)\r\ncolumn-names                      TRUE\r\ncolumn-type-info                  FALSE\r\ncomments                          FALSE\r\ncompress                          FALSE\r\nconnect-expired-password          FALSE\r\nconnect-timeout                   0\r\ndatabase                          (No default value)\r\ndebug-check                       FALSE\r\ndebug-info                        FALSE\r\ndefault-auth                      (No default value)\r\ndefault-character-set             auto\r\ndelimiter                         ;\r\nforce                             FALSE\r\nhost                              (No default value)\r\nhtml                              FALSE\r\nignore-spaces                     FALSE\r\ninit-command                      (No default value)\r\nline-numbers                      TRUE\r\nlocal-infile                      FALSE\r\nmax-allowed-packet                16777216\r\nmax-join-size                     1000000\r\nnamed-commands                    FALSE\r\nnet-buffer-length                 16384\r\nno-beep                           FALSE\r\nplugin-dir                        C:\\Program Files\\MariaDB 12.0/\r\n\e[31;64H/lib/plugin\r\nport                              3306\r\nprint-query-on-error              TRUE\r\nprogress-reports                  TRUE\r\nprompt                            \\N [\\d]>\e[1C\r\nprotocol\e[26C\r\nquick                             FALSE\r\nquick-max-column-width            2147483647\r\nraw                               FALSE\r\nreconnect                         TRUE\r\nsafe-updates                      FALSE\r\ni-am-a-dummy                      FALSE\r\nsandbox                           FALSE\r\nscript-dir                        (No default value)\r\nsecure-auth                       FALSE\r\nselect-limit                      1000\r\nshow-query-costs                  FALSE\r\nshow-warnings                     FALSE\r\nsigint-ignore                     FALSE\r\nsocket                            (No default value)\r\nssl                               TRUE\r\nssl-ca                            (No default value)\r\nssl-capath                        (No default value)\r\nssl-cert                          (No default value)\r\nssl-cipher                        (No default value)\r\nssl-key                           (No default value)\r\nssl-crl                           (No default value)\r\nssl-crlpath                       (No default value)\r\ntls-version                       (No default value)\r\nssl-fp                            (No default value)\r\nssl-fplist                        (No default value)\r\nssl-verify-server-cert            TRUE\r\ntable                             FALSE\r\nunbuffered                        FALSE\r\nuser                              (No default value)\r\nvertical                          FALSE\r\nxml                               FALSE\r\n"
+  - delay: 16
+    content: 'PS C:\Users\rafif> '
+  - delay: 11181
+    content: "\e[?25l"
+  - delay: 24
+    content: "\e[93mm\e[?25h"
+  - delay: 420
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 551
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[32;20Hmys\e[?25h"
+  - delay: 296
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[32;20Hmysq\e[?25h"
+  - delay: 233
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[32;20Hmysql\e[?25h"
+  - delay: 237
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[32;20Hmysql \e[?25h"
+  - delay: 697
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[32;20Hmysql \e[37m-\e[?25h"
+  - delay: 422
+    content: "\e[?25l\e[m\e[93m\e[32;20Hmysql \e[90m-u"
+  - delay: 24
+    content: "\e[m\e[?25h"
+  - delay: 181
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[?25h"
+  - delay: 397
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 192
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 154
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 135
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 127
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 880
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 170
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[32;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 607
+    content: "\e[m"
+  - delay: 14
+    content: "\r\n"
+  - delay: 16
+    content: 'Enter password: '
+  - delay: 1326
+    content: '*'
+  - delay: 122
+    content: '*'
+  - delay: 106
+    content: '*'
+  - delay: 413
+    content: '*'
+  - delay: 263
+    content: '*'
+  - delay: 231
+    content: '*'
+  - delay: 146
+    content: '*'
+  - delay: 122
+    content: '*'
+  - delay: 249
+    content: '*'
+  - delay: 170
+    content: '*'
+  - delay: 145
+    content: '*'
+  - delay: 220
+    content: '*'
+  - delay: 294
+    content: '*'
+  - delay: 143
+    content: '*'
+  - delay: 273
+    content: '*'
+  - delay: 800
+    content: "\r\n"
+  - delay: 31
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\e[?25l\r\nYour MariaDB connection id is 45\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution  \e[32;63H\e[?25h\r\n\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and oth\r\n\e[31;64Hhers.\r\n\nType 'help;' or '\\h' for help. Type '\\c' to clear the current in\r\n\e[31;64Hnput statement.\r\n"
+  - delay: 14
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 2228
+    content: c
+  - delay: 1402
+    content: r
+  - delay: 324
+    content: e
+  - delay: 304
+    content: a
+  - delay: 368
+    content: t
+  - delay: 251
+    content: e
+  - delay: 202
+    content: ' '
+  - delay: 417
+    content: d
+  - delay: 159
+    content: a
+  - delay: 208
+    content: t
+  - delay: 167
+    content: a
+  - delay: 192
+    content: b
+  - delay: 535
+    content: a
+  - delay: 253
+    content: s
+  - delay: 345
+    content: e
+  - delay: 397
+    content: ' '
+  - delay: 615
+    content: p
+  - delay: 193
+    content: e
+  - delay: 160
+    content: 'n'
+  - delay: 192
+    content: j
+  - delay: 162
+    content: u
+  - delay: 229
+    content: a
+  - delay: 144
+    content: l
+  - delay: 155
+    content: a
+  - delay: 116
+    content: 'n'
+  - delay: 548
+    content: _
+  - delay: 303
+    content: k
+  - delay: 226
+    content: e
+  - delay: 170
+    content: r
+  - delay: 183
+    content: t
+  - delay: 110
+    content: a
+  - delay: 232
+    content: s
+  - delay: 28833
+    content: ;
+  - delay: 808
+    content: ' '
+  - delay: 321
+    content: u
+  - delay: 195
+    content: s
+  - delay: 181
+    content: e
+  - delay: 405
+    content: ' '
+  - delay: 674
+    content: p
+  - delay: 169
+    content: e
+  - delay: 903
+    content: 'n'
+  - delay: 334
+    content: j
+  - delay: 202
+    content: u
+  - delay: 246
+    content: a
+  - delay: 183
+    content: l
+  - delay: 215
+    content: "a\r\n\e[31;64Ha\r\n"
+  - delay: 163
+    content: 'n'
+  - delay: 979
+    content: _
+  - delay: 729
+    content: k
+  - delay: 142
+    content: e
+  - delay: 221
+    content: r
+  - delay: 214
+    content: t
+  - delay: 175
+    content: a
+  - delay: 282
+    content: s
+  - delay: 551
+    content: ;
+  - delay: 1133
+    content: "\r\nQuery OK, 1 row affected (0.001 sec)\r\n\nDatabase changed"
+  - delay: 11
+    content: "\r\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 1315
+    content: c
+  - delay: 207
+    content: r
+  - delay: 155
+    content: e
+  - delay: 124
+    content: a
+  - delay: 138
+    content: t
+  - delay: 212
+    content: e
+  - delay: 134
+    content: ' '
+  - delay: 217
+    content: t
+  - delay: 150
+    content: a
+  - delay: 103
+    content: b
+  - delay: 385
+    content: l
+  - delay: 164
+    content: e
+  - delay: 300
+    content: ' '
+  - delay: 1204
+    content: k
+  - delay: 293
+    content: e
+  - delay: 729
+    content: r
+  - delay: 217
+    content: t
+  - delay: 157
+    content: a
+  - delay: 256
+    content: s
+  - delay: 1039
+    content: ' '
+  - delay: 352
+    content: (
+  - delay: 11380
+    content: "\r\n"
+  - delay: 22
+    content: '    -> '
+  - delay: 1370
+    content: i
+  - delay: 188
+    content: d
+  - delay: 480
+    content: _
+  - delay: 376
+    content: k
+  - delay: 144
+    content: e
+  - delay: 256
+    content: r
+  - delay: 200
+    content: t
+  - delay: 117
+    content: a
+  - delay: 339
+    content: s
+  - delay: 577
+    content: ' '
+  - delay: 412
+    content: i
+  - delay: 188
+    content: 'n'
+  - delay: 285
+    content: t
+  - delay: 164
+    content: ' '
+  - delay: 211
+    content: a
+  - delay: 158
+    content: u
+  - delay: 449
+    content: t
+  - delay: 157
+    content: o
+  - delay: 235
+    content: ' '
+  - delay: 437
+    content: i
+  - delay: 232
+    content: 'n'
+  - delay: 299
+    content: c
+  - delay: 343
+    content: r
+  - delay: 147
+    content: e
+  - delay: 442
+    content: m
+  - delay: 107
+    content: e
+  - delay: 123
+    content: 'n'
+  - delay: 301
+    content: t
+  - delay: 626
+    content: ' '
+  - delay: 1901
+    content: p
+  - delay: 303
+    content: r
+  - delay: 166
+    content: i
+  - delay: 190
+    content: m
+  - delay: 246
+    content: a
+  - delay: 200
+    content: r
+  - delay: 247
+    content: 'y'
+  - delay: 150
+    content: ' '
+  - delay: 290
+    content: k
+  - delay: 130
+    content: e
+  - delay: 186
+    content: 'y'
+  - delay: 1601
+    content: ','
+  - delay: 709
+    content: "\b"
+  - delay: 528
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 284
+    content: "\b"
+  - delay: 172
+    content: "\b"
+  - delay: 170
+    content: "\b"
+  - delay: 594
+    content: "\e[?25l\bincrement primary key, \e[32;26H\e[?25h"
+  - delay: 510
+    content: "\e[?25l_increment primary key,\e[32;27H\e[?25h"
+  - delay: 614
+    content: "\e[1C"
+  - delay: 536
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 245
+    content: "\e[1C"
+  - delay: 706
+    content: "\e[1C"
+  - delay: 217
+    content: "\e[1C"
+  - delay: 221
+    content: "\e[1C"
+  - delay: 276
+    content: "\e[1C"
+  - delay: 376
+    content: "\e[1C"
+  - delay: 251
+    content: "\e[1C"
+  - delay: 2799
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 485
+    content: j
+  - delay: 148
+    content: e
+  - delay: 127
+    content: 'n'
+  - delay: 206
+    content: i
+  - delay: 142
+    content: s
+  - delay: 522
+    content: _
+  - delay: 364
+    content: k
+  - delay: 187
+    content: e
+  - delay: 196
+    content: r
+  - delay: 190
+    content: t
+  - delay: 133
+    content: a
+  - delay: 255
+    content: s
+  - delay: 859
+    content: ' '
+  - delay: 697
+    content: v
+  - delay: 139
+    content: a
+  - delay: 123
+    content: r
+  - delay: 202
+    content: c
+  - delay: 266
+    content: h
+  - delay: 169
+    content: a
+  - delay: 155
+    content: r
+  - delay: 1157
+    content: ' '
+  - delay: 719
+    content: "\b \b"
+  - delay: 663
+    content: (
+  - delay: 829
+    content: '1'
+  - delay: 215
+    content: '0'
+  - delay: 148
+    content: '0'
+  - delay: 642
+    content: )
+  - delay: 1129
+    content: ' '
+  - delay: 246
+    content: 'n'
+  - delay: 255
+    content: o
+  - delay: 259
+    content: t
+  - delay: 152
+    content: ' '
+  - delay: 204
+    content: 'n'
+  - delay: 213
+    content: u
+  - delay: 308
+    content: l
+  - delay: 158
+    content: l
+  - delay: 739
+    content: ','
+  - delay: 4485
+    content: "\r\n"
+  - delay: 23
+    content: '    -> '
+  - delay: 509
+    content: u
+  - delay: 187
+    content: k
+  - delay: 203
+    content: u
+  - delay: 296
+    content: r
+  - delay: 348
+    content: a
+  - delay: 566
+    content: 'n'
+  - delay: 211
+    content: ' '
+  - delay: 746
+    content: (
+  - delay: 647
+    content: "\b \b"
+  - delay: 592
+    content: v
+  - delay: 159
+    content: a
+  - delay: 156
+    content: r
+  - delay: 189
+    content: c
+  - delay: 307
+    content: h
+  - delay: 191
+    content: a
+  - delay: 139
+    content: r
+  - delay: 2640
+    content: (
+  - delay: 618
+    content: '2'
+  - delay: 364
+    content: '5'
+  - delay: 616
+    content: )
+  - delay: 967
+    content: ','
+  - delay: 1620
+    content: "\r\n"
+  - delay: 9
+    content: '    -> '
+  - delay: 506
+    content: h
+  - delay: 156
+    content: a
+  - delay: 129
+    content: r
+  - delay: 188
+    content: g
+  - delay: 153
+    content: a
+  - delay: 339
+    content: ' '
+  - delay: 359
+    content: d
+  - delay: 251
+    content: e
+  - delay: 398
+    content: c
+  - delay: 174
+    content: i
+  - delay: 214
+    content: m
+  - delay: 166
+    content: a
+  - delay: 157
+    content: l
+  - delay: 3236
+    content: (
+  - delay: 142
+    content: )
+  - delay: 726
+    content: "\b"
+  - delay: 584
+    content: "1)\b"
+  - delay: 136
+    content: "0)\b"
+  - delay: 424
+    content: ",)\b"
+  - delay: 463
+    content: "2)\b"
+  - delay: 791
+    content: "\e[1C"
+  - delay: 1626
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 554
+    content: )
+  - delay: 480
+    content: ;
+  - delay: 590
+    content: "\r\n"
+  - delay: 8
+    content: "Query OK, 0 rows affected (0.008 sec)\r\n"
+  - delay: 12
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 1866
+    content: c
+  - delay: 214
+    content: r
+  - delay: 156
+    content: e
+  - delay: 141
+    content: a
+  - delay: 197
+    content: t
+  - delay: 193
+    content: e
+  - delay: 131
+    content: ' '
+  - delay: 188
+    content: t
+  - delay: 181
+    content: a
+  - delay: 89
+    content: b
+  - delay: 374
+    content: l
+  - delay: 108
+    content: e
+  - delay: 236
+    content: ' '
+  - delay: 1558
+    content: t
+  - delay: 174
+    content: r
+  - delay: 160
+    content: a
+  - delay: 262
+    content: 'n'
+  - delay: 165
+    content: s
+  - delay: 201
+    content: a
+  - delay: 137
+    content: k
+  - delay: 196
+    content: s
+  - delay: 120
+    content: i
+  - delay: 1299
+    content: (
+  - delay: 1539
+    content: "\b \b"
+  - delay: 353
+    content: ' '
+  - delay: 738
+    content: (
+  - delay: 725
+    content: "\r\n"
+  - delay: 20
+    content: '    -> '
+  - delay: 3175
+    content: i
+  - delay: 197
+    content: d
+  - delay: 522
+    content: _
+  - delay: 442
+    content: t
+  - delay: 178
+    content: r
+  - delay: 208
+    content: a
+  - delay: 193
+    content: 'n'
+  - delay: 189
+    content: s
+  - delay: 202
+    content: a
+  - delay: 164
+    content: k
+  - delay: 142
+    content: s
+  - delay: 125
+    content: i
+  - delay: 905
+    content: ' '
+  - delay: 371
+    content: i
+  - delay: 235
+    content: 'n'
+  - delay: 282
+    content: t
+  - delay: 185
+    content: ' '
+  - delay: 219
+    content: a
+  - delay: 151
+    content: u
+  - delay: 467
+    content: t
+  - delay: 369
+    content: o
+  - delay: 231
+    content: ' '
+  - delay: 753
+    content: "\b \b"
+  - delay: 391
+    content: _
+  - delay: 627
+    content: i
+  - delay: 224
+    content: 'n'
+  - delay: 350
+    content: c
+  - delay: 235
+    content: r
+  - delay: 207
+    content: e
+  - delay: 267
+    content: m
+  - delay: 117
+    content: e
+  - delay: 136
+    content: 'n'
+  - delay: 254
+    content: t
+  - delay: 500
+    content: ' '
+  - delay: 709
+    content: p
+  - delay: 191
+    content: r
+  - delay: 161
+    content: i
+  - delay: 189
+    content: m
+  - delay: 190
+    content: a
+  - delay: 230
+    content: r
+  - delay: 207
+    content: 'y'
+  - delay: 166
+    content: ' '
+  - delay: 251
+    content: k
+  - delay: 150
+    content: e
+  - delay: 180
+    content: 'y'
+  - delay: 1377
+    content: ','
+  - delay: 457
+    content: "\r\n"
+  - delay: 18
+    content: '    -> '
+  - delay: 3258
+    content: t
+  - delay: 186
+    content: a
+  - delay: 155
+    content: 'n'
+  - delay: 193
+    content: g
+  - delay: 142
+    content: g
+  - delay: 166
+    content: a
+  - delay: 418
+    content: l
+  - delay: 683
+    content: ' '
+  - delay: 601
+    content: d
+  - delay: 139
+    content: a
+  - delay: 129
+    content: t
+  - delay: 232
+    content: e
+  - delay: 203
+    content: ' '
+  - delay: 848
+    content: 'n'
+  - delay: 258
+    content: o
+  - delay: 186
+    content: t
+  - delay: 152
+    content: ' '
+  - delay: 235
+    content: 'n'
+  - delay: 204
+    content: u
+  - delay: 255
+    content: l
+  - delay: 154
+    content: l
+  - delay: 1654
+    content: )
+  - delay: 2636
+    content: "\b \b"
+  - delay: 3025
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 504
+    content: )
+  - delay: 331
+    content: ;
+  - delay: 4149
+    content: "\r\n"
+  - delay: 8
+    content: "Query OK, 0 rows affected (0.009 sec)\r\n"
+  - delay: 15
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 11458
+    content: c
+  - delay: 265
+    content: r
+  - delay: 182
+    content: e
+  - delay: 138
+    content: a
+  - delay: 129
+    content: t
+  - delay: 248
+    content: e
+  - delay: 140
+    content: ' '
+  - delay: 470
+    content: t
+  - delay: 143
+    content: a
+  - delay: 134
+    content: b
+  - delay: 426
+    content: l
+  - delay: 149
+    content: e
+  - delay: 170
+    content: ' '
+  - delay: 233
+    content: t
+  - delay: 173
+    content: r
+  - delay: 163
+    content: a
+  - delay: 216
+    content: 'n'
+  - delay: 185
+    content: s
+  - delay: 209
+    content: a
+  - delay: 137
+    content: k
+  - delay: 304
+    content: s
+  - delay: 204
+    content: i
+  - delay: 4142
+    content: "\b"
+  - delay: 540
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 512
+    content: "\e[1C"
+  - delay: 533
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 383
+    content: "\e[1C"
+  - delay: 583
+    content: "\b \b"
+  - delay: 530
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 152
+    content: "\b \b"
+  - delay: 588
+    content: ' '
+  - delay: 193
+    content: d
+  - delay: 213
+    content: e
+  - delay: 217
+    content: t
+  - delay: 161
+    content: a
+  - delay: 242
+    content: i
+  - delay: 275
+    content: l
+  - delay: 882
+    content: _
+  - delay: 703
+    content: t
+  - delay: 169
+    content: r
+  - delay: 171
+    content: a
+  - delay: 237
+    content: 'n'
+  - delay: 185
+    content: s
+  - delay: 188
+    content: a
+  - delay: 157
+    content: k
+  - delay: 180
+    content: s
+  - delay: 118
+    content: i
+  - delay: 1261
+    content: ' '
+  - delay: 429
+    content: (
+  - delay: 1727
+    content: "\r\n"
+  - delay: 21
+    content: '    -> '
+  - delay: 876
+    content: i
+  - delay: 421
+    content: d
+  - delay: 400
+    content: _
+  - delay: 522
+    content: t
+  - delay: 185
+    content: r
+  - delay: 177
+    content: a
+  - delay: 192
+    content: b
+  - delay: 2497
+    content: "\b \b"
+  - delay: 443
+    content: "\b \b"
+  - delay: 178
+    content: "\b \b"
+  - delay: 189
+    content: "\b \b"
+  - delay: 451
+    content: d
+  - delay: 248
+    content: e
+  - delay: 220
+    content: t
+  - delay: 159
+    content: a
+  - delay: 231
+    content: i
+  - delay: 809
+    content: l
+  - delay: 2544
+    content: ' '
+  - delay: 265
+    content: i
+  - delay: 182
+    content: 'n'
+  - delay: 268
+    content: t
+  - delay: 202
+    content: ' '
+  - delay: 629
+    content: a
+  - delay: 148
+    content: u
+  - delay: 457
+    content: t
+  - delay: 188
+    content: o
+  - delay: 749
+    content: _
+  - delay: 490
+    content: i
+  - delay: 197
+    content: 'n'
+  - delay: 256
+    content: c
+  - delay: 201
+    content: r
+  - delay: 156
+    content: e
+  - delay: 604
+    content: m
+  - delay: 139
+    content: e
+  - delay: 129
+    content: 'n'
+  - delay: 477
+    content: t
+  - delay: 461
+    content: ' '
+  - delay: 490
+    content: p
+  - delay: 208
+    content: r
+  - delay: 187
+    content: i
+  - delay: 185
+    content: m
+  - delay: 232
+    content: a
+  - delay: 150
+    content: r
+  - delay: 206
+    content: 'y'
+  - delay: 168
+    content: ' '
+  - delay: 242
+    content: k
+  - delay: 140
+    content: e
+  - delay: 279
+    content: 'y'
+  - delay: 5653
+    content: ','
+  - delay: 1463
+    content: "\r\n"
+  - delay: 18
+    content: '    -> '
+  - delay: 643
+    content: i
+  - delay: 188
+    content: d
+  - delay: 1114
+    content: _
+  - delay: 441
+    content: t
+  - delay: 148
+    content: r
+  - delay: 173
+    content: a
+  - delay: 221
+    content: 'n'
+  - delay: 179
+    content: s
+  - delay: 202
+    content: a
+  - delay: 182
+    content: k
+  - delay: 186
+    content: s
+  - delay: 135
+    content: i
+  - delay: 1147
+    content: ' '
+  - delay: 412
+    content: i
+  - delay: 227
+    content: 'n'
+  - delay: 349
+    content: t
+  - delay: 1970
+    content: ;
+  - delay: 903
+    content: "\b \b"
+  - delay: 417
+    content: ''''
+  - delay: 665
+    content: "\b \b"
+  - delay: 313
+    content: ','
+  - delay: 9055
+    content: "\b \b"
+  - delay: 820
+    content: ' '
+  - delay: 303
+    content: 'n'
+  - delay: 270
+    content: o
+  - delay: 276
+    content: t
+  - delay: 425
+    content: ' '
+  - delay: 309
+    content: 'n'
+  - delay: 188
+    content: u
+  - delay: 328
+    content: k
+  - delay: 535
+    content: "\b \b"
+  - delay: 496
+    content: l
+  - delay: 166
+    content: l
+  - delay: 955
+    content: ' '
+  - delay: 462
+    content: u
+  - delay: 950
+    content: "\b \b"
+  - delay: 1093
+    content: "\b \b"
+  - delay: 745
+    content: "\b \b"
+  - delay: 534
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 161
+    content: "\b \b"
+  - delay: 190
+    content: "\b \b"
+  - delay: 190
+    content: "\b \b"
+  - delay: 848
+    content: ','
+  - delay: 1905
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 845
+    content: i
+  - delay: 156
+    content: d
+  - delay: 776
+    content: _
+  - delay: 554
+    content: k
+  - delay: 136
+    content: e
+  - delay: 246
+    content: r
+  - delay: 178
+    content: t
+  - delay: 134
+    content: a
+  - delay: 232
+    content: s
+  - delay: 1185
+    content: ' '
+  - delay: 344
+    content: i
+  - delay: 207
+    content: 'n'
+  - delay: 296
+    content: t
+  - delay: 1029
+    content: ','
+  - delay: 1466
+    content: "\r\n"
+  - delay: 17
+    content: '    -> '
+  - delay: 516
+    content: j
+  - delay: 183
+    content: u
+  - delay: 216
+    content: m
+  - delay: 262
+    content: ;
+  - delay: 188
+    content: a
+  - delay: 177
+    content: h
+  - delay: 688
+    content: "\b \b"
+  - delay: 166
+    content: "\b \b"
+  - delay: 153
+    content: "\b \b"
+  - delay: 1093
+    content: l
+  - delay: 151
+    content: a
+  - delay: 367
+    content: h
+  - delay: 913
+    content: ' '
+  - delay: 422
+    content: i
+  - delay: 202
+    content: 'n'
+  - delay: 290
+    content: t
+  - delay: 1766
+    content: ','
+  - delay: 859
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 1266
+    content: f
+  - delay: 322
+    content: o
+  - delay: 324
+    content: r
+  - delay: 164
+    content: e
+  - delay: 1286
+    content: i
+  - delay: 246
+    content: g
+  - delay: 281
+    content: 'n'
+  - delay: 576
+    content: ' '
+  - delay: 1623
+    content: k
+  - delay: 150
+    content: e
+  - delay: 197
+    content: 'y'
+  - delay: 334
+    content: ' '
+  - delay: 866
+    content: (
+  - delay: 609
+    content: i
+  - delay: 232
+    content: d
+  - delay: 1042
+    content: _
+  - delay: 518
+    content: t
+  - delay: 183
+    content: r
+  - delay: 200
+    content: a
+  - delay: 270
+    content: 'n'
+  - delay: 160
+    content: s
+  - delay: 191
+    content: a
+  - delay: 113
+    content: k
+  - delay: 186
+    content: i
+  - delay: 709
+    content: "\b \b"
+  - delay: 258
+    content: s
+  - delay: 433
+    content: i
+  - delay: 1603
+    content: )
+  - delay: 1940
+    content: ' '
+  - delay: 553
+    content: r
+  - delay: 139
+    content: e
+  - delay: 165
+    content: f
+  - delay: 174
+    content: e
+  - delay: 281
+    content: r
+  - delay: 174
+    content: e
+  - delay: 265
+    content: 'n'
+  - delay: 245
+    content: c
+  - delay: 225
+    content: e
+  - delay: 180
+    content: s
+  - delay: 321
+    content: ' '
+  - delay: 1326
+    content: t
+  - delay: 241
+    content: r
+  - delay: 478
+    content: a
+  - delay: 460
+    content: 'n'
+  - delay: 249
+    content: s
+  - delay: 497
+    content: a
+  - delay: 663
+    content: k
+  - delay: 155
+    content: s
+  - delay: 108
+    content: i
+  - delay: 221
+    content: ' '
+  - delay: 624
+    content: "\b \b"
+  - delay: 392
+    content: (
+  - delay: 531
+    content: )
+  - delay: 773
+    content: "\b"
+  - delay: 1066
+    content: "i)\b"
+  - delay: 189
+    content: "d)\b"
+  - delay: 491
+    content: "_)\b"
+  - delay: 388
+    content: "t)\b"
+  - delay: 215
+    content: "r)\b"
+  - delay: 186
+    content: "a)\b"
+  - delay: 290
+    content: "n)\e[32;63H"
+  - delay: 176
+    content: "s)\e[?25l\r\n\e[31;64H)\r\n\e[31;64H\e[?25h"
+  - delay: 195
+    content: "a)\r"
+  - delay: 162
+    content: "k)\b"
+  - delay: 142
+    content: "s)\b"
+  - delay: 110
+    content: "i)\b"
+  - delay: 8441
+    content: "\e[1C"
+  - delay: 2179
+    content: ','
+  - delay: 639
+    content: "\r\n"
+  - delay: 10
+    content: '    -> '
+  - delay: 1694
+    content: f
+  - delay: 596
+    content: o
+  - delay: 242
+    content: r
+  - delay: 269
+    content: e
+  - delay: 232
+    content: i
+  - delay: 343
+    content: g
+  - delay: 251
+    content: 'n'
+  - delay: 169
+    content: ' '
+  - delay: 287
+    content: k
+  - delay: 175
+    content: e
+  - delay: 131
+    content: 'y'
+  - delay: 250
+    content: ' '
+  - delay: 1956
+    content: (
+  - delay: 112
+    content: )
+  - delay: 2030
+    content: "\b"
+  - delay: 827
+    content: "i)\b"
+  - delay: 215
+    content: "d)\b"
+  - delay: 405
+    content: "_)\b"
+  - delay: 590
+    content: "k)\b"
+  - delay: 137
+    content: "e)\b"
+  - delay: 185
+    content: "r)\b"
+  - delay: 170
+    content: "t)\b"
+  - delay: 132
+    content: "a)\b"
+  - delay: 236
+    content: "s)\b"
+  - delay: 860
+    content: "\e[1C"
+  - delay: 1037
+    content: ' '
+  - delay: 467
+    content: r
+  - delay: 172
+    content: e
+  - delay: 217
+    content: f
+  - delay: 377
+    content: e
+  - delay: 287
+    content: r
+  - delay: 146
+    content: e
+  - delay: 587
+    content: 'n'
+  - delay: 284
+    content: c
+  - delay: 197
+    content: e
+  - delay: 191
+    content: s
+  - delay: 231
+    content: ' '
+  - delay: 2047
+    content: k
+  - delay: 131
+    content: e
+  - delay: 180
+    content: r
+  - delay: 174
+    content: t
+  - delay: 114
+    content: a
+  - delay: 242
+    content: s
+  - delay: 497
+    content: (
+  - delay: 397
+    content: i
+  - delay: 172
+    content: d
+  - delay: 489
+    content: _
+  - delay: 1356
+    content: k
+  - delay: 154
+    content: e
+  - delay: 147
+    content: r
+  - delay: 171
+    content: t
+  - delay: 112
+    content: a
+  - delay: 232
+    content: s
+  - delay: 312
+    content: )
+  - delay: 2470
+    content: "\r\n"
+  - delay: 21
+    content: '    -> '
+  - delay: 769
+    content: )
+  - delay: 838
+    content: ;
+  - delay: 430
+    content: "\r\n"
+  - delay: 9
+    content: "Query OK, 0 rows affected (0.009 sec)\r\n\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 11792
+    content: i
+  - delay: 235
+    content: 'n'
+  - delay: 201
+    content: s
+  - delay: 176
+    content: e
+  - delay: 187
+    content: r
+  - delay: 227
+    content: t
+  - delay: 177
+    content: ' '
+  - delay: 587
+    content: i
+  - delay: 194
+    content: 'n'
+  - delay: 254
+    content: t
+  - delay: 157
+    content: o
+  - delay: 245
+    content: ' '
+  - delay: 3576
+    content: k
+  - delay: 208
+    content: e
+  - delay: 158
+    content: r
+  - delay: 180
+    content: t
+  - delay: 146
+    content: a
+  - delay: 212
+    content: s
+  - delay: 195
+    content: ' '
+  - delay: 8839
+    content: (
+  - delay: 2131
+    content: )
+  - delay: 493
+    content: "\b"
+  - delay: 733
+    content: "j)\b"
+  - delay: 176
+    content: "e)\b"
+  - delay: 98
+    content: "n)\b"
+  - delay: 202
+    content: "i)\b"
+  - delay: 144
+    content: "s)\b"
+  - delay: 6562
+    content: "_)\b"
+  - delay: 348
+    content: "k)\b"
+  - delay: 161
+    content: "e)\b"
+  - delay: 213
+    content: "r)\b"
+  - delay: 186
+    content: "t)\b"
+  - delay: 139
+    content: "a)\b"
+  - delay: 229
+    content: "s)\b"
+  - delay: 612
+    content: ",)\b"
+  - delay: 259
+    content: " )\e[32;63H"
+  - delay: 765
+    content: "u)\e[?25l\r\n\e[31;64H)\r\n\e[31;64H\e[?25h"
+  - delay: 222
+    content: "k)\r"
+  - delay: 432
+    content: "u)\b"
+  - delay: 282
+    content: "r)\b"
+  - delay: 149
+    content: "a)\b"
+  - delay: 319
+    content: "m)\b"
+  - delay: 691
+    content: "\e[?25l\b) \e[32;4H\e[?25h"
+  - delay: 773
+    content: "n)\b"
+  - delay: 621
+    content: ",)\b"
+  - delay: 1943
+    content: " )\b"
+  - delay: 526
+    content: "h)\b"
+  - delay: 162
+    content: "a)\b"
+  - delay: 160
+    content: "r)\b"
+  - delay: 188
+    content: "g)\b"
+  - delay: 142
+    content: "a)\b"
+  - delay: 4821
+    content: "\e[1C"
+  - delay: 425
+    content: ' '
+  - delay: 532
+    content: v
+  - delay: 138
+    content: a
+  - delay: 397
+    content: l
+  - delay: 274
+    content: u
+  - delay: 301
+    content: e
+  - delay: 151
+    content: s
+  - delay: 1729
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 1216
+    content: (
+  - delay: 471
+    content: )
+  - delay: 680
+    content: "\b"
+  - delay: 695
+    content: "')\b"
+  - delay: 187
+    content: "')\b"
+  - delay: 537
+    content: "\b"
+  - delay: 1491
+    content: "\e[?25lH')\e[32;11H\e[?25h"
+  - delay: 297
+    content: "\e[?25lV')\e[32;12H\e[?25h"
+  - delay: 352
+    content: "\e[?25lS')\e[32;13H\e[?25h"
+  - delay: 1028
+    content: "\e[1C"
+  - delay: 710
+    content: ",)\b"
+  - delay: 1154
+    content: " )\b"
+  - delay: 1404
+    content: "A)\b"
+  - delay: 740
+    content: "4)\b"
+  - delay: 1757
+    content: "')\b"
+  - delay: 362
+    content: "\b"
+  - delay: 240
+    content: "\b"
+  - delay: 511
+    content: "\b"
+  - delay: 372
+    content: "\e[?25l'A4')\e[32;17H\e[?25h"
+  - delay: 498
+    content: "\e[1C"
+  - delay: 209
+    content: "\e[1C"
+  - delay: 252
+    content: "\e[1C"
+  - delay: 729
+    content: ",)\b"
+  - delay: 187
+    content: " )\b"
+  - delay: 1982
+    content: "5)\b"
+  - delay: 4547
+    content: "0)\b"
+  - delay: 506
+    content: "0)\b"
+  - delay: 214
+    content: "0)\b"
+  - delay: 195
+    content: "0)\b"
+  - delay: 1544
+    content: "\e[1C"
+  - delay: 915
+    content: ','
+  - delay: 397
+    content: "\r\n"
+  - delay: 24
+    content: '    -> '
+  - delay: 1295
+    content: (
+  - delay: 162
+    content: )
+  - delay: 521
+    content: "\b"
+  - delay: 544
+    content: "')\b"
+  - delay: 158
+    content: "')\b"
+  - delay: 613
+    content: "\b"
+  - delay: 2476
+    content: "\e[?25lV')\e[32;11H\e[?25h"
+  - delay: 452
+    content: "\e[?25li')\e[32;12H\e[?25h"
+  - delay: 227
+    content: "\e[?25ln')\e[32;13H\e[?25h"
+  - delay: 345
+    content: "\e[?25ll')\e[32;14H\e[?25h"
+  - delay: 341
+    content: "\e[?25ly')\e[32;15H\e[?25h"
+  - delay: 1223
+    content: "\e[1C"
+  - delay: 1054
+    content: ",)\b"
+  - delay: 299
+    content: " )\b"
+  - delay: 1502
+    content: "A)\b"
+  - delay: 581
+    content: "3)\b"
+  - delay: 1328
+    content: "')\b"
+  - delay: 577
+    content: "\b"
+  - delay: 335
+    content: "\b"
+  - delay: 515
+    content: "\e[?25l'3')\e[32;20H\e[?25h"
+  - delay: 973
+    content: "\e[?25l\b3') \e[32;19H\e[?25h"
+  - delay: 405
+    content: "\b"
+  - delay: 361
+    content: "\e[?25l'A3')\e[32;19H\e[?25h"
+  - delay: 537
+    content: "\e[1C"
+  - delay: 235
+    content: "\e[1C"
+  - delay: 220
+    content: "\e[1C"
+  - delay: 667
+    content: ",)\b"
+  - delay: 221
+    content: " )\b"
+  - delay: 2334
+    content: "7)\b"
+  - delay: 215
+    content: "5)\b"
+  - delay: 547
+    content: "0)\b"
+  - delay: 153
+    content: "0)\b"
+  - delay: 172
+    content: "0)\b"
+  - delay: 10635
+    content: "\e[1C"
+  - delay: 3029
+    content: ','
+  - delay: 1965
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 1263
+    content: (
+  - delay: 153
+    content: )
+  - delay: 803
+    content: "\b"
+  - delay: 862
+    content: "')\b"
+  - delay: 208
+    content: "')\b"
+  - delay: 567
+    content: "\b"
+  - delay: 3447
+    content: "\e[?25lA')\e[32;11H\e[?25h"
+  - delay: 200
+    content: "\e[?25lr')\e[32;12H\e[?25h"
+  - delay: 190
+    content: "\e[?25lt')\e[32;13H\e[?25h"
+  - delay: 337
+    content: "\e[?25l ')\e[32;14H\e[?25h"
+  - delay: 605
+    content: "\e[?25lP')\e[32;15H\e[?25h"
+  - delay: 275
+    content: "\e[?25la')\e[32;16H\e[?25h"
+  - delay: 191
+    content: "\e[?25lp')\e[32;17H\e[?25h"
+  - delay: 216
+    content: "\e[?25le')\e[32;18H\e[?25h"
+  - delay: 199
+    content: "\e[?25lr')\e[32;19H\e[?25h"
+  - delay: 1511
+    content: "\e[?25l'')\e[32;20H\e[?25h"
+  - delay: 380
+    content: "\b"
+  - delay: 658
+    content: "\e[1C"
+  - delay: 490
+    content: "\e[?25l\b') \e[32;19H\e[?25h"
+  - delay: 445
+    content: "\e[1C"
+  - delay: 632
+    content: ",)\b"
+  - delay: 192
+    content: " )\b"
+  - delay: 2137
+    content: "A)\b"
+  - delay: 864
+    content: "\e[?25l\b) \e[32;22H\e[?25h"
+  - delay: 2036
+    content: "F)\b"
+  - delay: 264
+    content: "$)\b"
+  - delay: 927
+    content: "\e[?25l\b) \e[32;23H\e[?25h"
+  - delay: 437
+    content: "4)\b"
+  - delay: 1598
+    content: "')\b"
+  - delay: 332
+    content: "\b"
+  - delay: 207
+    content: "\b"
+  - delay: 251
+    content: "\b"
+  - delay: 584
+    content: "\e[?25l'F4')\e[32;23H\e[?25h"
+  - delay: 496
+    content: "\e[1C"
+  - delay: 215
+    content: "\e[1C"
+  - delay: 214
+    content: "\e[1C"
+  - delay: 775
+    content: ",)\b"
+  - delay: 264
+    content: " )\b"
+  - delay: 1587
+    content: "4)\b"
+  - delay: 215
+    content: "5)\b"
+  - delay: 645
+    content: "0)\b"
+  - delay: 168
+    content: "0)\b"
+  - delay: 148
+    content: "0)\b"
+  - delay: 652
+    content: "\e[1C"
+  - delay: 867
+    content: ;
+  - delay: 287
+    content: "\r\nQuery OK, 3 rows affected (0.004 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 21
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 2315
+    content: i
+  - delay: 223
+    content: 'n'
+  - delay: 159
+    content: s
+  - delay: 219
+    content: e
+  - delay: 173
+    content: r
+  - delay: 166
+    content: t
+  - delay: 201
+    content: ' '
+  - delay: 335
+    content: o
+  - delay: 1205
+    content: "\b \b"
+  - delay: 468
+    content: i
+  - delay: 181
+    content: 'n'
+  - delay: 261
+    content: t
+  - delay: 472
+    content: o
+  - delay: 253
+    content: ' '
+  - delay: 7282
+    content: t
+  - delay: 192
+    content: r
+  - delay: 238
+    content: a
+  - delay: 621
+    content: 'n'
+  - delay: 185
+    content: s
+  - delay: 224
+    content: a
+  - delay: 473
+    content: k
+  - delay: 266
+    content: s
+  - delay: 135
+    content: i
+  - delay: 772
+    content: ' '
+  - delay: 1191
+    content: (
+  - delay: 156
+    content: )
+  - delay: 584
+    content: "\b"
+  - delay: 626
+    content: "t)\b"
+  - delay: 172
+    content: "a)\b"
+  - delay: 158
+    content: "n)\b"
+  - delay: 222
+    content: "g)\b"
+  - delay: 119
+    content: "g)\b"
+  - delay: 174
+    content: "a)\b"
+  - delay: 256
+    content: "l)\b"
+  - delay: 3625
+    content: "\e[1C"
+  - delay: 1083
+    content: ' '
+  - delay: 230
+    content: v
+  - delay: 141
+    content: a
+  - delay: 289
+    content: l
+  - delay: 243
+    content: "u\r\n\e[31;64Hu\r\n"
+  - delay: 305
+    content: e
+  - delay: 158
+    content: s
+  - delay: 2515
+    content: "\r\n"
+  - delay: 22
+    content: '    -> '
+  - delay: 935
+    content: (
+  - delay: 141
+    content: )
+  - delay: 572
+    content: "\b"
+  - delay: 2221
+    content: "')\b"
+  - delay: 147
+    content: "')\b"
+  - delay: 451
+    content: "\b"
+  - delay: 1059
+    content: "\e[?25l2')\e[32;11H\e[?25h"
+  - delay: 347
+    content: "\e[?25l0')\e[32;12H\e[?25h"
+  - delay: 544
+    content: "\e[?25l2')\e[32;13H\e[?25h"
+  - delay: 483
+    content: "\e[?25l6')\e[32;14H\e[?25h"
+  - delay: 2341
+    content: "\e[?25l-')\e[32;15H\e[?25h"
+  - delay: 760
+    content: "\e[?25l0')\e[32;16H\e[?25h"
+  - delay: 442
+    content: "\e[?25l1')\e[32;17H\e[?25h"
+  - delay: 925
+    content: "\e[?25l-')\e[32;18H\e[?25h"
+  - delay: 2211
+    content: "\e[?25l0')\e[32;19H\e[?25h"
+  - delay: 421
+    content: "\e[?25l5')\e[32;20H\e[?25h"
+  - delay: 1689
+    content: "\e[1C"
+  - delay: 945
+    content: "\e[1C"
+  - delay: 852
+    content: ','
+  - delay: 1095
+    content: "\r\n"
+  - delay: 21
+    content: '    -> '
+  - delay: 1355
+    content: '9'
+  - delay: 131
+    content: '0'
+  - delay: 765
+    content: "\b \b"
+  - delay: 150
+    content: "\b \b"
+  - delay: 295
+    content: (
+  - delay: 139
+    content: )
+  - delay: 596
+    content: "\b"
+  - delay: 871
+    content: "')\b"
+  - delay: 155
+    content: "')\b"
+  - delay: 324
+    content: "\b"
+  - delay: 737
+    content: "\e[?25l2')\e[32;11H\e[?25h"
+  - delay: 229
+    content: "\e[?25l0')\e[32;12H\e[?25h"
+  - delay: 164
+    content: "\e[?25l2')\e[32;13H\e[?25h"
+  - delay: 374
+    content: "\e[?25l6')\e[32;14H\e[?25h"
+  - delay: 1226
+    content: "\e[?25l-')\e[32;15H\e[?25h"
+  - delay: 808
+    content: "\e[?25l0')\e[32;16H\e[?25h"
+  - delay: 207
+    content: "\e[?25l1')\e[32;17H\e[?25h"
+  - delay: 955
+    content: "\e[?25l-')\e[32;18H\e[?25h"
+  - delay: 2846
+    content: "\e[?25l0')\e[32;19H\e[?25h"
+  - delay: 1326
+    content: "\e[?25l4')\e[32;20H\e[?25h"
+  - delay: 846
+    content: "\e[1C"
+  - delay: 231
+    content: "\e[1C"
+  - delay: 1501
+    content: ','
+  - delay: 625
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 1051
+    content: (
+  - delay: 136
+    content: )
+  - delay: 562
+    content: "\b"
+  - delay: 852
+    content: "')\b"
+  - delay: 150
+    content: "')\b"
+  - delay: 395
+    content: "\b"
+  - delay: 717
+    content: "\e[?25l2')\e[32;11H\e[?25h"
+  - delay: 220
+    content: "\e[?25l0')\e[32;12H\e[?25h"
+  - delay: 159
+    content: "\e[?25l2')\e[32;13H\e[?25h"
+  - delay: 387
+    content: "\e[?25l6')\e[32;14H\e[?25h"
+  - delay: 618
+    content: "\e[1C"
+  - delay: 623
+    content: "\b"
+  - delay: 832
+    content: "\e[?25l-')\e[32;15H\e[?25h"
+  - delay: 579
+    content: "\e[?25l0')\e[32;16H\e[?25h"
+  - delay: 176
+    content: "\e[?25l1')\e[32;17H\e[?25h"
+  - delay: 198
+    content: "\e[?25l-')\e[32;18H\e[?25h"
+  - delay: 1160
+    content: "\e[?25l0')\e[32;19H\e[?25h"
+  - delay: 359
+    content: "\e[?25l6')\e[32;20H\e[?25h"
+  - delay: 559
+    content: "\e[1C"
+  - delay: 249
+    content: "\e[1C"
+  - delay: 783
+    content: ;
+  - delay: 1531
+    content: "\r\nQuery OK, 3 rows affected (0.004 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 14
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 4404
+    content: i
+  - delay: 232
+    content: 'n'
+  - delay: 192
+    content: s
+  - delay: 212
+    content: e
+  - delay: 181
+    content: r
+  - delay: 211
+    content: t
+  - delay: 209
+    content: ' '
+  - delay: 540
+    content: i
+  - delay: 207
+    content: 'n'
+  - delay: 203
+    content: t
+  - delay: 163
+    content: o
+  - delay: 225
+    content: ' '
+  - delay: 2938
+    content: D
+  - delay: 380
+    content: e
+  - delay: 248
+    content: t
+  - delay: 160
+    content: a
+  - delay: 1023
+    content: "\b \b"
+  - delay: 184
+    content: "\b \b"
+  - delay: 151
+    content: "\b \b"
+  - delay: 158
+    content: "\b \b"
+  - delay: 642
+    content: d
+  - delay: 152
+    content: e
+  - delay: 220
+    content: t
+  - delay: 199
+    content: a
+  - delay: 314
+    content: i
+  - delay: 247
+    content: l
+  - delay: 343
+    content: _
+  - delay: 335
+    content: t
+  - delay: 166
+    content: r
+  - delay: 152
+    content: a
+  - delay: 220
+    content: 'n'
+  - delay: 194
+    content: s
+  - delay: 203
+    content: a
+  - delay: 161
+    content: k
+  - delay: 266
+    content: s
+  - delay: 122
+    content: i
+  - delay: 2389
+    content: (
+  - delay: 179
+    content: )
+  - delay: 735
+    content: "\b"
+  - delay: 2773
+    content: "\b"
+  - delay: 1007
+    content: "\e[?25l ()\e[32;58H\e[?25h"
+  - delay: 226
+    content: "\e[1C"
+  - delay: 7218
+    content: "i)\b"
+  - delay: 215
+    content: "d)\b"
+  - delay: 410
+    content: "_)\b"
+  - delay: 419
+    content: "t)\e[32;63H"
+  - delay: 195
+    content: "r)\e[?25l\r\n\e[31;64H)\r\n\e[31;64H\e[?25h"
+  - delay: 221
+    content: "a)\r"
+  - delay: 241
+    content: "n)\b"
+  - delay: 214
+    content: "s)\b"
+  - delay: 310
+    content: "a)\b"
+  - delay: 286
+    content: "k)\b"
+  - delay: 911
+    content: "s)\b"
+  - delay: 176
+    content: "i)\b"
+  - delay: 722
+    content: ",)\b"
+  - delay: 227
+    content: " )\b"
+  - delay: 1572
+    content: "i)\b"
+  - delay: 232
+    content: "d)\b"
+  - delay: 759
+    content: "_)\b"
+  - delay: 511
+    content: "b)\b"
+  - delay: 974
+    content: "\e[?25l\b) \e[32;12H\e[?25h"
+  - delay: 456
+    content: "k)\b"
+  - delay: 167
+    content: "e)\b"
+  - delay: 166
+    content: "r)\b"
+  - delay: 172
+    content: "t)\b"
+  - delay: 128
+    content: "a)\b"
+  - delay: 267
+    content: "s)\b"
+  - delay: 647
+    content: ",)\b"
+  - delay: 306
+    content: " )\b"
+  - delay: 2235
+    content: "j)\b"
+  - delay: 176
+    content: "u)\b"
+  - delay: 216
+    content: "m)\b"
+  - delay: 222
+    content: "l)\b"
+  - delay: 155
+    content: "a)\b"
+  - delay: 146
+    content: "h)\b"
+  - delay: 2274
+    content: " )\b"
+  - delay: 1142
+    content: "\e[?25l\b) \e[32;26H\e[?25h"
+  - delay: 444
+    content: "\e[1C"
+  - delay: 524
+    content: ' '
+  - delay: 327
+    content: v
+  - delay: 173
+    content: a
+  - delay: 241
+    content: l
+  - delay: 260
+    content: u
+  - delay: 284
+    content: e
+  - delay: 154
+    content: s
+  - delay: 828
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 843
+    content: (
+  - delay: 152
+    content: )
+  - delay: 760
+    content: "\b"
+  - delay: 2022
+    content: "1)\b"
+  - delay: 262
+    content: ",)\b"
+  - delay: 1048
+    content: " )\b"
+  - delay: 314
+    content: "1)\b"
+  - delay: 561
+    content: ",)\b"
+  - delay: 894
+    content: " )\b"
+  - delay: 2169
+    content: "1)\b"
+  - delay: 161
+    content: "5)\b"
+  - delay: 1195
+    content: "\e[1C"
+  - delay: 918
+    content: ','
+  - delay: 902
+    content: "\r\n"
+  - delay: 22
+    content: '    -> '
+  - delay: 1187
+    content: (
+  - delay: 232
+    content: )
+  - delay: 719
+    content: "\b"
+  - delay: 1152
+    content: "2)\b"
+  - delay: 644
+    content: ",)\b"
+  - delay: 371
+    content: " )\b"
+  - delay: 232
+    content: "2)\b"
+  - delay: 734
+    content: ",)\b"
+  - delay: 263
+    content: " )\b"
+  - delay: 929
+    content: "2)\b"
+  - delay: 276
+    content: "0)\b"
+  - delay: 706
+    content: "\e[1C"
+  - delay: 850
+    content: ','
+  - delay: 1126
+    content: "\r\n"
+  - delay: 16
+    content: '    -> '
+  - delay: 792
+    content: '9'
+  - delay: 739
+    content: "\b \b"
+  - delay: 554
+    content: (
+  - delay: 221
+    content: )
+  - delay: 609
+    content: "\b"
+  - delay: 1258
+    content: "3)\b"
+  - delay: 266
+    content: ",)\b"
+  - delay: 606
+    content: " )\b"
+  - delay: 347
+    content: "3)\b"
+  - delay: 817
+    content: ",)\b"
+  - delay: 447
+    content: " )\b"
+  - delay: 1365
+    content: "2)\b"
+  - delay: 136
+    content: "5)\b"
+  - delay: 1329
+    content: "\e[1C"
+  - delay: 858
+    content: ;
+  - delay: 1497
+    content: "\r\nQuery OK, 3 rows affected (0.003 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 9
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 1317
+    content: s
+  - delay: 354
+    content: e
+  - delay: 206
+    content: l
+  - delay: 142
+    content: e
+  - delay: 222
+    content: c
+  - delay: 193
+    content: t
+  - delay: 243
+    content: ' '
+  - delay: 1014
+    content: "\b \b"
+  - delay: 498
+    content: '*'
+  - delay: 636
+    content: f
+  - delay: 312
+    content: r
+  - delay: 115
+    content: o
+  - delay: 241
+    content: m
+  - delay: 920
+    content: ' '
+  - delay: 1774
+    content: d
+  - delay: 190
+    content: e
+  - delay: 255
+    content: t
+  - delay: 200
+    content: a
+  - delay: 342
+    content: i
+  - delay: 628
+    content: "\b \b"
+  - delay: 175
+    content: "\b \b"
+  - delay: 157
+    content: "\b \b"
+  - delay: 204
+    content: "\b \b"
+  - delay: 237
+    content: "\b \b"
+  - delay: 829
+    content: k
+  - delay: 194
+    content: e
+  - delay: 157
+    content: r
+  - delay: 173
+    content: t
+  - delay: 540
+    content: a
+  - delay: 210
+    content: s
+  - delay: 517
+    content: ;
+  - delay: 634
+    content: "\r\n+-----------+--------------+--------+----------+\r\n| id_kertas | jenis_kertas | ukuran | harga    |\r\n+-----------+--------------+--------+----------+\r\n|         1 | HVS          | A4     | 50000.00 |\r\n|         2 | Vinly        | A3     | 75000.00 |\r\n|         3 | Art Paper    | F4     | 45000.00 |\r\n+-----------+--------------+--------+----------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 2326
+    content: select*from kertas;
+  - delay: 862
+    content: "\b"
+  - delay: 866
+    content: "\e[?25l\b; \e[32;46H\e[?25h"
+  - delay: 169
+    content: "\e[?25l\b; \e[32;45H\e[?25h"
+  - delay: 157
+    content: "\e[?25l\b; \e[32;44H\e[?25h"
+  - delay: 167
+    content: "\e[?25l\b; \e[32;43H\e[?25h"
+  - delay: 142
+    content: "\e[?25l\b; \e[32;42H\e[?25h"
+  - delay: 234
+    content: "\e[?25l\b; \e[32;41H\e[?25h"
+  - delay: 2414
+    content: "t;\b"
+  - delay: 175
+    content: "r;\b"
+  - delay: 175
+    content: "a;\b"
+  - delay: 319
+    content: "n;\b"
+  - delay: 157
+    content: "s;\b"
+  - delay: 218
+    content: "a;\b"
+  - delay: 149
+    content: "k;\b"
+  - delay: 198
+    content: "s;\b"
+  - delay: 150
+    content: "i;\b"
+  - delay: 1221
+    content: "\e[1C"
+  - delay: 771
+    content: "\r\n+--------------+------------+\r\n| id_transaksi | tanggal    |\r\n+--------------+------------+\r\n|            1 | 2026-01-05 |\r\n|            2 | 2026-01-04 |\r\n|            3 | 2026-01-06 |\r\n+--------------+------------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 15
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 2362
+    content: select*from transaksi;
+  - delay: 906
+    content: "\b"
+  - delay: 719
+    content: "\e[?25l\b; \e[32;49H\e[?25h"
+  - delay: 533
+    content: "\e[?25l\b; \e[32;48H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\b; \e[32;47H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\b; \e[32;46H\e[?25h"
+  - delay: 171
+    content: "\e[?25l\b; \e[32;45H\e[?25h"
+  - delay: 205
+    content: "\e[?25l\b; \e[32;44H\e[?25h"
+  - delay: 179
+    content: "\e[?25l\b; \e[32;43H\e[?25h"
+  - delay: 207
+    content: "\e[?25l\b; \e[32;42H\e[?25h"
+  - delay: 246
+    content: "\e[?25l\b; \e[32;41H\e[?25h"
+  - delay: 1725
+    content: "i;\b"
+  - delay: 157
+    content: "d;\b"
+  - delay: 1818
+    content: "_;\b"
+  - delay: 789
+    content: "t;\b"
+  - delay: 166
+    content: "r;\b"
+  - delay: 159
+    content: "a;\b"
+  - delay: 267
+    content: "n;\b"
+  - delay: 166
+    content: "s;\b"
+  - delay: 214
+    content: "a;\b"
+  - delay: 169
+    content: "k;\b"
+  - delay: 161
+    content: "s;\b"
+  - delay: 124
+    content: "i;\b"
+  - delay: 835
+    content: "\e[1C"
+  - delay: 555
+    content: "\r\nERROR 1146 (42S02): Table 'penjualan_kertas.id_transaksi' doesn'\r\n\e[31;64H't exist"
+  - delay: 13
+    content: "\r\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 3261
+    content: select*from id_transaksi;
+  - delay: 823
+    content: "\b"
+  - delay: 506
+    content: "\b"
+  - delay: 539
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 255
+    content: "\b"
+  - delay: 513
+    content: "\b"
+  - delay: 1700
+    content: "\b"
+  - delay: 485
+    content: "\b"
+  - delay: 823
+    content: "\e[?25l\bd_transaksi; \e[32;41H\e[?25h"
+  - delay: 388
+    content: "\e[1C"
+  - delay: 758
+    content: "\e[?25le_transaksi;\e[32;43H\e[?25h"
+  - delay: 254
+    content: "\e[?25lt_transaksi;\e[32;44H\e[?25h"
+  - delay: 230
+    content: "\e[?25la_transaksi;\e[32;45H\e[?25h"
+  - delay: 241
+    content: "\e[?25li_transaksi;\e[32;46H\e[?25h"
+  - delay: 242
+    content: "\e[?25ll_transaksi;\e[32;47H\e[?25h"
+  - delay: 568
+    content: "\e[1C"
+  - delay: 531
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 397
+    content: "\r\n+-----------+--------------+-----------+--------+\r\n| id_detail | id_transaksi | id_kertas | jumlah |\r\n+-----------+--------------+-----------+--------+\r\n|         1 |            1 |         1 |     15 |\r\n|         2 |            2 |         2 |     20 |\r\n|         3 |            3 |         3 |     25 |\r\n+-----------+--------------+-----------+--------+\r\n3 rows in set (0.000 sec)\r\n"
+  - delay: 7
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 16270
+    content: c
+  - delay: 231
+    content: r
+  - delay: 166
+    content: e
+  - delay: 112
+    content: a
+  - delay: 165
+    content: t
+  - delay: 233
+    content: e
+  - delay: 150
+    content: ' '
+  - delay: 258
+    content: t
+  - delay: 157
+    content: a
+  - delay: 476
+    content: b
+  - delay: 333
+    content: e
+  - delay: 214
+    content: l
+  - delay: 764
+    content: "\b \b"
+  - delay: 144
+    content: "\b \b"
+  - delay: 572
+    content: l
+  - delay: 125
+    content: e
+  - delay: 962
+    content: ' '
+  - delay: 349
+    content: p
+  - delay: 128
+    content: e
+  - delay: 152
+    content: m
+  - delay: 214
+    content: b
+  - delay: 167
+    content: e
+  - delay: 182
+    content: l
+  - delay: 251
+    content: i
+  - delay: 1308
+    content: ' '
+  - delay: 752
+    content: (
+  - delay: 582
+    content: "\r\n"
+  - delay: 23
+    content: '    -> '
+  - delay: 2805
+    content: i
+  - delay: 153
+    content: d
+  - delay: 521
+    content: _
+  - delay: 771
+    content: p
+  - delay: 551
+    content: e
+  - delay: 173
+    content: m
+  - delay: 264
+    content: b
+  - delay: 194
+    content: e
+  - delay: 441
+    content: l
+  - delay: 208
+    content: i
+  - delay: 1344
+    content: ' '
+  - delay: 433
+    content: i
+  - delay: 188
+    content: 'n'
+  - delay: 275
+    content: t
+  - delay: 948
+    content: ' '
+  - delay: 608
+    content: a
+  - delay: 144
+    content: u
+  - delay: 252
+    content: t
+  - delay: 482
+    content: o
+  - delay: 355
+    content: ' '
+  - delay: 562
+    content: i
+  - delay: 253
+    content: 'n'
+  - delay: 302
+    content: c
+  - delay: 248
+    content: r
+  - delay: 248
+    content: e
+  - delay: 189
+    content: m
+  - delay: 109
+    content: e
+  - delay: 102
+    content: 'n'
+  - delay: 235
+    content: t
+  - delay: 1846
+    content: "\b"
+  - delay: 165
+    content: "\b"
+  - delay: 171
+    content: "\b"
+  - delay: 198
+    content: "\b"
+  - delay: 179
+    content: "\b"
+  - delay: 172
+    content: "\b"
+  - delay: 184
+    content: "\b"
+  - delay: 223
+    content: "\b"
+  - delay: 241
+    content: "\b"
+  - delay: 629
+    content: "\e[?25l\bincrement \e[32;27H\e[?25h"
+  - delay: 531
+    content: "\e[?25l_increment\e[32;28H\e[?25h"
+  - delay: 589
+    content: "\e[1C"
+  - delay: 539
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 854
+    content: ' '
+  - delay: 496
+    content: p
+  - delay: 193
+    content: r
+  - delay: 180
+    content: i
+  - delay: 200
+    content: m
+  - delay: 235
+    content: a
+  - delay: 175
+    content: r
+  - delay: 227
+    content: 'y'
+  - delay: 180
+    content: ' '
+  - delay: 323
+    content: k
+  - delay: 316
+    content: 'y'
+  - delay: 716
+    content: "\b \b"
+  - delay: 197
+    content: e
+  - delay: 201
+    content: 'y'
+  - delay: 1228
+    content: ','
+  - delay: 392
+    content: "\r\n"
+  - delay: 16
+    content: '    -> '
+  - delay: 1487
+    content: 'n'
+  - delay: 133
+    content: a
+  - delay: 130
+    content: m
+  - delay: 130
+    content: a
+  - delay: 409
+    content: _
+  - delay: 769
+    content: p
+  - delay: 145
+    content: e
+  - delay: 204
+    content: m
+  - delay: 201
+    content: b
+  - delay: 131
+    content: e
+  - delay: 182
+    content: l
+  - delay: 226
+    content: i
+  - delay: 826
+    content: ' '
+  - delay: 611
+    content: v
+  - delay: 155
+    content: a
+  - delay: 154
+    content: r
+  - delay: 292
+    content: c
+  - delay: 252
+    content: h
+  - delay: 120
+    content: a
+  - delay: 185
+    content: r
+  - delay: 637
+    content: (
+  - delay: 625
+    content: '1'
+  - delay: 178
+    content: '0'
+  - delay: 161
+    content: '0'
+  - delay: 363
+    content: )
+  - delay: 915
+    content: ','
+  - delay: 835
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 1503
+    content: 'n'
+  - delay: 331
+    content: o
+  - delay: 1010
+    content: _
+  - delay: 483
+    content: h
+  - delay: 397
+    content: p
+  - delay: 767
+    content: ' '
+  - delay: 392
+    content: (
+  - delay: 917
+    content: "\b \b"
+  - delay: 383
+    content: v
+  - delay: 111
+    content: a
+  - delay: 115
+    content: r
+  - delay: 179
+    content: c
+  - delay: 297
+    content: h
+  - delay: 166
+    content: a
+  - delay: 106
+    content: t
+  - delay: 521
+    content: "\b \b"
+  - delay: 388
+    content: r
+  - delay: 536
+    content: (
+  - delay: 777
+    content: '2'
+  - delay: 209
+    content: '0'
+  - delay: 682
+    content: )
+  - delay: 750
+    content: .
+  - delay: 479
+    content: "\b \b"
+  - delay: 281
+    content: ','
+  - delay: 2974
+    content: "\r\n"
+  - delay: 21
+    content: '    -> '
+  - delay: 583
+    content: a
+  - delay: 117
+    content: l
+  - delay: 108
+    content: a
+  - delay: 105
+    content: m
+  - delay: 132
+    content: a
+  - delay: 173
+    content: t
+  - delay: 222
+    content: ' '
+  - delay: 441
+    content: c
+  - delay: 617
+    content: "\b \b"
+  - delay: 382
+    content: v
+  - delay: 169
+    content: a
+  - delay: 136
+    content: r
+  - delay: 230
+    content: c
+  - delay: 266
+    content: h
+  - delay: 154
+    content: a
+  - delay: 142
+    content: r
+  - delay: 2326
+    content: (
+  - delay: 157
+    content: )
+  - delay: 448
+    content: "\b"
+  - delay: 705
+    content: "5)\b"
+  - delay: 291
+    content: "0)\b"
+  - delay: 680
+    content: "\e[1C"
+  - delay: 1055
+    content: "\r\n"
+  - delay: 16
+    content: '    -> '
+  - delay: 534
+    content: )
+  - delay: 838
+    content: ;
+  - delay: 273
+    content: "\r\n"
+  - delay: 7
+    content: "Query OK, 0 rows affected (0.008 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 1742
+    content: i
+  - delay: 212
+    content: 'n'
+  - delay: 196
+    content: s
+  - delay: 173
+    content: e
+  - delay: 174
+    content: r
+  - delay: 188
+    content: t
+  - delay: 199
+    content: ' '
+  - delay: 486
+    content: i
+  - delay: 212
+    content: 'n'
+  - delay: 234
+    content: t
+  - delay: 145
+    content: o
+  - delay: 256
+    content: ' '
+  - delay: 1255
+    content: p
+  - delay: 227
+    content: e
+  - delay: 190
+    content: m
+  - delay: 214
+    content: b
+  - delay: 159
+    content: e
+  - delay: 359
+    content: l
+  - delay: 212
+    content: i
+  - delay: 2067
+    content: ' '
+  - delay: 323
+    content: (
+  - delay: 7814
+    content: 'n'
+  - delay: 161
+    content: a
+  - delay: 135
+    content: m
+  - delay: 183
+    content: a
+  - delay: 738
+    content: _
+  - delay: 796
+    content: p
+  - delay: 168
+    content: e
+  - delay: 150
+    content: m
+  - delay: 201
+    content: b
+  - delay: 183
+    content: e
+  - delay: 209
+    content: l
+  - delay: 243
+    content: i
+  - delay: 1739
+    content: m
+  - delay: 539
+    content: "\b \b"
+  - delay: 300
+    content: ','
+  - delay: 642
+    content: ' '
+  - delay: 616
+    content: "N\r\n\e[31;64HN\r\n"
+  - delay: 365
+    content: o
+  - delay: 597
+    content: "\r \r"
+  - delay: 167
+    content: "\e[?25l\e[31;64H \e[?25h"
+  - delay: 186
+    content: "\e[31;63H \e[31;63H"
+  - delay: 705
+    content: ' '
+  - delay: 209
+    content: 'n'
+  - delay: 262
+    content: o
+  - delay: 574
+    content: _
+  - delay: 835
+    content: h
+  - delay: 352
+    content: p
+  - delay: 1492
+    content: ','
+  - delay: 2012
+    content: ' '
+  - delay: 491
+    content: a
+  - delay: 123
+    content: l
+  - delay: 126
+    content: a
+  - delay: 109
+    content: m
+  - delay: 306
+    content: t
+  - delay: 554
+    content: "\b \b"
+  - delay: 183
+    content: a
+  - delay: 378
+    content: t
+  - delay: 1033
+    content: _
+  - delay: 542
+    content: "\b \b"
+  - delay: 411
+    content: )
+  - delay: 654
+    content: ' '
+  - delay: 662
+    content: v
+  - delay: 173
+    content: a
+  - delay: 284
+    content: l
+  - delay: 267
+    content: u
+  - delay: 291
+    content: e
+  - delay: 157
+    content: s
+  - delay: 489
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 1988
+    content: (
+  - delay: 124
+    content: )
+  - delay: 763
+    content: "\b"
+  - delay: 1025
+    content: "')\b"
+  - delay: 156
+    content: "')\b"
+  - delay: 389
+    content: "\b"
+  - delay: 1353
+    content: "\e[?25lb')\e[32;11H\e[?25h"
+  - delay: 101
+    content: "\e[?25la')\e[32;12H\e[?25h"
+  - delay: 103
+    content: "\e[?25lg')\e[32;13H\e[?25h"
+  - delay: 95
+    content: "\e[?25la')\e[32;14H\e[?25h"
+  - delay: 237
+    content: "\e[?25ls')\e[32;15H\e[?25h"
+  - delay: 652
+    content: "\e[1C"
+  - delay: 881
+    content: ",)\b"
+  - delay: 221
+    content: " )\b"
+  - delay: 1837
+    content: "')\b"
+  - delay: 149
+    content: "')\b"
+  - delay: 376
+    content: "\b"
+  - delay: 721
+    content: "\e[?25l0')\e[32;20H\e[?25h"
+  - delay: 286
+    content: "\e[?25l8')\e[32;21H\e[?25h"
+  - delay: 413
+    content: "\e[?25l6')\e[32;22H\e[?25h"
+  - delay: 256
+    content: "\e[?25l4')\e[32;23H\e[?25h"
+  - delay: 498
+    content: "\e[?25l5')\e[32;24H\e[?25h"
+  - delay: 192
+    content: "\e[?25l3')\e[32;25H\e[?25h"
+  - delay: 222
+    content: "\e[?25l7')\e[32;26H\e[?25h"
+  - delay: 247
+    content: "\e[?25l2')\e[32;27H\e[?25h"
+  - delay: 454
+    content: "\e[?25l8')\e[32;28H\e[?25h"
+  - delay: 178
+    content: "\e[?25l3')\e[32;29H\e[?25h"
+  - delay: 236
+    content: "\e[?25l9')\e[32;30H\e[?25h"
+  - delay: 250
+    content: "\e[?25l4')\e[32;31H\e[?25h"
+  - delay: 524
+    content: "\e[1C"
+  - delay: 685
+    content: ",)\b"
+  - delay: 232
+    content: " )\b"
+  - delay: 4197
+    content: "')\b"
+  - delay: 180
+    content: "')\b"
+  - delay: 765
+    content: "\b"
+  - delay: 482
+    content: "\e[?25lp')\e[32;36H\e[?25h"
+  - delay: 979
+    content: "\e[?25la')\e[32;37H\e[?25h"
+  - delay: 167
+    content: "\e[?25lm')\e[32;38H\e[?25h"
+  - delay: 192
+    content: "\e[?25lu')\e[32;39H\e[?25h"
+  - delay: 273
+    content: "\e[?25ll')\e[32;40H\e[?25h"
+  - delay: 148
+    content: "\e[?25la')\e[32;41H\e[?25h"
+  - delay: 133
+    content: "\e[?25ln')\e[32;42H\e[?25h"
+  - delay: 191
+    content: "\e[?25lg')\e[32;43H\e[?25h"
+  - delay: 609
+    content: "\e[1C"
+  - delay: 290
+    content: "\e[1C"
+  - delay: 689
+    content: ','
+  - delay: 355
+    content: "\r\n"
+  - delay: 16
+    content: '    -> '
+  - delay: 1046
+    content: (
+  - delay: 133
+    content: )
+  - delay: 587
+    content: "\b"
+  - delay: 939
+    content: "')\b"
+  - delay: 154
+    content: "')\b"
+  - delay: 400
+    content: "\b"
+  - delay: 992
+    content: "\e[?25la')\e[32;11H\e[?25h"
+  - delay: 165
+    content: "\e[?25ln')\e[32;12H\e[?25h"
+  - delay: 234
+    content: "\e[?25ld')\e[32;13H\e[?25h"
+  - delay: 187
+    content: "\e[?25lo')\e[32;14H\e[?25h"
+  - delay: 489
+    content: "\e[1C"
+  - delay: 704
+    content: ",)\b"
+  - delay: 247
+    content: " )\b"
+  - delay: 1313
+    content: "')\b"
+  - delay: 180
+    content: "')\b"
+  - delay: 413
+    content: "\b"
+  - delay: 1055
+    content: "\e[?25l0')\e[32;19H\e[?25h"
+  - delay: 252
+    content: "\e[?25l8')\e[32;20H\e[?25h"
+  - delay: 296
+    content: "\e[?25l6')\e[32;21H\e[?25h"
+  - delay: 283
+    content: "\e[?25l3')\e[32;22H\e[?25h"
+  - delay: 437
+    content: "\e[?25l2')\e[32;23H\e[?25h"
+  - delay: 244
+    content: "\e[?25l7')\e[32;24H\e[?25h"
+  - delay: 311
+    content: "\e[?25l8')\e[32;25H\e[?25h"
+  - delay: 260
+    content: "\e[?25l5')\e[32;26H\e[?25h"
+  - delay: 365
+    content: "\e[?25l0')\e[32;27H\e[?25h"
+  - delay: 249
+    content: "\e[?25l9')\e[32;28H\e[?25h"
+  - delay: 361
+    content: "\e[?25l7')\e[32;29H\e[?25h"
+  - delay: 406
+    content: "\e[?25l5')\e[32;30H\e[?25h"
+  - delay: 633
+    content: "\e[1C"
+  - delay: 1834
+    content: ",)\b"
+  - delay: 233
+    content: " )\b"
+  - delay: 761
+    content: "')\b"
+  - delay: 162
+    content: "')\b"
+  - delay: 339
+    content: "\b"
+  - delay: 650
+    content: "\e[?25lb')\e[32;35H\e[?25h"
+  - delay: 293
+    content: "\e[?25lo')\e[32;36H\e[?25h"
+  - delay: 441
+    content: "\e[?25lg')\e[32;37H\e[?25h"
+  - delay: 198
+    content: "\e[?25lo')\e[32;38H\e[?25h"
+  - delay: 261
+    content: "\e[?25lr')\e[32;39H\e[?25h"
+  - delay: 580
+    content: "\e[1C"
+  - delay: 427
+    content: "\e[1C"
+  - delay: 735
+    content: ','
+  - delay: 1089
+    content: "\r\n"
+  - delay: 14
+    content: '    -> '
+  - delay: 1023
+    content: (
+  - delay: 183
+    content: )
+  - delay: 697
+    content: "\b"
+  - delay: 345
+    content: "')\b"
+  - delay: 144
+    content: "')\b"
+  - delay: 487
+    content: "\b"
+  - delay: 3394
+    content: "\e[?25la')\e[32;11H\e[?25h"
+  - delay: 123
+    content: "\e[?25ln')\e[32;12H\e[?25h"
+  - delay: 204
+    content: "\e[?25lg')\e[32;13H\e[?25h"
+  - delay: 176
+    content: "\e[?25le')\e[32;14H\e[?25h"
+  - delay: 1581
+    content: "\e[?25ll')\e[32;15H\e[?25h"
+  - delay: 620
+    content: "\e[?25li')\e[32;16H\e[?25h"
+  - delay: 131
+    content: "\e[?25la')\e[32;17H\e[?25h"
+  - delay: 757
+    content: "\e[1C"
+  - delay: 756
+    content: ",)\b"
+  - delay: 232
+    content: " )\b"
+  - delay: 628
+    content: "')\b"
+  - delay: 147
+    content: "')\b"
+  - delay: 331
+    content: "\b"
+  - delay: 774
+    content: "\e[?25l0')\e[32;22H\e[?25h"
+  - delay: 281
+    content: "\e[?25l8')\e[32;23H\e[?25h"
+  - delay: 317
+    content: "\e[?25l6')\e[32;24H\e[?25h"
+  - delay: 361
+    content: "\e[?25l3')\e[32;25H\e[?25h"
+  - delay: 274
+    content: "\e[?25l5')\e[32;26H\e[?25h"
+  - delay: 266
+    content: "\e[?25l2')\e[32;27H\e[?25h"
+  - delay: 326
+    content: "\e[?25l7')\e[32;28H\e[?25h"
+  - delay: 292
+    content: "\e[?25l4')\e[32;29H\e[?25h"
+  - delay: 318
+    content: "\e[?25l9')\e[32;30H\e[?25h"
+  - delay: 266
+    content: "\e[?25l5')\e[32;31H\e[?25h"
+  - delay: 250
+    content: "\e[?25l8')\e[32;32H\e[?25h"
+  - delay: 285
+    content: "\e[?25l3')\e[32;33H\e[?25h"
+  - delay: 698
+    content: "\e[1C"
+  - delay: 733
+    content: ",)\b"
+  - delay: 241
+    content: " )\b"
+  - delay: 643
+    content: "')\b"
+  - delay: 160
+    content: "')\b"
+  - delay: 366
+    content: "\b"
+  - delay: 2240
+    content: "\e[?25lc')\e[32;38H\e[?25h"
+  - delay: 257
+    content: "\e[?25li')\e[32;39H\e[?25h"
+  - delay: 364
+    content: "\e[?25lp')\e[32;40H\e[?25h"
+  - delay: 398
+    content: "\e[?25lu')\e[32;41H\e[?25h"
+  - delay: 248
+    content: "\e[?25lt')\e[32;42H\e[?25h"
+  - delay: 130
+    content: "\e[?25la')\e[32;43H\e[?25h"
+  - delay: 107
+    content: "\e[?25lt')\e[32;44H\e[?25h"
+  - delay: 1197
+    content: "\e[1C"
+  - delay: 362
+    content: "\e[1C"
+  - delay: 665
+    content: ;
+  - delay: 407
+    content: "\r\nQuery OK, 3 rows affected (0.003 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 12
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 2290
+    content: s
+  - delay: 1167
+    content: e
+  - delay: 555
+    content: l
+  - delay: 125
+    content: e
+  - delay: 247
+    content: c
+  - delay: 182
+    content: t
+  - delay: 992
+    content: '*'
+  - delay: 1039
+    content: f
+  - delay: 348
+    content: r
+  - delay: 163
+    content: o
+  - delay: 231
+    content: m
+  - delay: 939
+    content: ' '
+  - delay: 643
+    content: p
+  - delay: 184
+    content: e
+  - delay: 143
+    content: m
+  - delay: 198
+    content: b
+  - delay: 137
+    content: e
+  - delay: 216
+    content: l
+  - delay: 240
+    content: i
+  - delay: 1368
+    content: ;
+  - delay: 241
+    content: "\r\n+------------+--------------+--------------+----------+\r\n| id_pembeli | nama_pembeli | no_hp        | alamat   |\r\n+------------+--------------+--------------+----------+\r\n|          1 | bagas        | 086453728394 | pamulang |\r\n|          2 | ando         | 086327850975 | bogor    |\r\n|          3 | angelia      | 086352749583 | ciputat  |\r\n+------------+--------------+--------------+----------+\r\n3 rows in set (0.000 sec)\r\n"
+  - delay: 16
+    content: "\nMariaDB [penjualan_kertas]>\e[1C"
+  - delay: 11424
+    content: e
+  - delay: 263
+    content: x
+  - delay: 386
+    content: i
+  - delay: 263
+    content: t
+  - delay: 704
+    content: "\r\nBye"
+  - delay: 11
+    content: "\r\n"
+  - delay: 16
+    content: 'PS C:\Users\rafif> '
+  - delay: 1693
+    content: "\e[?25l"
+  - delay: 21
+    content: "\e[93me\e[?25h"
+  - delay: 196
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bex\e[?25h"
+  - delay: 616
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[32;20Hexi\e[?25h"
+  - delay: 257
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[92m\e[32;20Hexit\e[?25h"
+  - delay: 709
+    content: "\e[m"
+  - delay: 12
+    content: "\r\n"
