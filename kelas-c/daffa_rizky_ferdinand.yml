@@ -1,0 +1,915 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\jeje1
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 133
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 37
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 828
+    content: "\e[?9001h\e[?1004h"
+  - delay: 88
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 178
+    content: 'PS C:\Users\jeje1> '
+  - delay: 1143
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93mm\e[?25h"
+  - delay: 305
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 705
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmy \e[?25h"
+  - delay: 101
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;20Hmy \e[37ms\e[?25h"
+  - delay: 181
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;20Hmy \e[37msq\e[?25h"
+  - delay: 243
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;20Hmy \e[37msql\e[?25h"
+  - delay: 368
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;20Hmy \e[37msq \b\e[?25h"
+  - delay: 165
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;20Hmy \e[37ms \b\e[?25h"
+  - delay: 129
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmy  \b\e[?25h"
+  - delay: 121
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;20Hmy \b\e[?25h"
+  - delay: 127
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;20Hm \b\e[?25h"
+  - delay: 110
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\bmq\e[?25h"
+  - delay: 600
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;20Hm \b\e[?25h"
+  - delay: 713
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 143
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmyq\e[?25h"
+  - delay: 272
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmyql\e[?25h"
+  - delay: 1355
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmyq \b\e[?25h"
+  - delay: 151
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmy \b\e[?25h"
+  - delay: 117
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmys\e[?25h"
+  - delay: 310
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;20Hmysq\e[?25h"
+  - delay: 145
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;20Hmysql\e[?25h"
+  - delay: 647
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;20Hmysql \e[?25h"
+  - delay: 1302
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;20Hmysql \e[37m-\e[?25h"
+  - delay: 304
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;20Hmysql \e[90m-u\e[?25h"
+  - delay: 284
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[?25h"
+  - delay: 279
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 122
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 175
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 265
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 280
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 185
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 699
+    content: "\e[m"
+  - delay: 16
+    content: "\r\n"
+  - delay: 27
+    content: E
+  - delay: 21
+    content: 'nter password: '
+  - delay: 6829
+    content: '*'
+  - delay: 441
+    content: '*'
+  - delay: 208
+    content: '*'
+  - delay: 748
+    content: "\b"
+  - delay: 13
+    content: " \b"
+  - delay: 166
+    content: "\b"
+  - delay: 21
+    content: " \b"
+  - delay: 125
+    content: "\b"
+  - delay: 16
+    content: " \b"
+  - delay: 970
+    content: '*'
+  - delay: 186
+    content: '*'
+  - delay: 133
+    content: '*'
+  - delay: 158
+    content: '*'
+  - delay: 315
+    content: '*'
+  - delay: 147
+    content: '*'
+  - delay: 103
+    content: '*'
+  - delay: 297
+    content: '*'
+  - delay: 180
+    content: '*'
+  - delay: 174
+    content: "\r\n"
+  - delay: 47
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 10
+    content: "\e[?25l\r\nYour MariaDB connection id is 36\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 2121
+    content: c
+  - delay: 510
+    content: r
+  - delay: 210
+    content: e
+  - delay: 450
+    content: a
+  - delay: 229
+    content: t
+  - delay: 127
+    content: e
+  - delay: 516
+    content: ' '
+  - delay: 2020
+    content: d
+  - delay: 144
+    content: a
+  - delay: 1435
+    content: "\b \b"
+  - delay: 502
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 36
+    content: "\b \b"
+  - delay: 25
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 1064
+    content: c
+  - delay: 182
+    content: r
+  - delay: 187
+    content: e
+  - delay: 372
+    content: t
+  - delay: 579
+    content: "\b \b"
+  - delay: 104
+    content: a
+  - delay: 227
+    content: e
+  - delay: 168
+    content: t
+  - delay: 665
+    content: "\b \b"
+  - delay: 183
+    content: "\b \b"
+  - delay: 150
+    content: "\b \b"
+  - delay: 949
+    content: a
+  - delay: 276
+    content: t
+  - delay: 119
+    content: e
+  - delay: 283
+    content: ' '
+  - delay: 205
+    content: d
+  - delay: 175
+    content: a
+  - delay: 461
+    content: t
+  - delay: 146
+    content: a
+  - delay: 803
+    content: b
+  - delay: 108
+    content: s
+  - delay: 196
+    content: e
+  - delay: 764
+    content: "\b \b"
+  - delay: 140
+    content: "\b \b"
+  - delay: 68
+    content: a
+  - delay: 152
+    content: s
+  - delay: 186
+    content: e
+  - delay: 1016
+    content: ' '
+  - delay: 516
+    content: l
+  - delay: 131
+    content: a
+  - delay: 177
+    content: u
+  - delay: 198
+    content: 'n'
+  - delay: 108
+    content: d
+  - delay: 513
+    content: 'y'
+  - delay: 843
+    content: "\b \b"
+  - delay: 193
+    content: r
+  - delay: 182
+    content: 'y'
+  - delay: 1317
+    content: _
+  - delay: 324
+    content: p
+  - delay: 228
+    content: e
+  - delay: 212
+    content: f
+  - delay: 111
+    content: a
+  - delay: 225
+    content: w
+  - delay: 448
+    content: "\b \b"
+  - delay: 165
+    content: "\b \b"
+  - delay: 163
+    content: "\b \b"
+  - delay: 474
+    content: g
+  - delay: 106
+    content: a
+  - delay: 487
+    content: "\b \b"
+  - delay: 443
+    content: a
+  - delay: 213
+    content: w
+  - delay: 180
+    content: a
+  - delay: 103
+    content: i
+  - delay: 1765
+    content: ':'
+  - delay: 649
+    content: "\b \b"
+  - delay: 307
+    content: ;
+  - delay: 831
+    content: "\r\n"
+  - delay: 14
+    content: "ERROR 1007 (HY000): Can't create database 'laundry_pegawai'; database exists\r\nMariaDB [(none)]> "
+  - delay: 1518
+    content: create database laundry_pegawai;
+  - delay: 11698
+    content: "\r\n"
+  - delay: 18
+    content: "ERROR 1007 (HY000): Can't create database 'laundry_pegawai'; database exists\r\nMariaDB [(none)]> "
+  - delay: 39622
+    content: u
+  - delay: 120
+    content: s
+  - delay: 192
+    content: e
+  - delay: 183
+    content: r
+  - delay: 718
+    content: "\b \b"
+  - delay: 1107
+    content: ' '
+  - delay: 567
+    content: a
+  - delay: 416
+    content: "\b \b"
+  - delay: 538
+    content: l
+  - delay: 108
+    content: a
+  - delay: 158
+    content: u
+  - delay: 213
+    content: 'n'
+  - delay: 109
+    content: d
+  - delay: 203
+    content: r
+  - delay: 119
+    content: 'y'
+  - delay: 939
+    content: _
+  - delay: 363
+    content: p
+  - delay: 137
+    content: e
+  - delay: 233
+    content: g
+  - delay: 97
+    content: a
+  - delay: 545
+    content: g
+  - delay: 472
+    content: "\b \b"
+  - delay: 176
+    content: a
+  - delay: 196
+    content: w
+  - delay: 290
+    content: "\b \b"
+  - delay: 284
+    content: "\b \b"
+  - delay: 105
+    content: w
+  - delay: 129
+    content: a
+  - delay: 263
+    content: i
+  - delay: 2381
+    content: ;
+  - delay: 745
+    content: "\r\n"
+  - delay: 15
+    content: "Database changed\r\nMariaDB [laundry_pegawai]> "
+  - delay: 8485
+    content: c
+  - delay: 253
+    content: r
+  - delay: 167
+    content: e
+  - delay: 229
+    content: a
+  - delay: 121
+    content: t
+  - delay: 170
+    content: e
+  - delay: 329
+    content: ' '
+  - delay: 965
+    content: t
+  - delay: 212
+    content: a
+  - delay: 132
+    content: b
+  - delay: 744
+    content: l
+  - delay: 108
+    content: e
+  - delay: 1048
+    content: ' '
+  - delay: 367
+    content: p
+  - delay: 145
+    content: e
+  - delay: 260
+    content: g
+  - delay: 70
+    content: a
+  - delay: 208
+    content: w
+  - delay: 334
+    content: a
+  - delay: 174
+    content: i
+  - delay: 1494
+    content: ' '
+  - delay: 559
+    content: )
+  - delay: 841
+    content: "\b \b"
+  - delay: 317
+    content: (
+  - delay: 2094
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 954
+    content: i
+  - delay: 151
+    content: d
+  - delay: 37707
+    content: "\b \b"
+  - delay: 286
+    content: "\b \b"
+  - delay: 3117
+    content: " id_pegawai INT AUTO_INCREMENT PRIMARY KEY,\r\n"
+  - delay: 19
+    content: "    ->     nama_pegawai VARCHAR(50) NOT NULL,\r\n    ->     jabatan VARCHAR(30)"
+  - delay: 5817
+    content: "\r\n"
+  - delay: 23
+    content: '    -> '
+  - delay: 3832
+    content: )
+  - delay: 1135
+    content: ;
+  - delay: 303
+    content: "\r\n"
+  - delay: 20
+    content: "ERROR 1050 (42S01): Table 'pegawai' already exists\r\nMariaDB [laundry_pegawai]> "
+  - delay: 32079
+    content: "Ctrl-C -- exit!\r\n"
+  - delay: 10
+    content: "Bye\r\n"
+  - delay: 23
+    content: 'PS C:\Users\jeje1> '
+  - delay: 3389
+    content: "\e[?25l\e[93mU\e[?25h"
+  - delay: 8
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\bUSE \e[37mlaundry_pegawai;\r\n\e[?25h"
+  - delay: 321
+    content: "\e[m\e[38;5;9mUSE : The term 'USE' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of \e[m\e[38;5;9m\r\nthe name, or if a path was included, verify that the path is correct and try again.\r\nAt line:1 char:1\r\n+ USE laundry_pegawai;\r\n+ ~~~\r\n    + CategoryInfo          : ObjectNotFound: (USE:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 16
+    content: "\e[m\r\n"
+  - delay: 12
+    content: 'PS C:\Users\jeje1> '
+  - delay: 5
+    content: "\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 53
+    content: "\e[?25l\e[91m\e[37;18H> \e[90m-- \e[93mTabel \e[37mpegawai\e[?25h"
+  - delay: 7
+    content: "\e[m\r\n"
+  - delay: 8
+    content: "\e[38;5;9mAt line:1 char:3\e[m\r\n\e[38;5;9m+ -- Tabel pegawai\e[m\r\n\e[38;5;9m+   ~\e[m\r\n\e[38;5;9mMissing expression after unary operator '--'.\e[m\r\n\e[38;5;9mAt line:1 char:4\e[m\r\n\e[38;5;9m+ -- Tabel pegawai\e[m\r\n\e[38;5;9m+    ~~~~~\e[m\r\n\e[38;5;9mUnexpected token 'Tabel' in expression or statement.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingExpressionAfterOperator\e[m\r\n\e[38;5;9m\e[1C\e[m\r\n"
+  - delay: 16
+    content: 'PS C:\Users\jeje1> '
+  - delay: 30
+    content: "\e[?25l\e[93mCREATE \e[37mTABLE pegawai (\e[m\r\n\e[37m>>     \e[93mid_pegawai \e[37mINT AUTO_INCREMENT PRIMARY KEY\e[90m,\e[K\e[84C\e[m\r\n\e[37m>>     nama_pegawai VARCHAR(\e[97m50\e[37m) NOT NULL\e[90m,\e[K\e[92C\e[m\r\n\e[37m>>     jabatan VARCHAR(\e[97m30\e[37m)\e[K\e[107C\e[m\r\n\e[37m>> );\e[?25h"
+  - delay: 16
+    content: "\e[m\r\n"
+  - delay: 56
+    content: "\e[38;5;9mid_pegawai : The term 'id_pegawai' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:2 char:5\e[m\r\n\e[38;5;9m+     id_pegawai INT AUTO_INCREMENT PRIMARY KEY,\e[m\r\n\e[38;5;9m+     ~~~~~~~~~~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (id_pegawai:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 6
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C\r\nPS C:\\Users\\jeje1\e[91m> \e[90m-- \e[93mTabel \e[37mlayanan\e[K"
+  - delay: 8
+    content: "\e[m\r\n"
+  - delay: 5
+    content: "\e[38;5;9mAt line:1 char:3\e[m\r\n\e[38;5;9m+ -- Tabel layanan\e[m\r\n\e[38;5;9m+   ~\e[m\r\n\e[38;5;9mMissing expression after unary operator '--'.\e[m\r\n\e[38;5;9mAt line:1 char:4\e[m\r\n\e[38;5;9m+ -- Tabel layanan\e[m\r\n\e[38;5;9m+    ~~~~~\e[m\r\n\e[38;5;9mUnexpected token 'Tabel' in expression or statement.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingExpressionAfterOperator\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 8
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C\e[93mCREATE \e[37mTABLE layanan (\e[?25l\e[m\r\n\e[37m>>     \e[93mid_layanan \e[37mINT AUTO_INCREMENT PRIMARY KEY\e[90m,\e[K\e[84C\e[m\r\n\e[37m>>     nama_layanan VARCHAR(\e[97m50\e[37m) NOT NULL\e[90m,\e[K\e[92C\e[m\r\n\e[37m>>     harga INT\e[117C\e[m\r\n\e[37m>> );\e[?25h"
+  - delay: 13
+    content: "\e[m\r\n"
+  - delay: 67
+    content: "\e[38;5;9mid_layanan : The term 'id_layanan' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:2 char:5\e[m\r\n\e[38;5;9m+     id_layanan INT AUTO_INCREMENT PRIMARY KEY,\e[m\r\n\e[38;5;9m+     ~~~~~~~~~~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (id_layanan:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C\e[m\r\n"
+  - delay: 7
+    content: 'PS C:\Users\jeje1> '
+  - delay: 8
+    content: "\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 6
+    content: "\e[?25l\e[91m\e[37;18H> \e[90m-- \e[93mTabel \e[37mtransaksi\e[?25h"
+  - delay: 10
+    content: "\e[m\r\n"
+  - delay: 7
+    content: "\e[38;5;9mAt line:1 char:3\e[m\r\n\e[38;5;9m+ -- Tabel transaksi\e[m\r\n\e[38;5;9m+   ~\e[m\r\n\e[38;5;9mMissing expression after unary operator '--'.\e[m\r\n\e[38;5;9mAt line:1 char:4\e[m\r\n\e[38;5;9m+ -- Tabel transaksi\e[m\r\n\e[38;5;9m+    ~~~~~\e[m\r\n\e[38;5;9mUnexpected token 'Tabel' in expression or statement.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingExpressionAfterOperator\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 7
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 14
+    content: "\e[93mCREATE \e[37mTABLE transaksi (\e[?25l\e[m\r\n\e[37m>>     \e[93mid_transaksi \e[37mINT AUTO_INCREMENT PRIMARY KEY\e[90m,\e[K\e[82C\e[m\r\n\e[37m>>     id_pegawai INT\e[90m,\e[K\e[111C\e[m\r\n\e[37m>>     id_layanan INT\e[90m,\e[K\e[111C\e[m\r\n\e[37m>>     FOREIGN KEY (\e[93mid_pegawai\e[37m) REFERENCES pegawai(\e[93mid_pegawai\e[37m)\e[90m,\e[K\e[70C\e[m\r\n\e[37m>>     FOREIGN KEY (\e[93mid_layanan\e[37m) REFERENCES layanan(\e[93mid_layanan\e[37m)\e[K\e[71C\e[m\r\n\e[37m>> );\e[?25h\e[m\r\n"
+  - delay: 79
+    content: "\e[38;5;9mid_pegawai : The term 'id_pegawai' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:5 char:18\e[m\r\n\e[38;5;9m+     FOREIGN KEY (id_pegawai) REFERENCES pegawai(id_pegawai),\e[m\r\n\e[38;5;9m+                  ~~~~~~~~~~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (id_pegawai:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 8
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C\r\n"
+  - delay: 9
+    content: "PS C:\\Users\\jeje1\e[91m> \e[90m-- \e[93mInsert \e[37mdata ke tabel pegawai"
+  - delay: 7
+    content: "\e[m\r\n"
+  - delay: 10
+    content: "\e[38;5;9mAt line:1 char:3\e[m\r\n\e[38;5;9m+ -- Insert data ke tabel pegawai\e[m\r\n\e[38;5;9m+   ~\e[m\r\n\e[38;5;9mMissing expression after unary operator '--'.\e[m\r\n\e[38;5;9mAt line:1 char:4\e[m\r\n\e[38;5;9m+ -- Insert data ke tabel pegawai\e[m\r\n\e[38;5;9m+    ~~~~~~\e[m\r\n\e[38;5;9mUnexpected token 'Insert' in expression or statement.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingExpressionAfterOperator\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 5
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C\e[?25l\e[91m\e[37;18H> \e[93mINSERT \e[37mINTO pegawai (\e[93mnama_pegawai\e[90m, \e[37mjabatan) VALUES\e[?25h"
+  - delay: 12
+    content: "\e[m\r\n\e[38;5;9mAt line:1 char:34\e[m\r\n\e[38;5;9m+ INSERT INTO pegawai (nama_pegawai, jabatan) VALUES\e[m\r\n\e[38;5;9m+                                  ~\e[m\r\n\e[38;5;9mMissing argument in parameter list.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingArgument\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 6
+    content: "\e[m\r\nPS C:\\Users\\jeje1> \e[37m(\e[36m'Andi'\e[90m, \e[36m'Cuci'\e[37m)\e[90m,\e[K\e[?25l\e[97C\e[m\r\n\e[37m>> (\e[36m'Siti'\e[90m, \e[36m'Setrika'\e[37m);\e[K\e[?25h"
+  - delay: 5
+    content: "\e[m\r\n"
+  - delay: 21
+    content: "Andi\r\nCuci\r\nSiti\r\nSetrika\r"
+  - delay: 7
+    content: "\nPS C:\\Users\\jeje1>\e[?25l\e[115C\e[37;20H\e[?25h"
+  - delay: 15
+    content: "\r\nPS C:\\Users\\jeje1\e[91m> \e[90m-- \e[93mInsert \e[37mdata ke tabel layanan\e[K\e[?25l\e[83C\e[m\e[37;51H\e[?25h"
+  - delay: 15
+    content: "\r\n\e[38;5;9mAt line:1 char:3\e[m\r\n\e[38;5;9m+ -- Insert data ke tabel layanan\e[m\r\n\e[38;5;9m+   ~\e[m\r\n\e[38;5;9mMissing expression after unary operator '--'.\e[m\r\n\e[38;5;9mAt line:1 char:4\e[m\r\n\e[38;5;9m+ -- Insert data ke tabel layanan\e[m\r\n\e[38;5;9m+    ~~~~~~\e[m\r\n\e[38;5;9mUnexpected token 'Insert' in expression or statement.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingExpressionAfterOperator\e[m\r\n\e[38;5;9m\e[1C\e[m\r\n"
+  - delay: 5
+    content: "PS C:\\Users\\jeje1\e[91m> \e[93mINSERT \e[37mINTO layanan (\e[93mnama_layanan\e[90m, \e[37mharga) VALUES"
+  - delay: 11
+    content: "\e[m\r\n\e[38;5;9mAt line:1 char:34\e[m\r\n\e[38;5;9m+ INSERT INTO layanan (nama_layanan, harga) VALUES\e[m\r\n\e[38;5;9m+                                  ~\e[m\r\n\e[38;5;9mMissing argument in parameter list.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingArgument\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 7
+    content: "\e[m\r\nPS C:\\Users\\jeje1> \e[37m(\e[36m'Cuci Kering'\e[90m, \e[97m7000\e[37m)\e[90m,\e[K\e[?25l\e[92C\e[m\r\n\e[37m>> (\e[36m'Cuci Setrika'\e[90m, \e[97m10000\e[37m);\e[K\e[?25h"
+  - delay: 6
+    content: "\e[m\r\n"
+  - delay: 16
+    content: "Cuci Kering\r\n7000\r\nCuci Setrika\r\n10000\r"
+  - delay: 8
+    content: "\nPS C:\\Users\\jeje1>\e[1C\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 9
+    content: "\e[?25l\e[91m\e[37;18H> \e[90m-- \e[93mInsert \e[37mdata ke tabel transaksi\e[?25h"
+  - delay: 6
+    content: "\e[m\r\n"
+  - delay: 10
+    content: "\e[38;5;9mAt line:1 char:3\e[m\r\n\e[38;5;9m+ -- Insert data ke tabel transaksi\e[m\r\n\e[38;5;9m+   ~\e[m\r\n\e[38;5;9mMissing expression after unary operator '--'.\e[m\r\n\e[38;5;9mAt line:1 char:4\e[m\r\n\e[38;5;9m+ -- Insert data ke tabel transaksi\e[m\r\n\e[38;5;9m+    ~~~~~~\e[m\r\n\e[38;5;9mUnexpected token 'Insert' in expression or statement.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingExpressionAfterOperator\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 5
+    content: "\e[m\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 5
+    content: "\e[?25l\e[91m\e[37;18H> \e[93mINSERT \e[37mINTO transaksi (\e[93mid_pegawai\e[90m, \e[37mid_layanan) VALUES\e[?25h"
+  - delay: 11
+    content: "\e[m\r\n"
+  - delay: 6
+    content: "\e[38;5;9mAt line:1 char:34\e[m\r\n\e[38;5;9m+ INSERT INTO transaksi (id_pegawai, id_layanan) VALUES\e[m\r\n\e[38;5;9m+                                  ~\e[m\r\n\e[38;5;9mMissing argument in parameter list.\e[m\r\n\e[38;5;9m    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : MissingArgument\e[m\r\n\e[38;5;9m\e[1C\e[m\r\nPS C:\\Users\\jeje1\e[91m> \e[37m(\e[97m1\e[90m, \e[97m1\e[37m)\e[90m,\e[K\e[?25l\e[107C\e[m\r\n\e[37m>>\e[131C"
+  - delay: 8
+    content: "\e[m\e[36;18H> \e[37m\r\n>> (\e[97m2\e[90m, \e[97m2\e[37m);\e[?25h"
+  - delay: 8
+    content: "\e[m\r\n"
+  - delay: 19
+    content: "1\r\n1\r\n2\r\n2\r"
+  - delay: 9
+    content: "\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 8029
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93mm\e[?25h"
+  - delay: 254
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 582
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[37;20Hmy \e[?25h"
+  - delay: 151
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[37;20Hmy \e[37ms\e[?25h"
+  - delay: 524
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[37;20Hmy \e[37msq\e[?25h"
+  - delay: 559
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[37;20Hmy \e[37msql\e[?25h"
+  - delay: 1051
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[37;20Hmy \e[37msq \b\e[?25h"
+  - delay: 112
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[37;20Hmy \e[37ms \b\e[?25h"
+  - delay: 132
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[37;20Hmy  \b\e[?25h"
+  - delay: 113
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[37;20Hmy \b\e[?25h"
+  - delay: 144
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[37;20Hm \b\e[?25h"
+  - delay: 1121
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 353
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[37;20Hmyq\e[?25h"
+  - delay: 236
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[37;20Hmyqk\e[?25h"
+  - delay: 400
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[37;20Hmyq \b\e[?25h"
+  - delay: 412
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[37;20Hmy \b\e[?25h"
+  - delay: 344
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[37;20Hmys\e[?25h"
+  - delay: 156
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[37;20Hmysq\e[?25h"
+  - delay: 188
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[37;20Hmysql\e[?25h"
+  - delay: 830
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[37;20Hmysql \e[?25h"
+  - delay: 365
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[37;20Hmysql \e[37m-\e[?25h"
+  - delay: 651
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[37;20Hmysql \e[90m-u\e[?25h"
+  - delay: 293
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[?25h"
+  - delay: 215
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 153
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 116
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 156
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 318
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 438
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 179
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[37;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 358
+    content: "\e[m"
+  - delay: 13
+    content: "\r\n"
+  - delay: 42
+    content: E
+  - delay: 21
+    content: 'nter password: '
+  - delay: 525
+    content: '*'
+  - delay: 141
+    content: '*'
+  - delay: 522
+    content: '*'
+  - delay: 180
+    content: '*'
+  - delay: 591
+    content: '*'
+  - delay: 160
+    content: '*'
+  - delay: 100
+    content: '*'
+  - delay: 295
+    content: '*'
+  - delay: 200
+    content: '*'
+  - delay: 143
+    content: "\r\n"
+  - delay: 66
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\nYour MariaDB connection id is 37\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\r\n\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n"
+  - delay: 17
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 5495
+    content: "USE laundry_pegawai;\r\nDatabase changed\r\nMariaDB [laundry_pegawai]>\r\nMariaDB [laundry_pegawai]> -- Tabel pegawai\r\nMariaDB [laundry_pegawai]> CREATE TABLE pegawai (\r\n    ->     id_pegawai INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_pegawai VARCHAR(50) NOT NULL,\r\n    ->     jabatan VARCHAR(30)\r\n    -> );\r\nERROR 1050 (42S01): Table 'pegawai' already exists\r\nMariaDB [laundry_pegawai]>\r\nMariaDB [laundry_pegawai]> -- Tabel layanan\r\nMariaDB [laundry_pegawai]> CREATE TABLE layanan (\r\n    ->     id_layanan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_layanan VARCHAR(50) NOT NULL,\r\n    ->     harga INT\r\n    -> );\r\nERROR 1050 (42S01): Table 'layanan' already exists\r\nMariaDB [laundry_pegawai]>\r\nMariaDB [laundry_pegawai]> -- Tabel transaksi\r\nMariaDB [laundry_pegawai]> CREATE TABLE transaksi (\r\n    ->     id_transaksi INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->\e[1C    id_pegawai INT,\r\n    ->     id_layanan INT,\r\n    ->     FOREIGN KEY (id_pegawai) REFERENCES pegawai(id_pegawai),\r\n    ->     FOREIGN KEY (id_layanan) REFERENCES layanan(id_layanan)\r\n    -> );\r"
+  - delay: 7
+    content: "\nQuery OK, 0 rows affected (0.005 sec)\r\n\nMariaDB [laundry_pegawai]>\r\nMariaDB [laundry_pegawai]> -- Insert data ke tabel pegawai\r\nMariaDB [laundry_pegawai]> INSERT INTO pegawai (nama_pegawai, jabatan) VALUES\r\n    -> ('Andi', 'Cuci'),\r\n    -> ('Siti', 'Setrika');\r\nQuery OK, 2 rows affected (0.001 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n\nMariaDB [laundry_pegawai]>\r\nMariaDB [laundry_pegawai]> -- Insert data ke tabel layanan\r\nMariaDB [laundry_pegawai]> INSERT INTO layanan (nama_layanan, harga) VALUES\r\n    -> ('Cuci Kering', 7000),\r\n    -> ('Cuci Setrika', 10000);\r\nQuery OK, 2 rows affected (0.001 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n\nMariaDB [laundry_pegawai]>\r\nMariaDB [laundry_pegawai]> -- Insert data ke tabel transaksi\r\nMariaDB [laundry_pegawai]> INSERT INTO transaksi (id_pegawai, id_layanan) VALUES\r\n    -> (1, 1),\r\n    -> (2, 2);\r\nQuery OK, 2 rows affected (0.002 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 6
+    content: "\nMariaDB [laundry_pegawai]>\e[1C"
+  - delay: 3474
+    content: e
+  - delay: 323
+    content: x
+  - delay: 146
+    content: i
+  - delay: 605
+    content: t
+  - delay: 2969
+    content: "\r\nBye"
+  - delay: 22
+    content: "\r\nPS C:\\Users\\jeje1>\e[1C"
+  - delay: 1181
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93me\e[?25h"
+  - delay: 276
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\bex\e[?25h"
+  - delay: 253
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[37;20Hext\e[?25h"
+  - delay: 1259
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[37;20Hex \b\e[?25h"
+  - delay: 372
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[37;20Hexi\e[?25h"
+  - delay: 768
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[92m\e[37;20Hexit\e[?25h"
+  - delay: 588
+    content: "\e[m"
+  - delay: 16
+    content: "\r\n"
