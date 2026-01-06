@@ -1,0 +1,895 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ASUS-
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 64
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 32
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 678
+    content: "\e[?9001h\e[?1004h"
+  - delay: 72
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[7;1H\e[?25h"
+  - delay: 111
+    content: 'PS C:\Users\ASUS-> '
+  - delay: 2414
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93mc\e[?25h"
+  - delay: 102
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\bcm\e[?25h"
+  - delay: 101
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[7;20Hcmd\e[?25h"
+  - delay: 716
+    content: "\e[m"
+  - delay: 21
+    content: "\r\n"
+  - delay: 16
+    content: "\e[?25lMicrosoft Windows [Version 10.0.26100.7462]\r\n(c) Microsoft Corporation. All rights reserved.\e[11;1HC:\\Users\\ASUS->\e[?25h"
+  - delay: 1274
+    content: V
+  - delay: 737
+    content: "\b \b"
+  - delay: 20174
+    content: '"C:\Program Files\MariaDB 12.1\bin\mysql.exe" -u root -p'
+  - delay: 957
+    content: "\r\n"
+  - delay: 14
+    content: "\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe - \"C:\\Program Files\\MariaDB 12.1\\bin\\mysql.exe\"  -u root -p\a"
+  - delay: 16
+    content: Ent
+  - delay: 16
+    content: 'er password: '
+  - delay: 808
+    content: '*'
+  - delay: 701
+    content: '*'
+  - delay: 186
+    content: '*'
+  - delay: 200
+    content: '*'
+  - delay: 280
+    content: '*'
+  - delay: 270
+    content: '*'
+  - delay: 286
+    content: '*'
+  - delay: 235
+    content: '*'
+  - delay: 241
+    content: '*'
+  - delay: 1261
+    content: "\r\n"
+  - delay: 37
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n"
+  - delay: 18
+    content: "\e[?25lYour MariaDB connection id is 29\r\nServer version: 12.1.2-MariaDB MariaDB Server\e[18;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[21;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[24;1HMariaDB [(none)]> \e[?25h"
+  - delay: 4622
+    content: S
+  - delay: 201
+    content: H
+  - delay: 169
+    content: O
+  - delay: 86
+    content: W
+  - delay: 631
+    content: ' '
+  - delay: 135
+    content: D
+  - delay: 180
+    content: A
+  - delay: 168
+    content: T
+  - delay: 82
+    content: A
+  - delay: 481
+    content: B
+  - delay: 81
+    content: A
+  - delay: 225
+    content: S
+  - delay: 220
+    content: E
+  - delay: 210
+    content: S
+  - delay: 1002
+    content: ;
+  - delay: 225
+    content: "\r\n"
+  - delay: 7
+    content: "+--------------------+\r\n| Database           |\r\n+--------------------+\r\n| alamat_pelanggan   |\r\n| belajar            |\r\n| contoh             |\r\n| information_schema |\r\n| mysql              |\r\n| parkir             |\r\n| performance_schema |\r\n| sys                |\r\n| test               |\r\n+--------------------+\r\n9 rows in set (0.003 sec)\r\n"
+  - delay: 12
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 3724
+    content: U
+  - delay: 94
+    content: S
+  - delay: 206
+    content: E
+  - delay: 1152
+    content: ' '
+  - delay: 145
+    content: D
+  - delay: 256
+    content: A
+  - delay: 225
+    content: T
+  - delay: 85
+    content: A
+  - delay: 866
+    content: "\e[?25l\e[32;23H    \e[32;23H\e[?25h"
+  - delay: 251
+    content: "\e[?25l\e[32;19H    \e[32;19H\e[?25h"
+  - delay: 717
+    content: U
+  - delay: 99
+    content: S
+  - delay: 205
+    content: E
+  - delay: 786
+    content: ' '
+  - delay: 366
+    content: A
+  - delay: 326
+    content: L
+  - delay: 94
+    content: A
+  - delay: 145
+    content: M
+  - delay: 56
+    content: A
+  - delay: 485
+    content: T
+  - delay: 716
+    content: _
+  - delay: 541
+    content: P
+  - delay: 140
+    content: E
+  - delay: 124
+    content: L
+  - delay: 161
+    content: A
+  - delay: 175
+    content: 'N'
+  - delay: 255
+    content: G
+  - delay: 131
+    content: G
+  - delay: 100
+    content: A
+  - delay: 145
+    content: 'N'
+  - delay: 1217
+    content: ;
+  - delay: 440
+    content: "\r\nDatabase changed"
+  - delay: 20
+    content: "\r\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 7457
+    content: CREATE TABLE pelanggan (
+  - delay: 913
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 9436
+    content: 'id_pelanggan INT PRIMARY KEY AUTO_INCREMENT,'
+  - delay: 8723
+    content: "\r\n"
+  - delay: 14
+    content: '    -> '
+  - delay: 875
+    content: 'nama VARCHAR(100) NOT NULL,'
+  - delay: 14298
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 743
+    content: 'email VARCHAR(100),'
+  - delay: 9122
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 758
+    content: ' no_telepon VARCHAR(20)'
+  - delay: 5331
+    content: "\r\n"
+  - delay: 14
+    content: '    -> '
+  - delay: 1251
+    content: )
+  - delay: 576
+    content: ;
+  - delay: 1001
+    content: "\r\n"
+  - delay: 9
+    content: "Query OK, 0 rows affected (0.008 sec)\r\n\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 21035
+    content: "INSERT INTO pelanggan (nama, email, \r\n\e[31;64H no_telepon) VALUES"
+  - delay: 1322
+    content: "\r\n"
+  - delay: 10
+    content: '    -> '
+  - delay: 8032
+    content: "('Rina Susanti', 'rina.susanti@email.com', '08123456789')\r\n\e[31;64H),"
+  - delay: 9463
+    content: "\r\n"
+  - delay: 9
+    content: '    -> '
+  - delay: 1487
+    content: "('Ahmad Hidayat', 'ahmad.hidayat@email.com', '08129876543\r\n\e[31;64H3'),"
+  - delay: 1332
+    content: "\r\n"
+  - delay: 11
+    content: '    -> '
+  - delay: 7355
+    content: "('Dewi Lestari', 'dewi.lestari@email.com', '08137778899')\r\n\e[31;64H);"
+  - delay: 1202
+    content: "\r\nQuery OK, 3 rows affected (0.003 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 11
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 19397
+    content: CREATE TABLE alamat (
+  - delay: 913
+    content: "\r\n"
+  - delay: 17
+    content: '    -> '
+  - delay: 7960
+    content: 'id_alamat INT PRIMARY KEY AUTO_INCREMENT,'
+  - delay: 1778
+    content: "\r\n"
+  - delay: 23
+    content: '    -> '
+  - delay: 7950
+    content: 'id_pelanggan INT NOT NULL,'
+  - delay: 1129
+    content: "\r\n"
+  - delay: 10
+    content: '    -> '
+  - delay: 9675
+    content: V
+  - delay: 1035
+    content: "\b \b"
+  - delay: 854
+    content: 'label_alamat VARCHAR(50) NOT NULL,'
+  - delay: 1034
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 9400
+    content: V
+  - delay: 946
+    content: "\b \b"
+  - delay: 560
+    content: 'alamat_lengkap VARCHAR(200) NOT NULL,'
+  - delay: 8439
+    content: "\r\n"
+  - delay: 18
+    content: '    -> '
+  - delay: 798
+    content: 'kota VARCHAR(50),'
+  - delay: 7000
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 981
+    content: 'provinsi VARCHAR(50),'
+  - delay: 1559
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 6705
+    content: 'kode_pos VARCHAR(10),'
+  - delay: 2345
+    content: "\r\n"
+  - delay: 17
+    content: '    -> '
+  - delay: 11024
+    content: 'is_alamat_utama BOOLEAN DEFAULT FALSE,'
+  - delay: 2253
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 7222
+    content: "FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelang\r\n\e[31;64Hggan)"
+  - delay: 2120
+    content: "\r\n"
+  - delay: 14
+    content: '    -> '
+  - delay: 1633
+    content: '0'
+  - delay: 738
+    content: ':'
+  - delay: 1145
+    content: "\e[?25l\e[32;8H  \e[32;8H\e[?25h"
+  - delay: 2338
+    content: )
+  - delay: 790
+    content: ;
+  - delay: 962
+    content: "\r\n"
+  - delay: 11
+    content: "Query OK, 0 rows affected (0.010 sec)\r\n\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 27447
+    content: "INSERT INTO alamat (id_pelanggan, la\r\n\e[31;64Habel_alamat, alamat_lengkap, kota, provinsi, kode_pos, is_alamat_\r\n\e[31;64H_utama) VALUES"
+  - delay: 3096
+    content: "\r\n"
+  - delay: 14
+    content: '    -> '
+  - delay: 11330
+    content: "(1, 'Rumah', 'Jl. Sudirman No. 123, RT 05/RW 02', 'Jakart\r\n\e[31;64Hta Selatan', 'DKI Jakarta', '12190', TRUE),"
+  - delay: 1509
+    content: "\r\n"
+  - delay: 18
+    content: '    -> '
+  - delay: 12557
+    content: "(1, 'Kantor', 'Jl. Gatot Subroto Kav. 45', 'Jakarta Selat\r\n\e[31;64Htan', 'DKI Jakarta', '12930', FALSE),"
+  - delay: 1096
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 8697
+    content: "(2, 'Rumah', 'Jl. Diponegoro No. 67', 'Bandung', 'Jawa Ba\r\n\e[31;64Harat', '40115', TRUE),"
+  - delay: 1127
+    content: "\r\n"
+  - delay: 21
+    content: '    -> '
+  - delay: 11055
+    content: "(3, 'Rumah', 'Jl. Malioboro No. 89', 'Yogyakarta', 'DI Yo\r\n\e[31;64Hogyakarta', '55271', TRUE),"
+  - delay: 10285
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 1097
+    content: "(3, 'Kos', 'Jl. Kaliurang KM 5', 'Sleman', 'DI Yogyakarta\r\n\e[31;64Ha', '55281', FALSE);"
+  - delay: 1612
+    content: "\r\nQuery OK, 5 rows affected (0.004 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 17
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 12078
+    content: CREATE TABLE pengiriman (
+  - delay: 904
+    content: "\r\n"
+  - delay: 21
+    content: '    -> '
+  - delay: 6267
+    content: 'id_pengiriman INT PRIMARY KEY AUTO_INCREMENT,'
+  - delay: 1036
+    content: "\r\n"
+  - delay: 9
+    content: '    -> '
+  - delay: 7551
+    content: 'id_pelanggan INT NOT NULL,'
+  - delay: 862
+    content: "\r\n"
+  - delay: 10
+    content: '    -> '
+  - delay: 5922
+    content: ' id_alamat INT NOT NULL,'
+  - delay: 1148
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 6299
+    content: 'tanggal_kirim DATE NOT NULL,'
+  - delay: 5780
+    content: "\r\n"
+  - delay: 19
+    content: '    -> '
+  - delay: 728
+    content: 'tanggal_terima DATE,'
+  - delay: 6385
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 755
+    content: 'status_pengiriman VARCHAR(50),'
+  - delay: 1276
+    content: "\r\n"
+  - delay: 20
+    content: '    -> '
+  - delay: 7804
+    content: 'nomor_resi VARCHAR(50) UNIQUE,'
+  - delay: 713
+    content: "\r\n"
+  - delay: 20
+    content: '    -> '
+  - delay: 7264
+    content: "FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelang\r\n\e[31;64Hggan),"
+  - delay: 2405
+    content: "\r\n"
+  - delay: 15
+    content: '    -> '
+  - delay: 6790
+    content: FOREIGN KEY (id_alamat) REFERENCES alamat(id_alamat)
+  - delay: 1412
+    content: "\r\n"
+  - delay: 9
+    content: '    -> '
+  - delay: 1272
+    content: )
+  - delay: 842
+    content: ;
+  - delay: 736
+    content: "\r\n"
+  - delay: 8
+    content: "Query OK, 0 rows affected (0.008 sec)\r\n"
+  - delay: 15
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 18240
+    content: "INSERT INTO pengiriman (id_pelanggan\r\n\e[31;64Hn, id_alamat, tanggal_kirim, tanggal_terima, status_pengiriman, n\r\n\e[31;64Hnomor_resi) VALUES"
+  - delay: 2305
+    content: "\r\n"
+  - delay: 18
+    content: '    -> '
+  - delay: 8370
+    content: "(1, 1, '2025-01-01', '2025-01-03', 'Terkirim', 'JNE123456\r\n\e[31;64H6789'),"
+  - delay: 1026
+    content: "\r\n"
+  - delay: 23
+    content: '    -> '
+  - delay: 7879
+    content: "(1, 2, '2025-01-02', NULL, 'Dalam Pengiriman', 'JNE987654\r\n\e[31;64H4321'),"
+  - delay: 1015
+    content: "\r\n"
+  - delay: 12
+    content: '    -> '
+  - delay: 7614
+    content: "(2, 3, '2025-01-03', '2025-01-05', 'Terkirim', 'SICEPAT11\r\n\e[31;64H11222'),"
+  - delay: 2565
+    content: "\r\n"
+  - delay: 22
+    content: '    -> '
+  - delay: 10848
+    content: "(3, 4, '2025-01-04', NULL, 'Dalam Pengiriman', 'ANTERAJA3\r\n\e[31;64H333444'),"
+  - delay: 7411
+    content: "\r\n"
+  - delay: 18
+    content: '    -> '
+  - delay: 993
+    content: "(3, 5, '2025-01-05', '2025-01-06', 'Terkirim', 'JNTEXP555\r\n\e[31;64H5666');"
+  - delay: 857
+    content: "\r\n"
+  - delay: 6
+    content: "Query OK, 5 rows affected (0.006 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 3695
+    content: S
+  - delay: 164
+    content: E
+  - delay: 1273
+    content: L
+  - delay: 159
+    content: E
+  - delay: 748
+    content: C
+  - delay: 355
+    content: T
+  - delay: 545
+    content: ' '
+  - delay: 1282
+    content: '8'
+  - delay: 726
+    content: "\b \b"
+  - delay: 657
+    content: '*'
+  - delay: 911
+    content: ' '
+  - delay: 597
+    content: F
+  - delay: 143
+    content: R
+  - delay: 161
+    content: O
+  - delay: 276
+    content: M
+  - delay: 275
+    content: ' '
+  - delay: 8628
+    content: A
+  - delay: 139
+    content: L
+  - delay: 115
+    content: A
+  - delay: 111
+    content: M
+  - delay: 85
+    content: A
+  - delay: 280
+    content: T
+  - delay: 641
+    content: ;
+  - delay: 396
+    content: "\r\n+-----------+--------------+--------------+---------------------\r\n\e[31;64H---------------+-----------------+---------------+----------+----\r\n\e[31;64H--------------+\r\n| id_alamat | id_pelanggan | label_alamat | alamat_lengkap      \r\n\e[31;64H               | kota            | provinsi      | kode_pos | is_\r\n\e[31;64H_alamat_utama |\r\n+-----------+--------------+--------------+---------------------\r\n\e[31;64H---------------+-----------------+---------------+----------+----\r\n\e[31;64H--------------+\r\n|         1 |            1 | Rumah        | Jl. Sudirman No. 123\r\n\e[31;64H3, RT 05/RW 02 | Jakarta Selatan | DKI Jakarta   | 12190    |    \r\n\e[31;64H            1 |\r\n|         2 |            1 | Kantor       | Jl. Gatot Subroto Ka\r\n\e[31;64Hav. 45         | Jakarta Selatan | DKI Jakarta   | 12930    |    \r\n\e[31;64H            0 |\r\n|         3 |            2 | Rumah        | Jl. Diponegoro No. 6\r\n\e[31;64H67             | Bandung         | Jawa Barat    | 40115    |    \r\n\e[31;64H            1 |\r\n|         4 |            3 | Rumah        | Jl. Malioboro No. 89\r\n\e[31;64H9              | Yogyakarta      | DI Yogyakarta | 55271    |    \r\n\e[31;64H            1 |\r\n|         5 |            3 | Kos          | Jl. Kaliurang KM 5  \r\n\e[31;64H               | Sleman          | DI Yogyakarta | 55281    |    \r\n\e[31;64H            0 |\r\n+-----------+--------------+--------------+---------------------\r\n\e[31;64H---------------+-----------------+---------------+----------+----\r\n\e[31;64H--------------+\r\n5 rows in set (0.000 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 2612
+    content: S
+  - delay: 223
+    content: E
+  - delay: 125
+    content: L
+  - delay: 87
+    content: E
+  - delay: 554
+    content: C
+  - delay: 220
+    content: T
+  - delay: 885
+    content: ' '
+  - delay: 332
+    content: '*'
+  - delay: 374
+    content: ' '
+  - delay: 189
+    content: F
+  - delay: 164
+    content: R
+  - delay: 116
+    content: O
+  - delay: 226
+    content: M
+  - delay: 199
+    content: ' '
+  - delay: 897
+    content: p
+  - delay: 1686
+    content: "\b \b"
+  - delay: 637
+    content: P
+  - delay: 276
+    content: L
+  - delay: 485
+    content: "\e[?25l\e[32;43H  \e[32;43H\e[?25h"
+  - delay: 121
+    content: E
+  - delay: 484
+    content: "\b \b"
+  - delay: 272
+    content: P
+  - delay: 84
+    content: E
+  - delay: 287
+    content: A
+  - delay: 580
+    content: "\e[?25l\e[32;43H   \e[32;43H\e[?25h"
+  - delay: 551
+    content: P
+  - delay: 159
+    content: E
+  - delay: 242
+    content: L
+  - delay: 111
+    content: A
+  - delay: 313
+    content: 'N'
+  - delay: 249
+    content: G
+  - delay: 119
+    content: G
+  - delay: 106
+    content: A
+  - delay: 130
+    content: 'N'
+  - delay: 1299
+    content: ;
+  - delay: 605
+    content: "\r\n+--------------+---------------+-------------------------+------\r\n\e[31;64H--------+\r\n| id_pelanggan | nama          | email                   | no_te\r\n\e[31;64Helepon  |\r\n+--------------+---------------+-------------------------+------\r\n\e[31;64H--------+\r\n|            1 | Rina Susanti  | rina.susanti@email.com  | 08123\r\n\e[31;64H3456789 |\r\n|            2 | Ahmad Hidayat | ahmad.hidayat@email.com | 08129\r\n\e[31;64H9876543 |\r\n|            3 | Dewi Lestari  | dewi.lestari@email.com  | 08137\r\n\e[31;64H7778899 |\r\n+--------------+---------------+-------------------------+------\r\n\e[31;64H--------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 18
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 1341
+    content: S
+  - delay: 221
+    content: E
+  - delay: 131
+    content: L
+  - delay: 98
+    content: E
+  - delay: 661
+    content: C
+  - delay: 156
+    content: T
+  - delay: 1338
+    content: ' '
+  - delay: 580
+    content: 'N'
+  - delay: 110
+    content: A
+  - delay: 111
+    content: M
+  - delay: 60
+    content: A
+  - delay: 355
+    content: ' '
+  - delay: 225
+    content: F
+  - delay: 229
+    content: R
+  - delay: 100
+    content: O
+  - delay: 232
+    content: M
+  - delay: 310
+    content: ' '
+  - delay: 250
+    content: P
+  - delay: 135
+    content: E
+  - delay: 195
+    content: L
+  - delay: 145
+    content: A
+  - delay: 177
+    content: 'N'
+  - delay: 304
+    content: G
+  - delay: 135
+    content: G
+  - delay: 116
+    content: A
+  - delay: 180
+    content: 'N'
+  - delay: 801
+    content: ;
+  - delay: 265
+    content: "\r\n+---------------+\r\n| NAMA          |\r\n+---------------+\r\n| Rina Susanti  |\r\n| Ahmad Hidayat |\r\n| Dewi Lestari  |\r\n+---------------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 8
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 7845
+    content: S
+  - delay: 214
+    content: E
+  - delay: 166
+    content: L
+  - delay: 50
+    content: E
+  - delay: 456
+    content: C
+  - delay: 200
+    content: T
+  - delay: 266
+    content: ' '
+  - delay: 204
+    content: F
+  - delay: 178
+    content: R
+  - delay: 110
+    content: O
+  - delay: 198
+    content: M
+  - delay: 240
+    content: ' '
+  - delay: 2581
+    content: "\e[?25l\e[32;36H     \e[32;36H\e[?25h"
+  - delay: 754
+    content: '*'
+  - delay: 486
+    content: F
+  - delay: 191
+    content: R
+  - delay: 645
+    content: "\e[?25l\e[32;36H   \e[32;36H\e[?25h"
+  - delay: 1471
+    content: '8'
+  - delay: 597
+    content: "\b \b"
+  - delay: 326
+    content: '*'
+  - delay: 300
+    content: ' '
+  - delay: 331
+    content: F
+  - delay: 155
+    content: R
+  - delay: 91
+    content: O
+  - delay: 191
+    content: M
+  - delay: 218
+    content: ' '
+  - delay: 321
+    content: p
+  - delay: 238
+    content: E
+  - delay: 63
+    content: 'N'
+  - delay: 226
+    content: G
+  - delay: 475
+    content: "\e[?25l\e[32;43H    \e[32;43H\e[?25h"
+  - delay: 140
+    content: "\e[?25l\e[32;38H     \e[32;38H\e[?25h"
+  - delay: 1309
+    content: F
+  - delay: 193
+    content: R
+  - delay: 135
+    content: O
+  - delay: 195
+    content: M
+  - delay: 266
+    content: ' '
+  - delay: 491
+    content: P
+  - delay: 105
+    content: E
+  - delay: 241
+    content: 'N'
+  - delay: 290
+    content: G
+  - delay: 157
+    content: I
+  - delay: 109
+    content: R
+  - delay: 119
+    content: I
+  - delay: 226
+    content: M
+  - delay: 175
+    content: A
+  - delay: 96
+    content: 'N'
+  - delay: 1536
+    content: ;
+  - delay: 576
+    content: "\r\n+---------------+--------------+-----------+---------------+----\r\n\e[31;64H-------------+-------------------+----------------+\r\n| id_pengiriman | id_pelanggan | id_alamat | tanggal_kirim | tan\r\n\e[31;64Hnggal_terima | status_pengiriman | nomor_resi     |\r\n+---------------+--------------+-----------+---------------+----\r\n\e[31;64H-------------+-------------------+----------------+\r\n|             1 |            1 |         1 | 2025-01-01    | 202\r\n\e[31;64H25-01-03     | Terkirim          | JNE123456789   |\r\n|             2 |            1 |         2 | 2025-01-02    | NUL\r\n\e[31;64HLL           | Dalam Pengiriman  | JNE987654321   |\r\n|             3 |            2 |         3 | 2025-01-03    | 202\r\n\e[31;64H25-01-05     | Terkirim          | SICEPAT111222  |\r\n|             4 |            3 |         4 | 2025-01-04    | NUL\r\n\e[31;64HLL           | Dalam Pengiriman  | ANTERAJA333444 |\r\n|             5 |            3 |         5 | 2025-01-05    | 202\r\n\e[31;64H25-01-06     | Terkirim          | JNTEXP555666   |\r\n+---------------+--------------+-----------+---------------+----\r\n\e[31;64H-------------+-------------------+----------------+\r\n5 rows in set (0.001 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [ALAMAT_PELANGGAN]>\e[1C"
+  - delay: 3097
+    content: E
+  - delay: 335
+    content: X
+  - delay: 170
+    content: I
+  - delay: 205
+    content: T
+  - delay: 1172
+    content: "\r\nBye"
+  - delay: 8
+    content: "\r\n\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a"
+  - delay: 14
+    content: |-
+
+      C:\Users\ASUS->
+  - delay: 1017
+    content: E
+  - delay: 278
+    content: X
+  - delay: 160
+    content: I
+  - delay: 196
+    content: T
+  - delay: 585
+    content: "\r\n"
+  - delay: 27
+    content: 'PS C:\Users\ASUS-> '
+  - delay: 414
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93mE\e[?25h"
+  - delay: 652
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\bEX\e[?25h"
+  - delay: 257
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[32;20HEXI\e[?25h"
+  - delay: 182
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[92m\e[32;20HEXIT\e[?25h"
+  - delay: 1245
+    content: "\e[m"
+  - delay: 13
+    content: "\r\n"
