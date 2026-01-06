@@ -1,0 +1,1195 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/dechri
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 92
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 40
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 201
+    content: "\e]0;dechri@debian:~\e\\\e]7;file://debian/home/dechri\e\\\e[?2004h\e]0;dechri@debian: ~\a\e[01;32mdechri@debian\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1647
+    content: s
+  - delay: 232
+    content: u
+  - delay: 157
+    content: d
+  - delay: 212
+    content: o
+  - delay: 230
+    content: ' '
+  - delay: 272
+    content: m
+  - delay: 154
+    content: a
+  - delay: 210
+    content: r
+  - delay: 332
+    content: i
+  - delay: 128
+    content: a
+  - delay: 201
+    content: d
+  - delay: 425
+    content: b
+  - delay: 217
+    content: ' '
+  - delay: 2064
+    content: '-'
+  - delay: 415
+    content: u
+  - delay: 464
+    content: ' '
+  - delay: 188
+    content: r
+  - delay: 188
+    content: o
+  - delay: 142
+    content: o
+  - delay: 848
+    content: t
+  - delay: 280
+    content: ' '
+  - delay: 307
+    content: '-'
+  - delay: 418
+    content: p
+  - delay: 888
+    content: "\r\n\e[?2004l\r"
+  - delay: 7
+    content: '[sudo] password for dechri: '
+  - delay: 2328
+    content: "\r\n"
+  - delay: 1616
+    content: "Sorry, try again.\r\n[sudo] password for dechri: "
+  - delay: 2778
+    content: "\r\n"
+  - delay: 27
+    content: 'Enter password: '
+  - delay: 2217
+    content: "\r\n"
+  - delay: 7
+    content: "\e(B\e[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n\e(B\e[m\e(B\e[0;1mYour MariaDB connection id is 32\r\nServer version: 10.11.14-MariaDB-0+deb12u2 Debian 12\r\n\r\n\e(B\e[m\e(B\e[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\r\n\e(B\e[m\e(B\e[0;1mType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 3625
+    content: C
+  - delay: 339
+    content: r
+  - delay: 161
+    content: e
+  - delay: 101
+    content: a
+  - delay: 449
+    content: t
+  - delay: 233
+    content: e
+  - delay: 291
+    content: ' '
+  - delay: 577
+    content: d
+  - delay: 107
+    content: a
+  - delay: 128
+    content: t
+  - delay: 114
+    content: a
+  - delay: 269
+    content: b
+  - delay: 122
+    content: a
+  - delay: 191
+    content: s
+  - delay: 625
+    content: e
+  - delay: 5184
+    content: k
+  - delay: 187
+    content: u
+  - delay: 212
+    content: 'n'
+  - delay: 163
+    content: j
+  - delay: 156
+    content: u
+  - delay: 156
+    content: 'n'
+  - delay: 167
+    content: g
+  - delay: 150
+    content: a
+  - delay: 683
+    content: "\r\e[41G\e[K"
+  - delay: 151
+    content: "\r\e[40G\e[K"
+  - delay: 142
+    content: "\r\e[39G\e[K"
+  - delay: 118
+    content: "\r\e[38G\e[K"
+  - delay: 125
+    content: "\r\e[37G\e[K"
+  - delay: 123
+    content: "\r\e[36G\e[K"
+  - delay: 141
+    content: "\r\e[35G\e[K"
+  - delay: 263
+    content: "\r\e[34G\e[K"
+  - delay: 458
+    content: ' '
+  - delay: 223
+    content: k
+  - delay: 165
+    content: u
+  - delay: 182
+    content: 'n'
+  - delay: 157
+    content: j
+  - delay: 137
+    content: u
+  - delay: 803
+    content: "\r\e[39G\e[K"
+  - delay: 830
+    content: u
+  - delay: 287
+    content: 'n'
+  - delay: 181
+    content: g
+  - delay: 143
+    content: a
+  - delay: 146
+    content: 'n'
+  - delay: 333
+    content: ' '
+  - delay: 556
+    content: "\r\e[44G"
+  - delay: 687
+    content: _
+  - delay: 843
+    content: t
+  - delay: 162
+    content: o
+  - delay: 183
+    content: k
+  - delay: 163
+    content: o
+  - delay: 10142
+    content: ;
+  - delay: 792
+    content: "\r\n\e(B\e[0;1mQuery OK, 1 row affected (0.000 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 2905
+    content: u
+  - delay: 338
+    content: s
+  - delay: 169
+    content: e
+  - delay: 397
+    content: ' '
+  - delay: 1112
+    content: d
+  - delay: 951
+    content: a
+  - delay: 175
+    content: t
+  - delay: 128
+    content: a
+  - delay: 641
+    content: b
+  - delay: 111
+    content: a
+  - delay: 226
+    content: s
+  - delay: 183
+    content: e
+  - delay: 1399
+    content: ' '
+  - delay: 495
+    content: k
+  - delay: 203
+    content: u
+  - delay: 434
+    content: 'n'
+  - delay: 182
+    content: j
+  - delay: 147
+    content: u
+  - delay: 181
+    content: 'n'
+  - delay: 166
+    content: g
+  - delay: 233
+    content: 'n'
+  - delay: 212
+    content: a
+  - delay: 813
+    content: "\r\e[40G\e[K"
+  - delay: 152
+    content: "\r\e[39G\e[K"
+  - delay: 870
+    content: a
+  - delay: 252
+    content: 'n'
+  - delay: 1121
+    content: _
+  - delay: 889
+    content: k
+  - delay: 634
+    content: "\r\e[42G\e[K"
+  - delay: 449
+    content: t
+  - delay: 191
+    content: o
+  - delay: 606
+    content: k
+  - delay: 186
+    content: o
+  - delay: 1011
+    content: ;
+  - delay: 285
+    content: "\r\nERROR 1049 (42000): Unknown database 'database'\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [(none)]> "
+  - delay: 23044
+    content: "USE kunjungan_toko;\r\n\e(B\e[0;1mDatabase changed\r\n\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 15514
+    content: c
+  - delay: 248
+    content: r
+  - delay: 163
+    content: e
+  - delay: 101
+    content: a
+  - delay: 175
+    content: t
+  - delay: 147
+    content: e
+  - delay: 202
+    content: ' '
+  - delay: 450
+    content: t
+  - delay: 115
+    content: a
+  - delay: 187
+    content: b
+  - delay: 232
+    content: l
+  - delay: 172
+    content: e
+  - delay: 213
+    content: ' '
+  - delay: 3370
+    content: t
+  - delay: 147
+    content: o
+  - delay: 145
+    content: k
+  - delay: 136
+    content: o
+  - delay: 389
+    content: ' '
+  - delay: 986
+    content: (
+  - delay: 2238
+    content: "\r\n    -> "
+  - delay: 848
+    content: i
+  - delay: 141
+    content: d
+  - delay: 760
+    content: _
+  - delay: 1463
+    content: t
+  - delay: 177
+    content: o
+  - delay: 162
+    content: k
+  - delay: 152
+    content: o
+  - delay: 232
+    content: ' '
+  - delay: 525
+    content: i
+  - delay: 187
+    content: 'n'
+  - delay: 238
+    content: t
+  - delay: 894
+    content: ' '
+  - delay: 687
+    content: "\r\e[19G"
+  - delay: 151
+    content: "\r\e[18G\e[K"
+  - delay: 122
+    content: "\r\e[17G\e[K"
+  - delay: 353
+    content: "\r\e[16G\e[K"
+  - delay: 4313
+    content: I
+  - delay: 234
+    content: 'N'
+  - delay: 153
+    content: T
+  - delay: 552
+    content: ' '
+  - delay: 659
+    content: A
+  - delay: 167
+    content: U
+  - delay: 272
+    content: T
+  - delay: 238
+    content: O
+  - delay: 405
+    content: ' '
+  - delay: 592
+    content: I
+  - delay: 201
+    content: 'N'
+  - delay: 429
+    content: C
+  - delay: 205
+    content: R
+  - delay: 149
+    content: E
+  - delay: 999
+    content: "\r\e[29G\e[K"
+  - delay: 142
+    content: "\r\e[28G\e[K"
+  - delay: 131
+    content: "\r\e[27G\e[K"
+  - delay: 141
+    content: "\r\e[26G\e[K"
+  - delay: 137
+    content: "\r\e[25G\e[K"
+  - delay: 360
+    content: "\r\e[24G"
+  - delay: 986
+    content: _
+  - delay: 1413
+    content: I
+  - delay: 288
+    content: 'N'
+  - delay: 338
+    content: C
+  - delay: 212
+    content: R
+  - delay: 96
+    content: R
+  - delay: 147
+    content: E
+  - delay: 222
+    content: M
+  - delay: 1167
+    content: "\r\e[31G\e[K"
+  - delay: 146
+    content: "\r\e[30G\e[K"
+  - delay: 157
+    content: "\r\e[29G\e[K"
+  - delay: 515
+    content: E
+  - delay: 581
+    content: M
+  - delay: 148
+    content: E
+  - delay: 162
+    content: 'N'
+  - delay: 409
+    content: T
+  - delay: 348
+    content: ' '
+  - delay: 2121
+    content: P
+  - delay: 202
+    content: R
+  - delay: 268
+    content: I
+  - delay: 263
+    content: M
+  - delay: 148
+    content: A
+  - delay: 303
+    content: R
+  - delay: 207
+    content: 'Y'
+  - delay: 317
+    content: ' '
+  - delay: 429
+    content: K
+  - delay: 141
+    content: E
+  - delay: 268
+    content: 'Y'
+  - delay: 1482
+    content: ','
+  - delay: 2291
+    content: "\r\n    -> "
+  - delay: 16005
+    content: "nama_toko VARCHAR(100),\r\n    ->     alamat TEXT\r\n    -> );"
+  - delay: 4325
+    content: "\r\n"
+  - delay: 8
+    content: "\e(B\e[0;1mQuery OK, 0 rows affected (0.008 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 13540
+    content: c
+  - delay: 194
+    content: r
+  - delay: 159
+    content: e
+  - delay: 135
+    content: a
+  - delay: 123
+    content: t
+  - delay: 179
+    content: e
+  - delay: 218
+    content: ' '
+  - delay: 410
+    content: t
+  - delay: 95
+    content: a
+  - delay: 190
+    content: b
+  - delay: 246
+    content: e
+  - delay: 512
+    content: l
+  - delay: 585
+    content: "\r\e[38G\e[K"
+  - delay: 125
+    content: "\r\e[37G\e[K"
+  - delay: 222
+    content: l
+  - delay: 112
+    content: e
+  - delay: 166
+    content: ' '
+  - delay: 1912
+    content: k
+  - delay: 169
+    content: u
+  - delay: 193
+    content: 'n'
+  - delay: 161
+    content: j
+  - delay: 136
+    content: u
+  - delay: 177
+    content: 'n'
+  - delay: 106
+    content: g
+  - delay: 172
+    content: a
+  - delay: 116
+    content: 'n'
+  - delay: 1073
+    content: ' '
+  - delay: 867
+    content: )
+  - delay: 722
+    content: "\r\e[50G\e[K"
+  - delay: 602
+    content: (
+  - delay: 1113
+    content: ' '
+  - delay: 1106
+    content: "\r\n    -> "
+  - delay: 1520
+    content: i
+  - delay: 168
+    content: d
+  - delay: 783
+    content: _
+  - delay: 829
+    content: k
+  - delay: 180
+    content: u
+  - delay: 419
+    content: 'n'
+  - delay: 181
+    content: j
+  - delay: 133
+    content: u
+  - delay: 196
+    content: 'n'
+  - delay: 132
+    content: g
+  - delay: 140
+    content: a
+  - delay: 116
+    content: 'n'
+  - delay: 183
+    content: ' '
+  - delay: 1345
+    content: I
+  - delay: 908
+    content: 'N'
+  - delay: 298
+    content: T
+  - delay: 422
+    content: ' '
+  - delay: 631
+    content: A
+  - delay: 166
+    content: U
+  - delay: 238
+    content: T
+  - delay: 364
+    content: O
+  - delay: 656
+    content: _
+  - delay: 671
+    content: I
+  - delay: 187
+    content: 'N'
+  - delay: 328
+    content: C
+  - delay: 210
+    content: R
+  - delay: 1028
+    content: E
+  - delay: 303
+    content: M
+  - delay: 207
+    content: E
+  - delay: 389
+    content: 'N'
+  - delay: 573
+    content: T
+  - delay: 1606
+    content: ' '
+  - delay: 352
+    content: P
+  - delay: 182
+    content: R
+  - delay: 197
+    content: I
+  - delay: 202
+    content: M
+  - delay: 162
+    content: A
+  - delay: 257
+    content: R
+  - delay: 243
+    content: 'Y'
+  - delay: 381
+    content: ' '
+  - delay: 337
+    content: K
+  - delay: 408
+    content: E
+  - delay: 370
+    content: 'Y'
+  - delay: 1151
+    content: ','
+  - delay: 3912
+    content: "\r\n    -> "
+  - delay: 13472
+    content: "id_toko INT,\r\n    ->     id_pengunjung INT,\r\n    ->     tanggal_kunjungan DATE,\r\n    ->     waktu_kunjungan TIME,\r\n    ->     tujuan_kunjungan VARCHAR(100),\r\n    ->     FOREIGN KEY (id_toko) REFERENCES toko(id_toko),\r\n    ->     FOREIGN KEY (id_pengunjung) REFERENCES pengunjung(id_pengunjung)\r\n    -> );"
+  - delay: 913
+    content: "\r\n"
+  - delay: 6
+    content: "ERROR 1005 (HY000): Can't create table `kunjungan_toko`.`kunjungan` (errno: 150 \"Foreign key constraint is incorrectly formed\")\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 50034
+    content: V
+  - delay: 884
+    content: "\r\e[27G\e[K"
+  - delay: 3889
+    content: "CREATE TABLE pengunjung (\r\n    ->     id_pengunjung INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_pengunjung VARCHAR(100),\r\n    ->     jenis_kelamin VARCHAR(10),\r\n    ->     no_hp VARCHAR(15)\r\n    -> );\r\n\e(B\e[0;1mQuery OK, 0 rows affected (0.004 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 10189
+    content: "CREATE TABLE kunjungan (\r\n    ->     id_kunjungan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     id_toko INT,\r\n    ->     id_pengunjung INT,\r\n    ->     tanggal_kunjungan DATE,\r\n    ->     waktu_kunjungan TIME,\r\n    ->     tujuan_kunjungan VARCHAR(100),\r\n    ->     FOREIGN KEY (id_toko) REFERENCES toko(id_toko),\r\n    ->     FOREIGN KEY (id_pengunjung) REFERENCES pengunjung(id_pengunjung)\r\n    -> );\r\n"
+  - delay: 6
+    content: "\e(B\e[0;1mQuery OK, 0 rows affected (0.005 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 28188
+    content: "INSERT INTO toko (nama_toko, alamat) VALUES\r\n    -> ('Toko Maju Jaya', 'Jl. Merdeka No.10'),\r\n    -> ('Toko Sukses Selalu', 'Jl. Sudirman No.25'),\r\n    -> ('Toko Berkah', 'Jl. Ahmad Yani No.5'),\r\n    -> ('Toko Sejahtera', 'Jl. Diponegoro No.12');\r\n\e(B\e[0;1mQuery OK, 4 rows affected (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 4  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 43920
+    content: I
+  - delay: 420
+    content: 'N'
+  - delay: 229
+    content: S
+  - delay: 225
+    content: E
+  - delay: 175
+    content: R
+  - delay: 478
+    content: T
+  - delay: 279
+    content: ' '
+  - delay: 357
+    content: I
+  - delay: 198
+    content: 'N'
+  - delay: 135
+    content: T
+  - delay: 435
+    content: O
+  - delay: 727
+    content: ' '
+  - delay: 1389
+    content: p
+  - delay: 163
+    content: e
+  - delay: 178
+    content: 'n'
+  - delay: 243
+    content: g
+  - delay: 201
+    content: u
+  - delay: 226
+    content: 'n'
+  - delay: 152
+    content: j
+  - delay: 151
+    content: u
+  - delay: 182
+    content: 'n'
+  - delay: 152
+    content: g
+  - delay: 348
+    content: ' '
+  - delay: 831
+    content: (
+  - delay: 2283
+    content: 'n'
+  - delay: 115
+    content: a
+  - delay: 167
+    content: m
+  - delay: 65
+    content: a
+  - delay: 1096
+    content: _
+  - delay: 693
+    content: p
+  - delay: 121
+    content: e
+  - delay: 495
+    content: 'n'
+  - delay: 284
+    content: g
+  - delay: 246
+    content: j
+  - delay: 176
+    content: u
+  - delay: 769
+    content: "\r\e[61G\e[K"
+  - delay: 169
+    content: "\r\e[60G\e[K"
+  - delay: 765
+    content: u
+  - delay: 253
+    content: 'n'
+  - delay: 168
+    content: j
+  - delay: 625
+    content: u
+  - delay: 277
+    content: 'n'
+  - delay: 193
+    content: g
+  - delay: 1956
+    content: ' '
+  - delay: 1085
+    content: "\r\e[66G"
+  - delay: 518
+    content: ','
+  - delay: 202
+    content: ' '
+  - delay: 433
+    content: j
+  - delay: 244
+    content: 'n'
+  - delay: 129
+    content: e
+  - delay: 501
+    content: i
+  - delay: 433
+    content: "\r\e[71G\e[K"
+  - delay: 142
+    content: "\r\e[70G\e[K"
+  - delay: 318
+    content: "\r\e[69G\e[K"
+  - delay: 149
+    content: e
+  - delay: 540
+    content: 'n'
+  - delay: 156
+    content: i
+  - delay: 232
+    content: s
+  - delay: 189
+    content: ' '
+  - delay: 187
+    content: k
+  - delay: 155
+    content: e
+  - delay: 499
+    content: l
+  - delay: 470
+    content: "\r\e[76G\e[K"
+  - delay: 157
+    content: "\r\e[75G\e[K"
+  - delay: 131
+    content: "\r\e[74G\e[K"
+  - delay: 277
+    content: "\r\e[73G"
+  - delay: 223
+    content: "\r\e[72G\e[K"
+  - delay: 773
+    content: s
+  - delay: 658
+    content: _
+  - delay: 746
+    content: k
+  - delay: 19
+    content: k
+  - delay: 61
+    content: e
+  - delay: 172
+    content: l
+  - delay: 171
+    content: a
+  - delay: 128
+    content: m
+  - delay: 191
+    content: i
+  - delay: 222
+    content: 'n'
+  - delay: 1518
+    content: "\r\e[81G\e[K"
+  - delay: 500
+    content: "\r\e[80G\e[K"
+  - delay: 30
+    content: "\r\e[79G\e[K"
+  - delay: 29
+    content: "\r\e[78G\e[K"
+  - delay: 31
+    content: "\r\e[77G\e[K"
+  - delay: 150
+    content: "\r\e[76G\e[K"
+  - delay: 192
+    content: "\r\e[75G\e[K"
+  - delay: 233
+    content: e
+  - delay: 505
+    content: l
+  - delay: 127
+    content: a
+  - delay: 125
+    content: m
+  - delay: 192
+    content: i
+  - delay: 213
+    content: 'n'
+  - delay: 1420
+    content: ','
+  - delay: 424
+    content: ' '
+  - delay: 535
+    content: 'n'
+  - delay: 178
+    content: o
+  - delay: 1378
+    content: _
+  - delay: 687
+    content: h
+  - delay: 334
+    content: p
+  - delay: 2085
+    content: )
+  - delay: 506
+    content: ' '
+  - delay: 595
+    content: V
+  - delay: 137
+    content: A
+  - delay: 193
+    content: "L \b"
+  - delay: 217
+    content: U
+  - delay: 338
+    content: E
+  - delay: 161
+    content: S
+  - delay: 1626
+    content: "\r\n    -> "
+  - delay: 10979
+    content: "('Andi', 'Laki-laki', '081234567890'),\r\n    -> ('Siti', 'Perempuan', '089876543210'),\r\n    -> ('Budi', 'Laki-laki', '082345678901'),\r\n    -> ('Rina', 'Perempuan', '087654321098')"
+  - delay: 2237
+    content: "\r\e[44G\e[K"
+  - delay: 1176
+    content: )
+  - delay: 768
+    content: ' '
+  - delay: 320
+    content: ' '
+  - delay: 524
+    content: "\r\e[46G"
+  - delay: 334
+    content: "\r\e[45G"
+  - delay: 924
+    content: h
+  - delay: 105
+    content: d
+  - delay: 46
+    content: j
+  - delay: 51
+    content: s
+  - delay: 75
+    content: h
+  - delay: 187
+    content: d
+  - delay: 16
+    content: h
+  - delay: 125
+    content: s
+  - delay: 66
+    content: d
+  - delay: 25
+    content: h
+  - delay: 425
+    content: 'n'
+  - delay: 277
+    content: s
+  - delay: 370
+    content: "\r\e[56G\e[K"
+  - delay: 176
+    content: "\r\e[55G\e[K"
+  - delay: 118
+    content: "\r\e[54G\e[K"
+  - delay: 141
+    content: "\r\e[53G\e[K"
+  - delay: 125
+    content: "\r\e[52G\e[K"
+  - delay: 126
+    content: "\r\e[51G\e[K"
+  - delay: 139
+    content: "\r\e[50G\e[K"
+  - delay: 155
+    content: "\r\e[49G\e[K"
+  - delay: 158
+    content: "\r\e[48G\e[K"
+  - delay: 152
+    content: "\r\e[47G\e[K"
+  - delay: 151
+    content: "\r\e[46G\e[K"
+  - delay: 150
+    content: "\r\e[45G\e[K"
+  - delay: 6280
+    content: 'n'
+  - delay: 381
+    content: d
+  - delay: 607
+    content: d
+  - delay: 102
+    content: j
+  - delay: 172
+    content: k
+  - delay: 227
+    content: j
+  - delay: 66
+    content: d
+  - delay: 166
+    content: k
+  - delay: 399
+    content: s
+  - delay: 375
+    content: "\r\e[53G\e[K"
+  - delay: 181
+    content: "\r\e[52G\e[K"
+  - delay: 194
+    content: "\r\e[51G\e[K"
+  - delay: 131
+    content: "\r\e[50G\e[K"
+  - delay: 135
+    content: "\r\e[49G\e[K"
+  - delay: 173
+    content: "\r\e[48G\e[K"
+  - delay: 161
+    content: "\r\e[47G\e[K"
+  - delay: 157
+    content: "\r\e[46G\e[K"
+  - delay: 152
+    content: "\r\e[45G\e[K"
+  - delay: 49644
+    content: ;
+  - delay: 14899
+    content: "\r\n\e(B\e[0;1mQuery OK, 4 rows affected (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 4  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kunjungan_toko]> "
+  - delay: 3572
+    content: e
+  - delay: 243
+    content: x
+  - delay: 185
+    content: i
+  - delay: 480
+    content: t
+  - delay: 2162
+    content: "\r\n\e(B\e[0;1mBye\r\n\e(B\e[m\e]0;dechri@debian:~\e\\\e]7;file://debian/home/dechri\e\\\e[?2004h\e]0;dechri@debian: ~\a\e[01;32mdechri@debian\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 2634
+    content: s
+  - delay: 186
+    content: u
+  - delay: 161
+    content: d
+  - delay: 217
+    content: o
+  - delay: 237
+    content: ' '
+  - delay: 233
+    content: m
+  - delay: 80
+    content: a
+  - delay: 259
+    content: r
+  - delay: 343
+    content: i
+  - delay: 122
+    content: a
+  - delay: 215
+    content: d
+  - delay: 1519
+    content: b
+  - delay: 223
+    content: ' '
+  - delay: 2646
+    content: '-'
+  - delay: 303
+    content: u
+  - delay: 216
+    content: ' '
+  - delay: 195
+    content: r
+  - delay: 202
+    content: o
+  - delay: 134
+    content: o
+  - delay: 253
+    content: t
+  - delay: 386
+    content: ' '
+  - delay: 388
+    content: '-'
+  - delay: 273
+    content: p
+  - delay: 1318
+    content: "\r\n\e[?2004l\r"
+  - delay: 10
+    content: 'Enter password: '
+  - delay: 1876
+    content: "\r\n"
+  - delay: 7
+    content: "\e(B\e[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n\e(B\e[m\e(B\e[0;1mYour MariaDB connection id is 33\r\nServer version: 10.11.14-MariaDB-0+deb12u2 Debian 12\r\n\r\n\e(B\e[m\e(B\e[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\r\n\e(B\e[m\e(B\e[0;1mType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 8935
+    content: "CREATE DATABASE keuntungan_toko;\r\n\e(B\e[0;1mQuery OK, 1 row affected (0.000 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [(none)]> USE keuntungan_toko;\r\n\e(B\e[0;1mDatabase changed\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 5643
+    content: "CREATE TABLE toko (\r\n    ->     id_toko INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_toko VARCHAR(100),\r\n    ->     alamat TEXT\r\n    -> ) ENGINE=InnoDB;\r\n\e(B\e[0;1mQuery OK, 0 rows affected (0.004 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 6147
+    content: "CREATE TABLE produk (\r\n    ->     id_produk INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_produk VARCHAR(100),\r\n    ->     harga_beli DECIMAL(10,2),\r\n    ->     harga_jual DECIMAL(10,2)\r\n    -> ) ENGINE=InnoDB;\r\n\e(B\e[0;1mQuery OK, 0 rows affected (0.003 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 1881
+    content: "CREATE TABLE produk (\r\n    ->     id_produk INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_produk VARCHAR(100),\r\n    ->     harga_beli DECIMAL(10,2),\r\n    ->     harga_jual DECIMAL(10,2)\r\n    -> ) ENGINE=InnoDB;\r\nERROR 1050 (42S01): Table 'produk' already exists\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 40820
+    content: "CREATE TABLE penjualan (\r\n    ->     id_penjualan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     id_toko INT,\r\n    ->     id_produk INT,\r\n    ->     jumlah INT,\r\n    ->     tanggal DATE,\r\n    ->     FOREIGN KEY (id_toko) REFERENCES toko(id_toko),\r\n    ->     FOREIGN KEY (id_produk) REFERENCES produk(id_produk)\r\n    -> ) ENGINE=InnoDB;\r\n"
+  - delay: 6
+    content: "\e(B\e[0;1mQuery OK, 0 rows affected (0.005 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 42388
+    content: "INSERT INTO produk (nama_produk, harga_beli, harga_jual) VALUES\r\n    -> ('Beras 5kg', 60000, 70000),\r\n    -> ('Minyak Goreng', 14000, 17000),\r\n    -> ('Gula 1kg', 12000, 15000),\r\n    -> ('Tepung Terigu 1kg', 9000, 12000),\r\n    -> ('Telur Ayam 1kg', 23000, 27000),\r\n    -> ('Susu UHT 1L', 15000, 18000),\r\n    -> ('Mie Instan', 2500, 3500),\r\n    -> ('Kopi Sachet', 1500, 2500),\r\n    -> ('Teh Celup', 7000, 10000),\r\n    -> ('Garam 500gr', 3000, 4500),\r\n    -> ('Kecap Manis', 12000, 15000),\r\n    -> ('Saus Sambal', 11000, 14000),\r\n    -> ('Air Mineral 600ml', 3000, 5000),\r\n    -> ('Air Mineral Galon', 17000, 22000),\r\n    -> ('Sabun Mandi', 3500, 6000);\r\n\e(B\e[0;1mQuery OK, 15 rows affected (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 15  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 42234
+    content: "INSERT INTO toko (nama_toko, alamat) VALUES\r\n    -> ('Toko Maju Jaya', 'Jl. Merdeka No.10'),\r\n    -> ('Toko Sukses Selalu', 'Jl. Sudirman No.25'),\r\n    -> ('Toko Berkah', 'Jl. Ahmad Yani No.5'),\r\n    -> ('Toko Sejahtera', 'Jl. Diponegoro No.12'),\r\n    -> ('Toko Makmur', 'Jl. Gatot Subroto No.8'),\r\n    -> ('Toko Sentosa', 'Jl. Veteran No.20'),\r\n    -> ('Toko Harapan', 'Jl. Pemuda No.3'),\r\n    -> ('Toko Rezeki', 'Jl. Melati No.15'),\r\n    -> ('Toko Jaya Abadi', 'Jl. Kenanga No.7'),\r\n    -> ('Toko Sumber Makmur', 'Jl. Anggrek No.9');\r\n\e(B\e[0;1mQuery OK, 10 rows affected (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 10  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 47936
+    content: "CREATE TABLE penjualan (\r\n    ->     id_penjualan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     id_toko INT,\r\n    ->     id_produk INT,\r\n    ->     jumlah INT,\r\n    ->     tanggal DATE,\r\n    ->     FOREIGN KEY (id_toko) REFERENCES toko(id_toko),\r\n    ->     FOREIGN KEY (id_produk) REFERENCES produk(id_produk)\r\n    -> ) ENGINE=InnoDB;\r\nERROR 1050 (42S01): Table 'penjualan' already exists\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 65341
+    content: s
+  - delay: 157
+    content: e
+  - delay: 576
+    content: l
+  - delay: 145
+    content: e
+  - delay: 1076
+    content: c
+  - delay: 172
+    content: t
+  - delay: 413
+    content: ' '
+  - delay: 1870
+    content: '*'
+  - delay: 555
+    content: ' '
+  - delay: 273
+    content: f
+  - delay: 172
+    content: r
+  - delay: 197
+    content: o
+  - delay: 277
+    content: m
+  - delay: 157
+    content: ' '
+  - delay: 7170
+    content: t
+  - delay: 182
+    content: o
+  - delay: 177
+    content: k
+  - delay: 126
+    content: o
+  - delay: 556
+    content: ;
+  - delay: 1096
+    content: "\r\n+---------+--------------------+------------------------+\r\n| id_toko | nama_toko          | alamat                 |\r\n+---------+--------------------+------------------------+\r\n|       1 | Toko Maju Jaya     | Jl. Merdeka No.10      |\r\n|       2 | Toko Sukses Selalu | Jl. Sudirman No.25     |\r\n|       3 | Toko Berkah        | Jl. Ahmad Yani No.5    |\r\n|       4 | Toko Sejahtera     | Jl. Diponegoro No.12   |\r\n|       5 | Toko Makmur        | Jl. Gatot Subroto No.8 |\r\n|       6 | Toko Sentosa       | Jl. Veteran No.20      |\r\n|       7 | Toko Harapan       | Jl. Pemuda No.3        |\r\n|       8 | Toko Rezeki        | Jl. Melati No.15       |\r\n|       9 | Toko Jaya Abadi    | Jl. Kenanga No.7       |\r\n|      10 | Toko Sumber Makmur | Jl. Anggrek No.9       |\r\n+---------+--------------------+------------------------+\r\n\e(B\e[0;1m10 rows in set (0.000 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 1308
+    content: s
+  - delay: 187
+    content: e
+  - delay: 233
+    content: l
+  - delay: 116
+    content: e
+  - delay: 376
+    content: c
+  - delay: 251
+    content: t
+  - delay: 344
+    content: ' '
+  - delay: 1278
+    content: '*'
+  - delay: 514
+    content: ' '
+  - delay: 222
+    content: f
+  - delay: 218
+    content: r
+  - delay: 198
+    content: o
+  - delay: 218
+    content: m
+  - delay: 151
+    content: ' '
+  - delay: 1827
+    content: p
+  - delay: 535
+    content: r
+  - delay: 182
+    content: o
+  - delay: 243
+    content: d
+  - delay: 444
+    content: u
+  - delay: 253
+    content: k
+  - delay: 558
+    content: ;
+  - delay: 313
+    content: "\r\n+-----------+-------------------+------------+------------+\r\n| id_produk | nama_produk       | harga_beli | harga_jual |\r\n+-----------+-------------------+------------+------------+\r\n|         1 | Beras 5kg         |   60000.00 |   70000.00 |\r\n|         2 | Minyak Goreng     |   14000.00 |   17000.00 |\r\n|         3 | Gula 1kg          |   12000.00 |   15000.00 |\r\n|         4 | Tepung Terigu 1kg |    9000.00 |   12000.00 |\r\n|         5 | Telur Ayam 1kg    |   23000.00 |   27000.00 |\r\n|         6 | Susu UHT 1L       |   15000.00 |   18000.00 |\r\n|         7 | Mie Instan        |    2500.00 |    3500.00 |\r\n|         8 | Kopi Sachet       |    1500.00 |    2500.00 |\r\n|         9 | Teh Celup         |    7000.00 |   10000.00 |\r\n|        10 | Garam 500gr       |    3000.00 |    4500.00 |\r\n|        11 | Kecap Manis       |   12000.00 |   15000.00 |\r\n|        12 | Saus Sambal       |   11000.00 |   14000.00 |\r\n|        13 | Air Mineral 600ml |    3000.00 |    5000.00 |\r\n|        14 | Air Mineral Galon |   17000.00 |   22000.00 |\r\n|        15 | Sabun Mandi       |    3500.00 |    6000.00 |\r\n+-----------+-------------------+------------+------------+\r\n\e(B\e[0;1m15 rows in set (0.000 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [keuntungan_toko]> "
+  - delay: 2337
+    content: e
+  - delay: 288
+    content: x
+  - delay: 243
+    content: i
+  - delay: 386
+    content: t
+  - delay: 760
+    content: "\r\n\e(B\e[0;1mBye\r\n\e(B\e[m\e]0;dechri@debian:~\e\\\e]7;file://debian/home/dechri\e\\\e[?2004h\e]0;dechri@debian: ~\a\e[01;32mdechri@debian\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1977
+    content: "\e[?2004l\r\r\nlogout\r\n"
