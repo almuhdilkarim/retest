@@ -1,0 +1,585 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\SOLIT
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 970
+    content: "\e[?9001h\e[?1004h"
+  - delay: 79
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 142
+    content: 'PS C:\Users\SOLIT> '
+  - delay: 131
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93mm\e[?25h"
+  - delay: 197
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 150
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;20Hmys\e[?25h"
+  - delay: 157
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmysq\e[?25h"
+  - delay: 227
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;20Hmysql\e[?25h"
+  - delay: 446
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;20Hmysql \e[?25h"
+  - delay: 196
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[6;20Hmysql \e[37m-\e[?25h"
+  - delay: 264
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;20Hmysql \e[90m-u\e[?25h"
+  - delay: 1633
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[?25h"
+  - delay: 254
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 83
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 111
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 186
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 160
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 644
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 624
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 625
+    content: "\e[m"
+  - delay: 19
+    content: "\r\n"
+  - delay: 40
+    content: E
+  - delay: 22
+    content: 'nter password: '
+  - delay: 1291
+    content: '*'
+  - delay: 211
+    content: '*'
+  - delay: 181
+    content: '*'
+  - delay: 67
+    content: '*'
+  - delay: 202
+    content: '*'
+  - delay: 96
+    content: '*'
+  - delay: 152
+    content: '*'
+  - delay: 160
+    content: '*'
+  - delay: 286
+    content: '*'
+  - delay: 219
+    content: '*'
+  - delay: 362
+    content: '*'
+  - delay: 137
+    content: '*'
+  - delay: 141
+    content: '*'
+  - delay: 363
+    content: '*'
+  - delay: 212
+    content: '*'
+  - delay: 375
+    content: '*'
+  - delay: 1401
+    content: "\b"
+  - delay: 24
+    content: " \b"
+  - delay: 293
+    content: "\b"
+  - delay: 20
+    content: " \b"
+  - delay: 694
+    content: '*'
+  - delay: 242
+    content: '*'
+  - delay: 200
+    content: '*'
+  - delay: 209
+    content: "\r\n"
+  - delay: 54
+    content: ERROR 1045 (28000)
+  - delay: 15
+    content: ": Access denied for user 'root'@'localhost' (using password: YES)\r\nPS C:\\Users\\SOLIT> "
+  - delay: 1872
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93mm\e[?25h"
+  - delay: 205
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 227
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[9;20Hmys\e[?25h"
+  - delay: 140
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[9;20Hmysq\e[?25h"
+  - delay: 198
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[9;20Hmysql\e[?25h"
+  - delay: 284
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[9;20Hmysql \e[?25h"
+  - delay: 320
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[9;20Hmysql \e[37m-\e[?25h"
+  - delay: 257
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[9;20Hmysql \e[90m-u\e[?25h"
+  - delay: 221
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[?25h"
+  - delay: 205
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 89
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 113
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 174
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 131
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 334
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[9;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 1005
+    content: "\e[m"
+  - delay: 18
+    content: "\r\n"
+  - delay: 22
+    content: E
+  - delay: 10
+    content: 'nter password: '
+  - delay: 933
+    content: '*'
+  - delay: 175
+    content: '*'
+  - delay: 184
+    content: '*'
+  - delay: 103
+    content: '*'
+  - delay: 184
+    content: '*'
+  - delay: 1566
+    content: "\b"
+  - delay: 9
+    content: " \b"
+  - delay: 150
+    content: "\b"
+  - delay: 24
+    content: " \b"
+  - delay: 118
+    content: "\b"
+  - delay: 9
+    content: " \b"
+  - delay: 112
+    content: "\b"
+  - delay: 14
+    content: " \b"
+  - delay: 127
+    content: "\b"
+  - delay: 14
+    content: " \b"
+  - delay: 619
+    content: '*'
+  - delay: 208
+    content: '*'
+  - delay: 153
+    content: '*'
+  - delay: 310
+    content: '*'
+  - delay: 281
+    content: '*'
+  - delay: 139
+    content: '*'
+  - delay: 129
+    content: '*'
+  - delay: 144
+    content: '*'
+  - delay: 308
+    content: '*'
+  - delay: 253
+    content: '*'
+  - delay: 344
+    content: '*'
+  - delay: 151
+    content: '*'
+  - delay: 140
+    content: '*'
+  - delay: 167
+    content: '*'
+  - delay: 157
+    content: '*'
+  - delay: 238
+    content: '*'
+  - delay: 169
+    content: "\r\n"
+  - delay: 44
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 15
+    content: "\e[?25l\r\nYour MariaDB connection id is 31\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[15;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[17;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[19;1HMariaDB [(none)]> \e[?25h"
+  - delay: 12226
+    content: "CREATE DATABASE IF NOT EXISTS estimasi_biaya;\r\n"
+  - delay: 19
+    content: "\e[?25lQuery OK, 0 rows affected, 1 warning (0.000 sec)\e[22;1HMariaDB [(none)]> USE estimasi_biaya;\e[?25h"
+  - delay: 646
+    content: "\r\n"
+  - delay: 10
+    content: "Database changed\r\nMariaDB [estimasi_biaya]> "
+  - delay: 7215
+    content: "CREATE TABLE proyek (\r\n"
+  - delay: 20
+    content: "    ->     id INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_proyek VARCHAR(100) NOT NULL,\r\n    ->     total_estimasi DECIMAL(15,2)"
+  - delay: 551
+    content: "\r\n"
+  - delay: 10
+    content: '    -> '
+  - delay: 2073
+    content: ;
+  - delay: 1187
+    content: "\b \b"
+  - delay: 697
+    content: )
+  - delay: 818
+    content: ;
+  - delay: 235
+    content: "\r\n"
+  - delay: 11
+    content: "ERROR 1050 (42S01): Table 'proyek' already exists\r\nMariaDB [estimasi_biaya]> "
+  - delay: 13809
+    content: s
+  - delay: 284
+    content: e
+  - delay: 194
+    content: l
+  - delay: 128
+    content: e
+  - delay: 410
+    content: c
+  - delay: 127
+    content: t
+  - delay: 2081
+    content: ' '
+  - delay: 2281
+    content: '*'
+  - delay: 565
+    content: ' '
+  - delay: 383
+    content: f
+  - delay: 229
+    content: r
+  - delay: 104
+    content: o
+  - delay: 277
+    content: m
+  - delay: 765
+    content: ' '
+  - delay: 4156
+    content: p
+  - delay: 150
+    content: r
+  - delay: 122
+    content: o
+  - delay: 287
+    content: 'y'
+  - delay: 110
+    content: e
+  - delay: 145
+    content: k
+  - delay: 1312
+    content: ;
+  - delay: 206
+    content: "\r\n"
+  - delay: 12
+    content: "+----+--------------------+-----------------+\r\n| id | nama_proyek        | total_sistemasi |\r\n+----+--------------------+-----------------+\r\n|  1 | Renovasi Rumah     |     50000000.00 |\r\n|  2 | Pembangunan Kantor |    150000000.00 |\r\n+----+--------------------+-----------------+\r\n2 rows in set (0.012 sec)\r\n"
+  - delay: 12
+    content: "\nMariaDB [estimasi_biaya]>\e[1C"
+  - delay: 914
+    content: s
+  - delay: 252
+    content: e
+  - delay: 109
+    content: l
+  - delay: 83
+    content: e
+  - delay: 652
+    content: c
+  - delay: 124
+    content: t
+  - delay: 370
+    content: ' '
+  - delay: 3184
+    content: '*'
+  - delay: 547
+    content: ' '
+  - delay: 331
+    content: f
+  - delay: 196
+    content: r
+  - delay: 140
+    content: o
+  - delay: 651
+    content: m
+  - delay: 832
+    content: ' '
+  - delay: 436
+    content: i
+  - delay: 267
+    content: t
+  - delay: 97
+    content: e
+  - delay: 356
+    content: m
+  - delay: 1098
+    content: ;
+  - delay: 205
+    content: "\r\n+----+-----------------+--------------+\r\n| id | nama_item       | harga_satuan |\r\n+----+-----------------+--------------+\r\n|  1 | Semen 50kg      |     75000.00 |\r\n|  2 | Besi Beton 10mm |    120000.00 |\r\n+----+-----------------+--------------+\r\n2 rows in set (0.000 sec)\r\n"
+  - delay: 6
+    content: "\nMariaDB [estimasi_biaya]>\e[1C"
+  - delay: 608
+    content: s
+  - delay: 186
+    content: e
+  - delay: 138
+    content: l
+  - delay: 97
+    content: e
+  - delay: 246
+    content: c
+  - delay: 114
+    content: t
+  - delay: 1066
+    content: ' '
+  - delay: 687
+    content: '*'
+  - delay: 1008
+    content: ' '
+  - delay: 170
+    content: f
+  - delay: 250
+    content: r
+  - delay: 117
+    content: o
+  - delay: 273
+    content: m
+  - delay: 675
+    content: ' '
+  - delay: 1110
+    content: d
+  - delay: 183
+    content: e
+  - delay: 102
+    content: t
+  - delay: 202
+    content: a
+  - delay: 513
+    content: i
+  - delay: 190
+    content: l
+  - delay: 1349
+    content: ;
+  - delay: 533
+    content: "\r\n+----+-----------+---------+\r\n| id | id_proyek | id_item |\r\n+----+-----------+---------+\r\n|  3 |         1 |       1 |\r\n|  4 |         2 |       2 |\r\n+----+-----------+---------+\r\n2 rows in set (0.001 sec)\r\n\nMariaDB [estimasi_biaya]>\e[1C"
+  - delay: 1207
+    content: x
+  - delay: 189
+    content: i
+  - delay: 245
+    content: t
+  - delay: 1178
+    content: "\b"
+  - delay: 154
+    content: "\b"
+  - delay: 419
+    content: "\b"
+  - delay: 162
+    content: "\e[?25lexit\e[30;28H\e[?25h"
+  - delay: 554
+    content: "\r\nBye"
+  - delay: 11
+    content: "\r\nPS C:\\Users\\SOLIT>\e[1C"
+  - delay: 1139
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93me\e[?25h"
+  - delay: 1124
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\bex\e[?25h"
+  - delay: 82
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[30;20Hexi\e[?25h"
+  - delay: 241
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[92m\e[30;20Hexit\e[?25h"
+  - delay: 337
+    content: "\e[m"
+  - delay: 23
+    content: "\r\n"
