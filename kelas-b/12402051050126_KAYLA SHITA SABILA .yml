@@ -1,0 +1,1495 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/kayla
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 238
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 59
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1046
+    content: "\e]0;kayla@kayla:~\e\\\e]7;file://kayla/home/kayla\e\\\e[?2004h\e]0;kayla@kayla: ~\a\e[01;32mkayla@kayla\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 4107
+    content: m
+  - delay: 300
+    content: 'y'
+  - delay: 240
+    content: s
+  - delay: 336
+    content: q
+  - delay: 377
+    content: l
+  - delay: 918
+    content: ' '
+  - delay: 2973
+    content: A
+  - delay: 296
+    content: "\b\e[K"
+  - delay: 2391
+    content: _
+  - delay: 933
+    content: "\b\e[K"
+  - delay: 1104
+    content: '-'
+  - delay: 967
+    content: u
+  - delay: 633
+    content: ' '
+  - delay: 506
+    content: r
+  - delay: 627
+    content: o
+  - delay: 121
+    content: o
+  - delay: 305
+    content: t
+  - delay: 1205
+    content: ' '
+  - delay: 565
+    content: '-'
+  - delay: 594
+    content: p
+  - delay: 1307
+    content: "\r\n\e[?2004l\r\e]133;C\e\\\r"
+  - delay: 8
+    content: 'Enter password: '
+  - delay: 3759
+    content: "\r\n"
+  - delay: 7
+    content: "\e(B\e[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n\e(B\e[m\e(B\e[0;1mYour MariaDB connection id is 10\r\nServer version: 10.11.13-MariaDB-0ubuntu0.24.04.1 Ubuntu 24.04\r\n\r\n\e(B\e[m\e(B\e[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\r\n\e(B\e[m\e(B\e[0;1mType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 82742
+    content: u
+  - delay: 191
+    content: s
+  - delay: 215
+    content: e
+  - delay: 678
+    content: ' '
+  - delay: 2156
+    content: "\r\e[22G"
+  - delay: 211
+    content: "\r\e[21G\e[K"
+  - delay: 180
+    content: "\r\e[20G\e[K"
+  - delay: 176
+    content: "\r\e[19G\e[K"
+  - delay: 1820
+    content: U
+  - delay: 160
+    content: S
+  - delay: 262
+    content: E
+  - delay: 802
+    content: ' '
+  - delay: 496
+    content: D
+  - delay: 115
+    content: A
+  - delay: 256
+    content: T
+  - delay: 572
+    content: A
+  - delay: 487
+    content: B
+  - delay: 120
+    content: A
+  - delay: 210
+    content: S
+  - delay: 257
+    content: E
+  - delay: 2190
+    content: ' '
+  - delay: 3200
+    content: P
+  - delay: 457
+    content: U
+  - delay: 300
+    content: L
+  - delay: 261
+    content: S
+  - delay: 200
+    content: A
+  - delay: 935
+    content: ;
+  - delay: 626
+    content: "\r\nERROR 1049 (42000): Unknown database 'DATABASE'\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [(none)]> "
+  - delay: 13766
+    content: C
+  - delay: 297
+    content: R
+  - delay: 180
+    content: E
+  - delay: 116
+    content: T
+  - delay: 74
+    content: A
+  - delay: 252
+    content: E
+  - delay: 695
+    content: "\r\e[24G\e[K"
+  - delay: 156
+    content: "\r\e[23G\e[K"
+  - delay: 426
+    content: "\r\e[22G\e[K"
+  - delay: 501
+    content: A
+  - delay: 166
+    content: T
+  - delay: 150
+    content: E
+  - delay: 283
+    content: ' '
+  - delay: 476
+    content: D
+  - delay: 95
+    content: A
+  - delay: 170
+    content: T
+  - delay: 151
+    content: A
+  - delay: 135
+    content: B
+  - delay: 100
+    content: A
+  - delay: 207
+    content: S
+  - delay: 254
+    content: E
+  - delay: 842
+    content: ' '
+  - delay: 553
+    content: P
+  - delay: 340
+    content: U
+  - delay: 277
+    content: L
+  - delay: 205
+    content: S
+  - delay: 211
+    content: A
+  - delay: 1218
+    content: ;
+  - delay: 1018
+    content: "\r\n\e(B\e[0;1mQuery OK, 1 row affected (0,001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 1606
+    content: U
+  - delay: 124
+    content: S
+  - delay: 228
+    content: E
+  - delay: 659
+    content: ' '
+  - delay: 582
+    content: P
+  - delay: 412
+    content: U
+  - delay: 256
+    content: L
+  - delay: 217
+    content: S
+  - delay: 214
+    content: A
+  - delay: 867
+    content: ;
+  - delay: 1014
+    content: "\r\n\e(B\e[0;1mDatabase changed\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 2017
+    content: C
+  - delay: 267
+    content: R
+  - delay: 207
+    content: E
+  - delay: 103
+    content: A
+  - delay: 127
+    content: T
+  - delay: 180
+    content: E
+  - delay: 191
+    content: ' '
+  - delay: 455
+    content: T
+  - delay: 105
+    content: A
+  - delay: 226
+    content: B
+  - delay: 346
+    content: L
+  - delay: 185
+    content: E
+  - delay: 282
+    content: ' '
+  - delay: 7302
+    content: D
+  - delay: 95
+    content: A
+  - delay: 136
+    content: T
+  - delay: 140
+    content: A
+  - delay: 2086
+    content: "\r\e[34G\e[K"
+  - delay: 181
+    content: "\r\e[33G\e[K"
+  - delay: 160
+    content: "\r\e[32G\e[K"
+  - delay: 321
+    content: "\r\e[31G\e[K"
+  - delay: 122221
+    content: T
+  - delay: 618
+    content: O
+  - delay: 220
+    content: K
+  - delay: 170
+    content: O
+  - delay: 3359
+    content: "\r\e[34G\e[K"
+  - delay: 226
+    content: "\r\e[33G\e[K"
+  - delay: 185
+    content: "\r\e[32G\e[K"
+  - delay: 206
+    content: "\r\e[31G\e[K"
+  - delay: 6962
+    content: P
+  - delay: 201
+    content: E
+  - delay: 271
+    content: L
+  - delay: 136
+    content: A
+  - delay: 205
+    content: 'N'
+  - delay: 267
+    content: G
+  - delay: 94
+    content: G
+  - delay: 180
+    content: R
+  - delay: 152
+    content: A
+  - delay: 598
+    content: "\r\e[39G\e[K"
+  - delay: 167
+    content: "\r\e[38G\e[K"
+  - delay: 1771
+    content: A
+  - delay: 241
+    content: 'N'
+  - delay: 3576
+    content: ' '
+  - delay: 1529
+    content: (
+  - delay: 1104
+    content: "\r\n    -> "
+  - delay: 6209
+    content: I
+  - delay: 191
+    content: D
+  - delay: 614
+    content: ' '
+  - delay: 936
+    content: "\r\e[10G"
+  - delay: 191
+    content: "\r\e[9G\e[K"
+  - delay: 200
+    content: "\r\e[8G\e[K"
+  - delay: 616
+    content: 'N'
+  - delay: 548
+    content: O
+  - delay: 513
+    content: ' '
+  - delay: 541
+    content: I
+  - delay: 234
+    content: 'N'
+  - delay: 307
+    content: T
+  - delay: 270
+    content: ' '
+  - delay: 692
+    content: P
+  - delay: 427
+    content: R
+  - delay: 760
+    content: I
+  - delay: 205
+    content: M
+  - delay: 133
+    content: A
+  - delay: 346
+    content: R
+  - delay: 266
+    content: 'Y'
+  - delay: 888
+    content: ' '
+  - delay: 456
+    content: K
+  - delay: 157
+    content: E
+  - delay: 668
+    content: 'Y'
+  - delay: 344
+    content: ' '
+  - delay: 618
+    content: A
+  - delay: 250
+    content: U
+  - delay: 270
+    content: T
+  - delay: 658
+    content: I
+  - delay: 491
+    content: "\r\e[30G\e[K"
+  - delay: 372
+    content: U
+  - delay: 1133
+    content: "\r\e[30G\e[K"
+  - delay: 883
+    content: O
+  - delay: 4257
+    content: _
+  - delay: 1009
+    content: I
+  - delay: 482
+    content: 'N'
+  - delay: 387
+    content: C
+  - delay: 261
+    content: R
+  - delay: 284
+    content: E
+  - delay: 271
+    content: M
+  - delay: 145
+    content: E
+  - delay: 111
+    content: 'N'
+  - delay: 246
+    content: T
+  - delay: 3361
+    content: ','
+  - delay: 80
+    content: ' '
+  - delay: 2076
+    content: "\r\n    -> "
+  - delay: 14911
+    content: 'N'
+  - delay: 70
+    content: A
+  - delay: 147
+    content: M
+  - delay: 20
+    content: A
+  - delay: 766
+    content: ' '
+  - delay: 1149
+    content: V
+  - delay: 120
+    content: A
+  - delay: 181
+    content: R
+  - delay: 271
+    content: C
+  - delay: 320
+    content: H
+  - delay: 120
+    content: A
+  - delay: 168
+    content: R
+  - delay: 1488
+    content: (
+  - delay: 1921
+    content: '1'
+  - delay: 807
+    content: '0'
+  - delay: 143
+    content: '0'
+  - delay: 720
+    content: )
+  - delay: 922
+    content: ','
+  - delay: 77
+    content: ' '
+  - delay: 1243
+    content: "\r\n    -> "
+  - delay: 2653
+    content: T
+  - delay: 172
+    content: E
+  - delay: 460
+    content: L
+  - delay: 210
+    content: P
+  - delay: 165
+    content: O
+  - delay: 317
+    content: 'N'
+  - delay: 2889
+    content: ' '
+  - delay: 436
+    content: V
+  - delay: 125
+    content: A
+  - delay: 207
+    content: R
+  - delay: 221
+    content: C
+  - delay: 256
+    content: H
+  - delay: 125
+    content: A
+  - delay: 170
+    content: R
+  - delay: 1394
+    content: (
+  - delay: 541
+    content: '1'
+  - delay: 337
+    content: '0'
+  - delay: 151
+    content: '0'
+  - delay: 1420
+    content: )
+  - delay: 15141
+    content: "\r\n    -> "
+  - delay: 9258
+    content: )
+  - delay: 1625
+    content: ;
+  - delay: 942
+    content: "\r\n"
+  - delay: 22
+    content: "\e(B\e[0;1mQuery OK, 0 rows affected (0,022 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 12728
+    content: I
+  - delay: 250
+    content: 'N'
+  - delay: 90
+    content: S
+  - delay: 237
+    content: E
+  - delay: 131
+    content: R
+  - delay: 174
+    content: T
+  - delay: 367
+    content: ' '
+  - delay: 1294
+    content: I
+  - delay: 236
+    content: 'N'
+  - delay: 301
+    content: T
+  - delay: 361
+    content: O
+  - delay: 265
+    content: ' '
+  - delay: 6004
+    content: P
+  - delay: 356
+    content: U
+  - delay: 266
+    content: L
+  - delay: 240
+    content: S
+  - delay: 288
+    content: A
+  - delay: 1148
+    content: ' '
+  - delay: 1011
+    content: (
+  - delay: 4798
+    content: 'N'
+  - delay: 113
+    content: A
+  - delay: 97
+    content: M
+  - delay: 90
+    content: A
+  - delay: 681
+    content: ','
+  - delay: 75
+    content: ' '
+  - delay: 401
+    content: T
+  - delay: 237
+    content: E
+  - delay: 1524
+    content: L
+  - delay: 230
+    content: P
+  - delay: 205
+    content: O
+  - delay: 413
+    content: 'N'
+  - delay: 1413
+    content: )
+  - delay: 1596
+    content: ' '
+  - delay: 1836
+    content: V
+  - delay: 222
+    content: A
+  - delay: 383
+    content: L
+  - delay: 376
+    content: U
+  - delay: 217
+    content: E
+  - delay: 231
+    content: S
+  - delay: 848
+    content: "\r\n    -> "
+  - delay: 4181
+    content: (
+  - delay: 6923
+    content: ''''
+  - delay: 1950
+    content: J
+  - delay: 106
+    content: A
+  - delay: 150
+    content: K
+  - delay: 72
+    content: A
+  - delay: 1283
+    content: ''''
+  - delay: 1591
+    content: ','
+  - delay: 60
+    content: ' '
+  - delay: 3178
+    content: '0'
+  - delay: 466
+    content: '8'
+  - delay: 301
+    content: '9'
+  - delay: 469
+    content: '7'
+  - delay: 325
+    content: '6'
+  - delay: 296
+    content: '5'
+  - delay: 526
+    content: '4'
+  - delay: 367
+    content: '3'
+  - delay: 402
+    content: '2'
+  - delay: 6528
+    content: '3'
+  - delay: 397
+    content: '2'
+  - delay: 280
+    content: '1'
+  - delay: 20004
+    content: "\b"
+  - delay: 206
+    content: "\b"
+  - delay: 175
+    content: "\b"
+  - delay: 161
+    content: "\b"
+  - delay: 148
+    content: "\b"
+  - delay: 141
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 125
+    content: "\b"
+  - delay: 130
+    content: "\b"
+  - delay: 140
+    content: "\b"
+  - delay: 141
+    content: "\b"
+  - delay: 141
+    content: "\b"
+  - delay: 893
+    content: "\b"
+  - delay: 1438
+    content: "\r\e[16G\e[1@' \b"
+  - delay: 1444
+    content: "\r\e[16G\e[P \b"
+  - delay: 780
+    content: ' '
+  - delay: 1317
+    content: "\r\e[17G\e[1@'0\b"
+  - delay: 2963
+    content: '0'
+  - delay: 207
+    content: '8'
+  - delay: 153
+    content: '9'
+  - delay: 123
+    content: '7'
+  - delay: 131
+    content: '6'
+  - delay: 141
+    content: '5'
+  - delay: 150
+    content: '4'
+  - delay: 135
+    content: '3'
+  - delay: 146
+    content: '2'
+  - delay: 150
+    content: '3'
+  - delay: 141
+    content: '2'
+  - delay: 1117
+    content: "\r\e[29G'1\b"
+  - delay: 1876
+    content: "\r\e[29G1\e[K\b"
+  - delay: 1731
+    content: '1'
+  - delay: 1003
+    content: ''''
+  - delay: 929
+    content: "\r\e[30G\e[K"
+  - delay: 751
+    content: ''''
+  - delay: 2497
+    content: )
+  - delay: 1124
+    content: ','
+  - delay: 29
+    content: ' '
+  - delay: 929
+    content: "\r\n    -> "
+  - delay: 11806
+    content: (
+  - delay: 1215
+    content: ''''
+  - delay: 426
+    content: K
+  - delay: 191
+    content: I
+  - delay: 241
+    content: 'N'
+  - delay: 205
+    content: A
+  - delay: 187
+    content: 'N'
+  - delay: 799
+    content: T
+  - delay: 336
+    content: I
+  - delay: 2734
+    content: ''''
+  - delay: 386
+    content: ','
+  - delay: 66
+    content: ' '
+  - delay: 1454
+    content: '0'
+  - delay: 441
+    content: '8'
+  - delay: 382
+    content: '7'
+  - delay: 2256
+    content: '6'
+  - delay: 2027
+    content: '9'
+  - delay: 927
+    content: '8'
+  - delay: 3591
+    content: '5'
+  - delay: 243
+    content: '5'
+  - delay: 534
+    content: '2'
+  - delay: 1099
+    content: '1'
+  - delay: 461
+    content: '3'
+  - delay: 336
+    content: '3'
+  - delay: 1666
+    content: "\b"
+  - delay: 186
+    content: "\b"
+  - delay: 136
+    content: "\b"
+  - delay: 114
+    content: "\b"
+  - delay: 121
+    content: "\b"
+  - delay: 115
+    content: "\b"
+  - delay: 125
+    content: "\b"
+  - delay: 122
+    content: "\b"
+  - delay: 119
+    content: "\b"
+  - delay: 120
+    content: "\b"
+  - delay: 137
+    content: "\b"
+  - delay: 281
+    content: "\b"
+  - delay: 1553
+    content: "\r\e[20G\e[1@'0\b"
+  - delay: 2279
+    content: "\r\e[20G\e[P0\b"
+  - delay: 610
+    content: "\r\e[19G\e[P0\b"
+  - delay: 1286
+    content: "\r\e[19G\e[1@ 0\b"
+  - delay: 614
+    content: "\r\e[20G\e[1@'0\b"
+  - delay: 3850
+    content: '0'
+  - delay: 163
+    content: '8'
+  - delay: 121
+    content: '7'
+  - delay: 135
+    content: '6'
+  - delay: 112
+    content: '9'
+  - delay: 101
+    content: '8'
+  - delay: 109
+    content: '5'
+  - delay: 124
+    content: '5'
+  - delay: 140
+    content: '2'
+  - delay: 116
+    content: '1'
+  - delay: 127
+    content: '3'
+  - delay: 129
+    content: '3'
+  - delay: 832
+    content: "\r\e[32G\e[K"
+  - delay: 178
+    content: "\r\e[31G\e[K"
+  - delay: 98
+    content: "\r\e[30G\e[K"
+  - delay: 120
+    content: "\r\e[29G\e[K"
+  - delay: 126
+    content: "\r\e[28G\e[K"
+  - delay: 110
+    content: "\r\e[27G\e[K"
+  - delay: 120
+    content: "\r\e[26G\e[K"
+  - delay: 116
+    content: "\r\e[25G\e[K"
+  - delay: 121
+    content: "\r\e[24G\e[K"
+  - delay: 145
+    content: "\r\e[23G\e[K"
+  - delay: 114
+    content: "\r\e[22G\e[K"
+  - delay: 126
+    content: "\r\e[21G\e[K"
+  - delay: 211
+    content: "\r\e[20G\e[K"
+  - delay: 381
+    content: "\r\e[19G"
+  - delay: 1565
+    content: "\r\e[18G\e[K"
+  - delay: 924
+    content: ','
+  - delay: 71
+    content: ' '
+  - delay: 1779
+    content: ''''
+  - delay: 1059
+    content: '0'
+  - delay: 401
+    content: '8'
+  - delay: 575
+    content: '1'
+  - delay: 1110
+    content: '9'
+  - delay: 351
+    content: '8'
+  - delay: 270
+    content: '7'
+  - delay: 350
+    content: '6'
+  - delay: 277
+    content: '5'
+  - delay: 254
+    content: '4'
+  - delay: 1079
+    content: '2'
+  - delay: 255
+    content: '3'
+  - delay: 241
+    content: '4'
+  - delay: 251
+    content: '1'
+  - delay: 1304
+    content: ''''
+  - delay: 1820
+    content: )
+  - delay: 548
+    content: ','
+  - delay: 56
+    content: ' '
+  - delay: 1082
+    content: "\r\n    -> "
+  - delay: 1787
+    content: (
+  - delay: 1593
+    content: K
+  - delay: 301
+    content: I
+  - delay: 2789
+    content: 'N'
+  - delay: 672
+    content: "\r\e[11G\e[K"
+  - delay: 217
+    content: "\r\e[10G\e[K"
+  - delay: 369
+    content: "\r\e[9G\e[K"
+  - delay: 2041
+    content: ''''
+  - delay: 316
+    content: S
+  - delay: 196
+    content: A
+  - delay: 161
+    content: M
+  - delay: 1890
+    content: ''''
+  - delay: 382
+    content: ','
+  - delay: 71
+    content: ' '
+  - delay: 3770
+    content: ''''
+  - delay: 3756
+    content: '8'
+  - delay: 1109
+    content: "\r\e[17G\e[K"
+  - delay: 416
+    content: '0'
+  - delay: 978
+    content: '8'
+  - delay: 717
+    content: '5'
+  - delay: 664
+    content: '5'
+  - delay: 795
+    content: '4'
+  - delay: 1159
+    content: '4'
+  - delay: 337
+    content: '3'
+  - delay: 295
+    content: '2'
+  - delay: 267
+    content: '1'
+  - delay: 801
+    content: '5'
+  - delay: 368
+    content: '6'
+  - delay: 1914
+    content: '8'
+  - delay: 1625
+    content: ''''
+  - delay: 3501
+    content: )
+  - delay: 2539
+    content: ;
+  - delay: 908
+    content: "\r\nERROR 1146 (42S02): Table 'PULSA.PULSA' doesn't exist\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [PULSA]> "
+  - delay: 30986
+    content: "INSERT INTO PULSA (NAMA, TELPON) VALUES\r\n    -> "
+  - delay: 20839
+    content: '(''Andi'', ''081234567890''),'
+  - delay: 2319
+    content: "\r\n    -> "
+  - delay: 13249
+    content: '(''Budi'', ''082345678901'');'
+  - delay: 1140
+    content: "\r\nERROR 1146 (42S02): Table 'PULSA.PULSA' doesn't exist\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [PULSA]> "
+  - delay: 17751
+    content: 'INSERT INTO '
+  - delay: 4299
+    content: P
+  - delay: 290
+    content: E
+  - delay: 306
+    content: L
+  - delay: 124
+    content: A
+  - delay: 182
+    content: 'N'
+  - delay: 225
+    content: G
+  - delay: 120
+    content: G
+  - delay: 417
+    content: A
+  - delay: 239
+    content: 'N'
+  - delay: 3362
+    content: ' '
+  - delay: 1673
+    content: (
+  - delay: 747
+    content: 'N'
+  - delay: 191
+    content: M
+  - delay: 768
+    content: "\r\e[42G\e[K"
+  - delay: 591
+    content: A
+  - delay: 822
+    content: M
+  - delay: 120
+    content: A
+  - delay: 387
+    content: ','
+  - delay: 100
+    content: ' '
+  - delay: 5897
+    content: T
+  - delay: 139
+    content: E
+  - delay: 377
+    content: L
+  - delay: 179
+    content: P
+  - delay: 180
+    content: O
+  - delay: 1876
+    content: 'N'
+  - delay: 1219
+    content: )
+  - delay: 1334
+    content: "\r\e[53G\e[K"
+  - delay: 180
+    content: "\r\e[52G\e[K"
+  - delay: 100
+    content: "\r\e[51G\e[K"
+  - delay: 138
+    content: "\r\e[50G\e[K"
+  - delay: 100
+    content: "\r\e[49G\e[K"
+  - delay: 113
+    content: "\r\e[48G\e[K"
+  - delay: 106
+    content: "\r\e[47G\e[K"
+  - delay: 266
+    content: "\r\e[46G"
+  - delay: 1441
+    content: ' '
+  - delay: 695
+    content: T
+  - delay: 361
+    content: E
+  - delay: 522
+    content: L
+  - delay: 195
+    content: P
+  - delay: 206
+    content: O
+  - delay: 331
+    content: 'N'
+  - delay: 2667
+    content: )
+  - delay: 648
+    content: ' '
+  - delay: 1194
+    content: V
+  - delay: 153
+    content: A
+  - delay: 257
+    content: L
+  - delay: 255
+    content: U
+  - delay: 187
+    content: E
+  - delay: 226
+    content: S
+  - delay: 590
+    content: "\r\n    -> "
+  - delay: 10575
+    content: '(''JAKA'', ''089765432321''),'
+  - delay: 1561
+    content: "\r\n    -> "
+  - delay: 15914
+    content: '(''Andi'', ''081234567890''),'
+  - delay: 1928
+    content: "\r\e[32G\e[K"
+  - delay: 2089
+    content: ;
+  - delay: 694
+    content: "\r\n"
+  - delay: 14
+    content: "\e(B\e[0;1mQuery OK, 2 rows affected (0,014 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 2  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 4921
+    content: S
+  - delay: 556
+    content: E
+  - delay: 160
+    content: L
+  - delay: 136
+    content: E
+  - delay: 707
+    content: C
+  - delay: 351
+    content: T
+  - delay: 973
+    content: ' '
+  - delay: 2139
+    content: '*'
+  - delay: 885
+    content: ' '
+  - delay: 345
+    content: F
+  - delay: 262
+    content: R
+  - delay: 476
+    content: O
+  - delay: 238
+    content: M
+  - delay: 215
+    content: ' '
+  - delay: 575
+    content: P
+  - delay: 203
+    content: E
+  - delay: 298
+    content: L
+  - delay: 126
+    content: A
+  - delay: 205
+    content: 'N'
+  - delay: 261
+    content: G
+  - delay: 145
+    content: G
+  - delay: 604
+    content: A
+  - delay: 154
+    content: R
+  - delay: 709
+    content: "\r\e[40G\e[K"
+  - delay: 1191
+    content: A
+  - delay: 1023
+    content: 'N'
+  - delay: 4184
+    content: ;
+  - delay: 999
+    content: "\r\nERROR 1146 (42S02): Table 'PULSA.PELANGGAAN' doesn't exist\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [PULSA]> "
+  - delay: 9109
+    content: S
+  - delay: 276
+    content: E
+  - delay: 220
+    content: L
+  - delay: 106
+    content: E
+  - delay: 330
+    content: C
+  - delay: 167
+    content: T
+  - delay: 2974
+    content: ' '
+  - delay: 1373
+    content: '*'
+  - delay: 1314
+    content: F
+  - delay: 227
+    content: R
+  - delay: 470
+    content: O
+  - delay: 227
+    content: M
+  - delay: 217
+    content: ' '
+  - delay: 8425
+    content: PELANGGAN
+  - delay: 1352
+    content: ;
+  - delay: 1177
+    content: "\r\n+----+------+--------------+\r\n| NO | NAMA | TELPON       |\r\n+----+------+--------------+\r\n|  1 | JAKA | 089765432321 |\r\n|  2 | Andi | 081234567890 |\r\n+----+------+--------------+\r\n\e(B\e[0;1m2 rows in set (0,001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 22904
+    content: CREATE TABLE produk_pulsa (
+  - delay: 1769
+    content: "\r\n    -> "
+  - delay: 17453
+    content: 'id_produk INT AUTO_INCREMENT PRIMARY KEY,'
+  - delay: 10949
+    content: "\r\n    -> "
+  - delay: 3131
+    content: ' operator VARCHAR(20),'
+  - delay: 2042
+    content: "\r\n    -> "
+  - delay: 12390
+    content: 'nominal INT,'
+  - delay: 4043
+    content: "\r\n    -> "
+  - delay: 1009
+    content: H
+  - delay: 94
+    content: A
+  - delay: 208
+    content: R
+  - delay: 223
+    content: G
+  - delay: 240
+    content: A
+  - delay: 2761
+    content: ' '
+  - delay: 340
+    content: I
+  - delay: 221
+    content: 'N'
+  - delay: 269
+    content: T
+  - delay: 6886
+    content: "\r\n    -> "
+  - delay: 3436
+    content: )
+  - delay: 2726
+    content: ;
+  - delay: 948
+    content: "\r\n"
+  - delay: 82
+    content: "\e(B\e[0;1mQuery OK, 0 rows affected (0,081 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 4694
+    content: I
+  - delay: 459
+    content: 'N'
+  - delay: 176
+    content: S
+  - delay: 225
+    content: E
+  - delay: 126
+    content: R
+  - delay: 242
+    content: T
+  - delay: 50
+    content: ' '
+  - delay: 692
+    content: T
+  - delay: 1463
+    content: "\r\e[25G\e[K"
+  - delay: 2539
+    content: I
+  - delay: 250
+    content: 'N'
+  - delay: 300
+    content: T
+  - delay: 437
+    content: O
+  - delay: 431
+    content: ' '
+  - delay: 3441
+    content: "\r\e[29G"
+  - delay: 636
+    content: ' '
+  - delay: 649
+    content: P
+  - delay: 405
+    content: R
+  - delay: 586
+    content: O
+  - delay: 256
+    content: D
+  - delay: 197
+    content: E
+  - delay: 244
+    content: U
+  - delay: 197
+    content: K
+  - delay: 857
+    content: "\r\e[36G\e[K"
+  - delay: 170
+    content: "\r\e[35G\e[K"
+  - delay: 462
+    content: "\r\e[34G\e[K"
+  - delay: 883
+    content: U
+  - delay: 241
+    content: K
+  - delay: 1062
+    content: _
+  - delay: 1013
+    content: P
+  - delay: 351
+    content: I
+  - delay: 222
+    content: L
+  - delay: 194
+    content: S
+  - delay: 201
+    content: A
+  - delay: 674
+    content: "\r\e[41G\e[K"
+  - delay: 146
+    content: "\r\e[40G\e[K"
+  - delay: 168
+    content: "\r\e[39G\e[K"
+  - delay: 211
+    content: "\r\e[38G\e[K"
+  - delay: 606
+    content: U
+  - delay: 317
+    content: L
+  - delay: 185
+    content: S
+  - delay: 227
+    content: A
+  - delay: 3113
+    content: ' '
+  - delay: 607
+    content: (
+  - delay: 29592
+    content: "\r\e[43G\e[K"
+  - delay: 291
+    content: "\r\e[42G"
+  - delay: 140
+    content: "\r\e[41G\e[K"
+  - delay: 127
+    content: "\r\e[40G\e[K"
+  - delay: 246
+    content: "\r\e[39G\e[K"
+  - delay: 135
+    content: "\r\e[38G\e[K"
+  - delay: 126
+    content: "\r\e[37G\e[K"
+  - delay: 135
+    content: "\r\e[36G\e[K"
+  - delay: 119
+    content: "\r\e[35G\e[K"
+  - delay: 120
+    content: "\r\e[34G\e[K"
+  - delay: 128
+    content: "\r\e[33G\e[K"
+  - delay: 110
+    content: "\r\e[32G\e[K"
+  - delay: 234
+    content: "\r\e[31G\e[K"
+  - delay: 222
+    content: "\r\e[30G\e[K"
+  - delay: 7860
+    content: produk_pulsa
+  - delay: 1852
+    content: ' '
+  - delay: 2320
+    content: produk_pulsa
+  - delay: 1524
+    content: "\r\e[54G\e[K"
+  - delay: 163
+    content: "\r\e[53G\e[K"
+  - delay: 105
+    content: "\r\e[52G\e[K"
+  - delay: 121
+    content: "\r\e[51G\e[K"
+  - delay: 105
+    content: "\r\e[50G\e[K"
+  - delay: 120
+    content: "\r\e[49G\e[K"
+  - delay: 127
+    content: "\r\e[48G\e[K"
+  - delay: 104
+    content: "\r\e[47G\e[K"
+  - delay: 126
+    content: "\r\e[46G\e[K"
+  - delay: 116
+    content: "\r\e[45G\e[K"
+  - delay: 335
+    content: "\r\e[44G\e[K"
+  - delay: 196
+    content: "\r\e[43G\e[K"
+  - delay: 7983
+    content: "\r\e[42G"
+  - delay: 537
+    content: ' '
+  - delay: 2769
+    content: '(operator, nominal, harga) VALUES'
+  - delay: 1890
+    content: "\r\n    -> "
+  - delay: 14610
+    content: '(''Telkomsel'', 10000, 12000),'
+  - delay: 1542
+    content: "\r\n    -> "
+  - delay: 11859
+    content: '(''Indosat'', 20000, 22000);'
+  - delay: 1612
+    content: "\r\n"
+  - delay: 10
+    content: "\e(B\e[0;1mQuery OK, 2 rows affected (0,010 sec)\r\n\e(B\e[m\e(B\e[0;1mRecords: 2  Duplicates: 0  Warnings: 0\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 3160
+    content: S
+  - delay: 1038
+    content: L
+  - delay: 624
+    content: "\r\e[19G\e[K"
+  - delay: 202
+    content: E
+  - delay: 278
+    content: E
+  - delay: 661
+    content: "\r\e[20G\e[K"
+  - delay: 908
+    content: L
+  - delay: 130
+    content: E
+  - delay: 337
+    content: C
+  - delay: 220
+    content: T
+  - delay: 677
+    content: ' '
+  - delay: 1665
+    content: '*'
+  - delay: 602
+    content: ' '
+  - delay: 323
+    content: F
+  - delay: 208
+    content: R
+  - delay: 531
+    content: O
+  - delay: 236
+    content: M
+  - delay: 436
+    content: ' '
+  - delay: 11979
+    content: 'produk_pulsa '
+  - delay: 1662
+    content: "\r\e[44G"
+  - delay: 959
+    content: ;
+  - delay: 791
+    content: "\r\n+-----------+-----------+---------+-------+\r\n| id_produk | operator  | nominal | HARGA |\r\n+-----------+-----------+---------+-------+\r\n|         1 | Telkomsel |   10000 | 12000 |\r\n|         2 | Indosat   |   20000 | 22000 |\r\n+-----------+-----------+---------+-------+\r\n\e(B\e[0;1m2 rows in set (0,001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [PULSA]> "
+  - delay: 13306
+    content: E
+  - delay: 337
+    content: X
+  - delay: 213
+    content: I
+  - delay: 292
+    content: T
+  - delay: 1558
+    content: ;
+  - delay: 1064
+    content: "\r\n"
+  - delay: 5
+    content: "\e(B\e[0;1mBye\r\n\e(B\e[m\e]0;kayla@kayla:~\e\\"
+  - delay: 7
+    content: "\e]7;file://kayla/home/kayla\e\\\e[?2004h\e]0;kayla@kayla: ~\a\e[01;32mkayla@kayla\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 2879
+    content: "\e[?2004l\r\r\nlogout\r\n"
