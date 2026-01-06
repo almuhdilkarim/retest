@@ -1,0 +1,627 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/ahnafaninaila/demo
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 72
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 34
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1313
+    content: "\e[?2004h\e]0;ahnafaninaila@DESKTOP-9OC6IL7: ~/demo\a\e[01;32mahnafaninaila@DESKTOP-9OC6IL7\e[00m:\e[01;34m~/demo\e[00m$ "
+  - delay: 4404
+    content: s
+  - delay: 173
+    content: u
+  - delay: 190
+    content: d
+  - delay: 239
+    content: o
+  - delay: 648
+    content: ' '
+  - delay: 213
+    content: m
+  - delay: 137
+    content: a
+  - delay: 238
+    content: r
+  - delay: 419
+    content: i
+  - delay: 166
+    content: a
+  - delay: 700
+    content: d
+  - delay: 258
+    content: b
+  - delay: 1297
+    content: "\r\n\e[?2004l\r"
+  - delay: 72
+    content: '[sudo] password for ahnafaninaila: '
+  - delay: 3217
+    content: "\r\n"
+  - delay: 173
+    content: "\e(B\e[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n"
+  - delay: 11
+    content: "\e(B\e[m\e(B\e[0;1mYour MariaDB connection id is 33\r\nServer version: 10.11.13-MariaDB-0ubuntu0.24.04.1 Ubuntu 24.04\r\n\r\n\e(B\e[m\e(B\e[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\r\n\e(B\e[m\e(B\e[0;1mType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\n\e(B\e[mMariaDB [(none)]> "
+  - delay: 6984
+    content: U
+  - delay: 191
+    content: S
+  - delay: 183
+    content: E
+  - delay: 474
+    content: ' '
+  - delay: 967
+    content: k
+  - delay: 152
+    content: a
+  - delay: 186
+    content: s
+  - delay: 166
+    content: i
+  - delay: 183
+    content: r
+  - delay: 421
+    content: ' '
+  - delay: 526
+    content: s
+  - delay: 192
+    content: e
+  - delay: 182
+    content: d
+  - delay: 186
+    content: e
+  - delay: 162
+    content: r
+  - delay: 313
+    content: h
+  - delay: 138
+    content: a
+  - delay: 162
+    content: 'n'
+  - delay: 139
+    content: a
+  - delay: 1575
+    content: "\r\e[37G\e[K"
+  - delay: 148
+    content: "\r\e[36G\e[K"
+  - delay: 144
+    content: "\r\e[35G\e[K"
+  - delay: 149
+    content: "\r\e[34G\e[K"
+  - delay: 127
+    content: "\r\e[33G\e[K"
+  - delay: 134
+    content: "\r\e[32G\e[K"
+  - delay: 131
+    content: "\r\e[31G\e[K"
+  - delay: 143
+    content: "\r\e[30G\e[K"
+  - delay: 135
+    content: "\r\e[29G\e[K"
+  - delay: 172
+    content: "\r\e[28G"
+  - delay: 1160
+    content: _
+  - delay: 549
+    content: s
+  - delay: 193
+    content: e
+  - delay: 160
+    content: d
+  - delay: 363
+    content: r
+  - delay: 860
+    content: "\r\e[32G\e[K"
+  - delay: 676
+    content: e
+  - delay: 175
+    content: r
+  - delay: 226
+    content: h
+  - delay: 128
+    content: a
+  - delay: 164
+    content: 'n'
+  - delay: 137
+    content: a
+  - delay: 1698
+    content: ;
+  - delay: 1519
+    content: "\r\n"
+  - delay: 25
+    content: "Reading table information for completion of table and column names\r\nYou can turn off this feature to get a quicker startup with -A\r\n\r\n\e(B\e[0;1mDatabase changed\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 3024
+    content: S
+  - delay: 326
+    content: H
+  - delay: 297
+    content: O
+  - delay: 172
+    content: W
+  - delay: 2894
+    content: ' '
+  - delay: 776
+    content: t
+  - delay: 194
+    content: a
+  - delay: 262
+    content: b
+  - delay: 1185
+    content: "\r\e[35G\e[K"
+  - delay: 166
+    content: "\r\e[34G\e[K"
+  - delay: 1169
+    content: "\r\e[33G\e[K"
+  - delay: 677
+    content: T
+  - delay: 172
+    content: A
+  - delay: 212
+    content: B
+  - delay: 362
+    content: L
+  - delay: 185
+    content: E
+  - delay: 251
+    content: S
+  - delay: 1319
+    content: ;
+  - delay: 434
+    content: "\r\n+---------------------------+\r\n| Tables_in_kasir_sederhana |\r\n+---------------------------+\r\n| produk                    |\r\n| transaksi                 |\r\n+---------------------------+\r\n\e(B\e[0;1m2 rows in set (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 998
+    content: S
+  - delay: 215
+    content: E
+  - delay: 140
+    content: L
+  - delay: 164
+    content: E
+  - delay: 303
+    content: C
+  - delay: 1260
+    content: T
+  - delay: 2048
+    content: '*'
+  - delay: 945
+    content: ' '
+  - delay: 638
+    content: F
+  - delay: 196
+    content: R
+  - delay: 273
+    content: O
+  - delay: 871
+    content: M
+  - delay: 396
+    content: ' '
+  - delay: 1230
+    content: p
+  - delay: 341
+    content: r
+  - delay: 238
+    content: o
+  - delay: 499
+    content: d
+  - delay: 180
+    content: u
+  - delay: 229
+    content: k
+  - delay: 1265
+    content: ;
+  - delay: 317
+    content: "\r\n"
+  - delay: 8
+    content: "+----+-------------+-------+------+\r\n| id | nama_produk | harga | stok |\r\n+----+-------------+-------+------+\r\n|  1 | Pulpen      |  3000 |   50 |\r\n|  2 | Buku Tulis  |  5000 |   30 |\r\n+----+-------------+-------+------+\r\n\e(B\e[0;1m2 rows in set (0.008 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 2600
+    content: S
+  - delay: 1594
+    content: E
+  - delay: 203
+    content: L
+  - delay: 120
+    content: E
+  - delay: 314
+    content: C
+  - delay: 251
+    content: T
+  - delay: 921
+    content: ' '
+  - delay: 1631
+    content: '*'
+  - delay: 1642
+    content: F
+  - delay: 198
+    content: R
+  - delay: 173
+    content: O
+  - delay: 300
+    content: M
+  - delay: 1851
+    content: "\r\e[39G\e[K"
+  - delay: 151
+    content: "\r\e[38G\e[K"
+  - delay: 434
+    content: "\r\e[37G\e[K"
+  - delay: 761
+    content: "\r\e[36G\e[K"
+  - delay: 341
+    content: ' '
+  - delay: 262
+    content: F
+  - delay: 209
+    content: R
+  - delay: 232
+    content: O
+  - delay: 243
+    content: M
+  - delay: 367
+    content: ' '
+  - delay: 1201
+    content: t
+  - delay: 171
+    content: r
+  - delay: 154
+    content: a
+  - delay: 237
+    content: 'n'
+  - delay: 1339
+    content: s
+  - delay: 233
+    content: a
+  - delay: 1779
+    content: s
+  - delay: 350
+    content: k
+  - delay: 237
+    content: i
+  - delay: 2436
+    content: ;
+  - delay: 4607
+    content: "\r\n"
+  - delay: 17
+    content: "ERROR 1146 (42S02): Table 'kasir_sederhana.transaski' doesn't exist\r\n\a\e(B\e[0;7m\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 11944
+    content: U
+  - delay: 290
+    content: S
+  - delay: 174
+    content: E
+  - delay: 907
+    content: ' '
+  - delay: 678
+    content: k
+  - delay: 158
+    content: a
+  - delay: 198
+    content: s
+  - delay: 197
+    content: i
+  - delay: 183
+    content: r
+  - delay: 3064
+    content: _
+  - delay: 1500
+    content: s
+  - delay: 205
+    content: e
+  - delay: 188
+    content: d
+  - delay: 181
+    content: e
+  - delay: 169
+    content: r
+  - delay: 215
+    content: h
+  - delay: 159
+    content: a
+  - delay: 143
+    content: 'n'
+  - delay: 152
+    content: a
+  - delay: 736
+    content: ;
+  - delay: 928
+    content: "\r\n\e(B\e[0;1mDatabase changed\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 3685
+    content: s
+  - delay: 156
+    content: h
+  - delay: 230
+    content: o
+  - delay: 203
+    content: w
+  - delay: 249
+    content: ' '
+  - delay: 324
+    content: t
+  - delay: 195
+    content: a
+  - delay: 145
+    content: b
+  - delay: 316
+    content: l
+  - delay: 258
+    content: e
+  - delay: 219
+    content: s
+  - delay: 1571
+    content: "\r\e[38G\e[K"
+  - delay: 476
+    content: "\r\e[37G\e[K"
+  - delay: 27
+    content: "\r\e[36G\e[K"
+  - delay: 31
+    content: "\r\e[35G\e[K"
+  - delay: 29
+    content: "\r\e[34G\e[K"
+  - delay: 28
+    content: "\r\e[33G\e[K"
+  - delay: 31
+    content: "\r\e[32G"
+  - delay: 27
+    content: "\r\e[31G\e[K"
+  - delay: 193
+    content: "\r\e[30G\e[K"
+  - delay: 137
+    content: "\r\e[29G\e[K"
+  - delay: 172
+    content: "\r\e[28G\e[K"
+  - delay: 1067
+    content: S
+  - delay: 172
+    content: H
+  - delay: 250
+    content: O
+  - delay: 273
+    content: W
+  - delay: 314
+    content: ' '
+  - delay: 278
+    content: T
+  - delay: 158
+    content: A
+  - delay: 123
+    content: B
+  - delay: 353
+    content: L
+  - delay: 173
+    content: E
+  - delay: 225
+    content: S
+  - delay: 1521
+    content: ;
+  - delay: 1309
+    content: "\r\n+---------------------------+\r\n| Tables_in_kasir_sederhana |\r\n+---------------------------+\r\n| produk                    |\r\n| transaksi                 |\r\n+---------------------------+\r\n\e(B\e[0;1m2 rows in set (0.001 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 2842
+    content: S
+  - delay: 197
+    content: E
+  - delay: 161
+    content: L
+  - delay: 131
+    content: E
+  - delay: 2932
+    content: C
+  - delay: 393
+    content: T
+  - delay: 1706
+    content: ' '
+  - delay: 836
+    content: F
+  - delay: 218
+    content: R
+  - delay: 235
+    content: O
+  - delay: 279
+    content: M
+  - delay: 1523
+    content: "\r\e[38G\e[K"
+  - delay: 146
+    content: "\r\e[37G\e[K"
+  - delay: 138
+    content: "\r\e[36G\e[K"
+  - delay: 348
+    content: "\r\e[35G\e[K"
+  - delay: 966
+    content: '*'
+  - delay: 334
+    content: ' '
+  - delay: 253
+    content: F
+  - delay: 197
+    content: R
+  - delay: 200
+    content: O
+  - delay: 310
+    content: M
+  - delay: 267
+    content: ' '
+  - delay: 1321
+    content: p
+  - delay: 448
+    content: r
+  - delay: 233
+    content: o
+  - delay: 297
+    content: d
+  - delay: 207
+    content: u
+  - delay: 200
+    content: k
+  - delay: 913
+    content: ;
+  - delay: 1335
+    content: "\r\n+----+-------------+-------+------+\r\n| id | nama_produk | harga | stok |\r\n+----+-------------+-------+------+\r\n|  1 | Pulpen      |  3000 |   50 |\r\n|  2 | Buku Tulis  |  5000 |   30 |\r\n+----+-------------+-------+------+\r\n\e(B\e[0;1m2 rows in set (0.004 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 3553
+    content: S
+  - delay: 249
+    content: E
+  - delay: 421
+    content: L
+  - delay: 200
+    content: E
+  - delay: 237
+    content: C
+  - delay: 232
+    content: T
+  - delay: 904
+    content: ' '
+  - delay: 1317
+    content: '*'
+  - delay: 1062
+    content: ' '
+  - delay: 129
+    content: F
+  - delay: 214
+    content: R
+  - delay: 188
+    content: O
+  - delay: 324
+    content: M
+  - delay: 1004
+    content: ' '
+  - delay: 591
+    content: t
+  - delay: 187
+    content: r
+  - delay: 173
+    content: a
+  - delay: 282
+    content: 'n'
+  - delay: 175
+    content: s
+  - delay: 298
+    content: a
+  - delay: 316
+    content: k
+  - delay: 190
+    content: s
+  - delay: 213
+    content: i
+  - delay: 2079
+    content: ;
+  - delay: 1029
+    content: "\r\n+----+-----------+--------+-------------+---------------------+\r\n| id | produk_id | jumlah | total_harga | tanggal             |\r\n+----+-----------+--------+-------------+---------------------+\r\n|  1 |         1 |      2 |        6000 | 2026-01-06 16:11:48 |\r\n|  2 |         2 |      1 |        5000 | 2026-01-06 16:15:13 |\r\n+----+-----------+--------+-------------+---------------------+\r\n\e(B\e[0;1m2 rows in set (0.002 sec)\r\n\e(B\e[m\e(B\e[0;1m\r\n\e(B\e[mMariaDB [kasir_sederhana]> "
+  - delay: 2407
+    content: E
+  - delay: 351
+    content: X
+  - delay: 388
+    content: I
+  - delay: 284
+    content: T
+  - delay: 1610
+    content: ;
+  - delay: 432
+    content: "\r\n"
+  - delay: 14
+    content: "\e(B\e[0;1mBye\r\n\e(B\e[m"
+  - delay: 8
+    content: "\e[?2004h\e]0;ahnafaninaila@DESKTOP-9OC6IL7: ~/demo\a\e[01;32mahnafaninaila@DESKTOP-9OC6IL7\e[00m:\e[01;34m~/demo\e[00m$ "
+  - delay: 4832
+    content: "\e[?2004l\r\r\nlogout\r\n"
