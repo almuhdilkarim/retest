@@ -1,0 +1,491 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/lunaa
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 118
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 59
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 980
+    content: "\e[?2004h\e]0;root@lunaa-Lenovo-V14-G4-AMN: /home/lunaa\aroot@lunaa-Lenovo-V14-G4-AMN:/home/lunaa# "
+  - delay: 2436
+    content: m
+  - delay: 264
+    content: 'y'
+  - delay: 1424
+    content: s
+  - delay: 612
+    content: q
+  - delay: 220
+    content: l
+  - delay: 356
+    content: "\r\n\e[?2004l\r"
+  - delay: 10
+    content: "Welcome to the MySQL monitor.  Commands end with ; or \\g.\r\nYour MySQL connection id is 11\r\nServer version: 8.0.44-0ubuntu0.24.04.2 (Ubuntu)\r\n\r\nCopyright (c) 2000, 2025, Oracle and/or its affiliates.\r\n\r\nOracle is a registered trademark of Oracle Corporation and/or its\r\naffiliates. Other names may be trademarks of their respective\r\nowners.\r\n\r\n"
+  - delay: 6
+    content: "Type 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\nmysql> "
+  - delay: 1069
+    content: s
+  - delay: 487
+    content: h
+  - delay: 190
+    content: o
+  - delay: 163
+    content: w
+  - delay: 226
+    content: ' '
+  - delay: 451
+    content: d
+  - delay: 181
+    content: a
+  - delay: 130
+    content: t
+  - delay: 135
+    content: a
+  - delay: 718
+    content: b
+  - delay: 110
+    content: a
+  - delay: 209
+    content: s
+  - delay: 190
+    content: e
+  - delay: 232
+    content: s
+  - delay: 300
+    content: ;
+  - delay: 270
+    content: "\r\n+-------------------------+\r\n| Database                |\r\n+-------------------------+\r\n| ONGKOS_KIRIM            |\r\n| REKOMENDASI_FILM        |\r\n| SISTEM_RENTAL_KENDARAAN |\r\n| eprints                 |\r\n| information_schema      |\r\n| mysql                   |\r\n| opendocman              |\r\n| performance_schema      |\r\n| reponuna                |\r\n| sys                     |\r\n| toko                    |\r\n+-------------------------+\r\n11 rows in set (0,00 sec)\r\n\r\nmysql> "
+  - delay: 1927
+    content: u
+  - delay: 196
+    content: s
+  - delay: 267
+    content: e
+  - delay: 475
+    content: ' '
+  - delay: 1094
+    content: o
+  - delay: 430
+    content: "\r\e[12G\e[K"
+  - delay: 747
+    content: O
+  - delay: 318
+    content: 'N'
+  - delay: 247
+    content: G
+  - delay: 246
+    content: K
+  - delay: 187
+    content: O
+  - delay: 184
+    content: S
+  - delay: 547
+    content: _
+  - delay: 402
+    content: K
+  - delay: 234
+    content: I
+  - delay: 156
+    content: R
+  - delay: 115
+    content: I
+  - delay: 185
+    content: M
+  - delay: 1204
+    content: ;
+  - delay: 1127
+    content: "\r\n"
+  - delay: 7
+    content: "Database changed\r\nmysql> "
+  - delay: 5553
+    content: "CREATE TABLE kota (\r\n    ->     id_kota INT PRIMARY KEY AUTO_INCREMENT,\r\n    ->     nama_kota VARCHAR(100) NOT NULL,\r\n    ->     provinsi VARCHAR(100) NOT NULL\r\n    -> );\r\n"
+  - delay: 68
+    content: "Query OK, 0 rows affected (0,07 sec)\r\n\r\nmysql> \r\nmysql> "
+  - delay: 5675
+    content: "CREATE TABLE layanan (\r\n    ->     id_layanan INT PRIMARY KEY AUTO_INCREMENT,\r\n    ->     nama_layanan VARCHAR(50) NOT NULL,\r\n    ->     estimasi_hari VARCHAR(20)\r\n    -> );\r\n"
+  - delay: 74
+    content: "Query OK, 0 rows affected (0,08 sec)\r\n\r\nmysql> \r\nmysql> "
+  - delay: 8975
+    content: "CREATE TABLE tarif (\r\n    ->     id_tarif INT PRIMARY KEY AUTO_INCREMENT,\r\n    ->     id_kota_asal INT NOT NULL,\r\n    ->     id_kota_tujuan INT NOT NULL,\r\n    ->     id_layanan INT NOT NULL,\r\n    ->     berat_max DECIMAL(5,2) NOT NULL,\r\n    ->     harga DECIMAL(10,2) NOT NULL,\r\n    ->     FOREIGN KEY (id_kota_asal) REFERENCES kota(id_kota),\r\n    ->     FOREIGN KEY (id_kota_tujuan) REFERENCES kota(id_kota),\r\n    ->     FOREIGN KEY (id_layanan) REFERENCES layanan(id_layanan)\r\n    -> );\r\n"
+  - delay: 171
+    content: "Query OK, 0 rows affected (0,17 sec)\r\n\r\nmysql> "
+  - delay: 14123
+    content: "CREATE TABLE pengiriman (\r\n    ->     id_pengiriman INT PRIMARY KEY AUTO_INCREMENT,\r\n    ->     nomor_resi VARCHAR(50) UNIQUE NOT NULL,\r\n    ->     nama_pengirim VARCHAR(100) NOT NULL,\r\n    ->     nama_penerima VARCHAR(100) NOT NULL,\r\n    ->     id_kota_asal INT NOT NULL,\r\n    ->     id_kota_tujuan INT NOT NULL,\r\n    ->     id_layanan INT NOT NULL,\r\n    ->     berat DECIMAL(5,2) NOT NULL,\r\n    ->     ongkir DECIMAL(10,2) NOT NULL,\r\n    ->     tanggal_kirim DATE NOT NULL,\r\n    ->     status ENUM('diproses', 'dikirim', 'diterima') DEFAULT 'diproses',\r\n    ->     FOREIGN KEY (id_kota_asal) REFERENCES kota(id_kota),\r\n    ->     FOREIGN KEY (id_kota_tujuan) REFERENCES kota(id_kota),\r\n    ->     FOREIGN KEY (id_layanan) REFERENCES layanan(id_layanan)\r\n    -> );\r\n"
+  - delay: 160
+    content: "Query OK, 0 rows affected (0,16 sec)\r\n\r\nmysql> "
+  - delay: 21896
+    content: "INSERT INTO kota (nama_kota, provinsi) VALUES\r\n    -> ('Jakarta', 'DKI Jakarta'),\r\n    -> ('Bandung', 'Jawa Barat'),\r\n    -> ('Surabaya', 'Jawa Timur'),\r\n    -> ('Semarang', 'Jawa Tengah'),\r\n    -> ('Yogyakarta', 'DI Yogyakarta');\r\n"
+  - delay: 31
+    content: "Query OK, 5 rows affected (0,03 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n\r\nmysql> "
+  - delay: 8569
+    content: "INSERT INTO layanan (nama_layanan, estimasi_hari) VALUES\r\n    -> ('Regular', '3-5 hari'),\r\n    -> ('Express', '1-2 hari'),\r\n    -> ('Same Day', '1 hari'),\r\n    -> ('Cargo', '5-7 hari'),\r\n    -> ('Ekonomi', '7-10 hari');"
+  - delay: 1716
+    content: "\r\n"
+  - delay: 44
+    content: "Query OK, 5 rows affected (0,05 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n\r\nmysql> "
+  - delay: 8208
+    content: "INSERT INTO tarif (id_kota_asal, id_kota_tujuan, id_layanan, berat_max, harga) VALUES\r\n    -> (1, 2, 1, 1, 15000),\r\n    -> (1, 3, 2, 1, 25000),\r\n    -> (2, 1, 1, 1, 15000),\r\n    -> (1, 4, 3, 1, 35000),\r\n    -> (3, 5, 4, 5, 50000);\r\n"
+  - delay: 44
+    content: "Query OK, 5 rows affected (0,04 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n\r\nmysql> "
+  - delay: 40407
+    content: "INSERT INTO pengiriman (nomor_resi, nama_pengirim, nama_penerima, id_kota_asal, id_kota_tujuan, id_layanan, ber \bat, ongkir, tanggal_kirim, status) VALUES\r\n    -> ('RESI001', 'Toko Maju Jaya', 'Ahmad Fauzi', 1, 2, 1, 0.5, 15000, '2024-12-28', 'dikirim'),\r\n    -> ('RESI002', 'CV Sumber Rezeki', 'Siti Rahmawati', 2, 1, 2, 0.8, 25000, '2024-12-29', 'diterima'),\r\n    -> ('RESI003', 'PT Berkah', 'Budi Santoso', 3, 4, 1, 1.2, 18000, '2024-12-27', 'diterima'),\r\n    -> ('RESI004', 'Toko Makmur', 'Dewi Lestari', 1, 4, 3, 0.3, 35000, '2025-01-02', 'diproses'),\r\n    -> ('RESI005', 'Warung Bu Tini', 'Rudi Hartono', 3, 5, 4, 3.5, 50000, '2025-01-01', 'dikirim');"
+  - delay: 1263
+    content: "\r\n"
+  - delay: 48
+    content: "Query OK, 5 rows affected (0,05 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n\r\nmysql> "
+  - delay: 2893
+    content: s
+  - delay: 315
+    content: h
+  - delay: 233
+    content: o
+  - delay: 163
+    content: w
+  - delay: 210
+    content: ' '
+  - delay: 934
+    content: "\r\e[12G"
+  - delay: 500
+    content: "\r\e[11G\e[K"
+  - delay: 31
+    content: "\r\e[10G\e[K"
+  - delay: 30
+    content: "\r\e[9G\e[K"
+  - delay: 31
+    content: "\r\e[8G\e[K"
+  - delay: 30
+    content: "\a"
+  - delay: 31
+    content: "\a"
+  - delay: 31
+    content: "\a"
+  - delay: 30
+    content: "\a"
+  - delay: 30
+    content: "\a"
+  - delay: 30
+    content: "\a"
+  - delay: 31
+    content: "\a"
+  - delay: 29
+    content: "\a"
+  - delay: 31
+    content: "\a"
+  - delay: 30
+    content: "\a"
+  - delay: 30
+    content: "\a"
+  - delay: 31
+    content: "\a"
+  - delay: 151
+    content: s
+  - delay: 267
+    content: e
+  - delay: 189
+    content: l
+  - delay: 115
+    content: e
+  - delay: 273
+    content: c
+  - delay: 210
+    content: t
+  - delay: 870
+    content: '*'
+  - delay: 448
+    content: f
+  - delay: 214
+    content: r
+  - delay: 134
+    content: o
+  - delay: 507
+    content: m
+  - delay: 562
+    content: ' '
+  - delay: 2406
+    content: t
+  - delay: 316
+    content: a
+  - delay: 256
+    content: b
+  - delay: 405
+    content: e
+  - delay: 998
+    content: "\r\e[23G\e[K"
+  - delay: 225
+    content: "\r\e[22G\e[K"
+  - delay: 262
+    content: "\r\e[21G\e[K"
+  - delay: 280
+    content: "\r\e[20G\e[K"
+  - delay: 3253
+    content: k
+  - delay: 171
+    content: o
+  - delay: 335
+    content: t
+  - delay: 487
+    content: a
+  - delay: 763
+    content: ;
+  - delay: 434
+    content: "\r\n+---------+------------+---------------+\r\n| id_kota | nama_kota  | provinsi      |\r\n+---------+------------+---------------+\r\n|       1 | Jakarta    | DKI Jakarta   |\r\n|       2 | Bandung    | Jawa Barat    |\r\n|       3 | Surabaya   | Jawa Timur    |\r\n|       4 | Semarang   | Jawa Tengah   |\r\n|       5 | Yogyakarta | DI Yogyakarta |\r\n+---------+------------+---------------+\r\n5 rows in set (0,00 sec)\r\n\r\nmysql> "
+  - delay: 1598
+    content: s
+  - delay: 217
+    content: e
+  - delay: 145
+    content: l
+  - delay: 94
+    content: e
+  - delay: 271
+    content: c
+  - delay: 221
+    content: t
+  - delay: 2573
+    content: '*'
+  - delay: 565
+    content: f
+  - delay: 205
+    content: r
+  - delay: 150
+    content: o
+  - delay: 243
+    content: m
+  - delay: 254
+    content: ' '
+  - delay: 2516
+    content: l
+  - delay: 526
+    content: a
+  - delay: 141
+    content: 'y'
+  - delay: 122
+    content: a
+  - delay: 140
+    content: 'n'
+  - delay: 113
+    content: a
+  - delay: 121
+    content: 'n'
+  - delay: 596
+    content: ;
+  - delay: 257
+    content: "\r\n+------------+--------------+---------------+\r\n| id_layanan | nama_layanan | estimasi_hari |\r\n+------------+--------------+---------------+\r\n|          1 | Regular      | 3-5 hari      |\r\n|          2 | Express      | 1-2 hari      |\r\n|          3 | Same Day     | 1 hari        |\r\n|          4 | Cargo        | 5-7 hari      |\r\n|          5 | Ekonomi      | 7-10 hari     |\r\n+------------+--------------+---------------+\r\n5 rows in set (0,00 sec)\r\n\r\nmysql> "
+  - delay: 737
+    content: s
+  - delay: 210
+    content: e
+  - delay: 149
+    content: l
+  - delay: 114
+    content: e
+  - delay: 276
+    content: c
+  - delay: 185
+    content: t
+  - delay: 2091
+    content: '*'
+  - delay: 412
+    content: f
+  - delay: 214
+    content: r
+  - delay: 160
+    content: o
+  - delay: 227
+    content: m
+  - delay: 250
+    content: ' '
+  - delay: 2606
+    content: t
+  - delay: 131
+    content: a
+  - delay: 90
+    content: r
+  - delay: 510
+    content: i
+  - delay: 244
+    content: f
+  - delay: 770
+    content: ;
+  - delay: 230
+    content: "\r\n+----------+--------------+----------------+------------+-----------+----------+\r\n| id_tarif | id_kota_asal | id_kota_tujuan | id_layanan | berat_max | harga    |\r\n+----------+--------------+----------------+------------+-----------+----------+\r\n|        1 |            1 |              2 |          1 |      1.00 | 15000.00 |\r\n|        2 |            1 |              3 |          2 |      1.00 | 25000.00 |\r\n|        3 |            2 |              1 |          1 |      1.00 | 15000.00 |\r\n|        4 |            1 |              4 |          3 |      1.00 | 35000.00 |\r\n|        5 |            3 |              5 |          4 |      5.00 | 50000.00 |\r\n+----------+--------------+----------------+------------+-----------+----------+\r\n5 rows in set (0,00 sec)\r\n\r\nmysql> "
+  - delay: 711
+    content: s
+  - delay: 211
+    content: e
+  - delay: 190
+    content: l
+  - delay: 80
+    content: e
+  - delay: 306
+    content: c
+  - delay: 191
+    content: t
+  - delay: 692
+    content: '*'
+  - delay: 418
+    content: f
+  - delay: 237
+    content: r
+  - delay: 192
+    content: o
+  - delay: 255
+    content: m
+  - delay: 240
+    content: ' '
+  - delay: 3583
+    content: p
+  - delay: 433
+    content: e
+  - delay: 116
+    content: 'n'
+  - delay: 174
+    content: g
+  - delay: 219
+    content: i
+  - delay: 101
+    content: r
+  - delay: 126
+    content: i
+  - delay: 191
+    content: m
+  - delay: 366
+    content: a
+  - delay: 169
+    content: 'n'
+  - delay: 674
+    content: ;
+  - delay: 560
+    content: "\r\n+---------------+------------+------------------+----------------+--------------+----------------+------------+-------+----------+---------------+----------+\r\n| id_pengiriman | nomor_resi | nama_pengirim    | nama_penerima  | id_kota_asal | id_kota_tujuan | id_layanan | berat | ongkir   | tanggal_kirim | status   |\r\n+---------------+------------+------------------+----------------+--------------+----------------+------------+-------+----------+---------------+----------+\r\n|             1 | RESI001    | Toko Maju Jaya   | Ahmad Fauzi    |            1 |              2 |          1 |  0.50 | 15000.00 | 2024-12-28    | dikirim  |\r\n|             2 | RESI002    | CV Sumber Rezeki | Siti Rahmawati |            2 |              1 |          2 |  0.80 | 25000.00 | 2024-12-29    | diterima |\r\n|             3 | RESI003    | PT Berkah        | Budi Santoso   |            3 |              4 |          1 |  1.20 | 18000.00 | 2024-12-27    | diterima |\r\n|             4 | RESI004    | Toko Makmur      | Dewi Lestari   |            1 |              4 |          3 |  0.30 | 35000.00 | 2025-01-02    | diproses |\r\n|             5 | RESI005    | Warung Bu Tini   | Rudi Hartono   |            3 |              5 |          4 |  3.50 | 50000.00 | 2025-01-01    | dikirim  |\r\n+---------------+------------+------------------+----------------+--------------+----------------+------------+-------+----------+---------------+----------+\r\n5 rows in set (0,00 sec)\r\n\r\nmysql> "
+  - delay: 3206
+    content: e
+  - delay: 366
+    content: x
+  - delay: 417
+    content: i
+  - delay: 285
+    content: t
+  - delay: 1529
+    content: "\r\n"
+  - delay: 18
+    content: "Bye\r\n\e[?2004h\e]0;root@lunaa-Lenovo-V14-G4-AMN: /home/lunaa\aroot@lunaa-Lenovo-V14-G4-AMN:/home/lunaa# "
+  - delay: 1352
+    content: l
+  - delay: 191
+    content: o
+  - delay: 430
+    content: g
+  - delay: 638
+    content: o
+  - delay: 300
+    content: u
+  - delay: 231
+    content: t
+  - delay: 1044
+    content: "\r\n\e[?2004l\r"
