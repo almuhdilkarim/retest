@@ -1,0 +1,590 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\emihi
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 73
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 34
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 3828
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[7;1H\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 737
+    content: 'PS C:\Users\emihi> '
+  - delay: 13374
+    content: "\e[93mm"
+  - delay: 15
+    content: "\e[m"
+  - delay: 388
+    content: "\e[93m\bmy"
+  - delay: 15
+    content: "\e[m"
+  - delay: 174
+    content: "\e[?25l\e[93m\e[7;20Hmys\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 292
+    content: "\e[?25l\e[93m\e[7;20Hmysq\e[?25h"
+  - delay: 8
+    content: "\e[m"
+  - delay: 199
+    content: "\e[?25l\e[93m\e[7;20Hmysql\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 339
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[?25h"
+  - delay: 23
+    content: "\e[m"
+  - delay: 1264
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[m-\e[?25h"
+  - delay: 272
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u\e[?25h"
+  - delay: 23
+    content: "\e[m"
+  - delay: 252
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 309
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mr\e[?25h"
+  - delay: 221
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mro\e[?25h"
+  - delay: 151
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mroo\e[?25h"
+  - delay: 156
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mroot\e[?25h"
+  - delay: 142
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mroot \e[?25h"
+  - delay: 409
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mroot -\e[?25h"
+  - delay: 262
+    content: "\e[?25l\e[93m\e[7;20Hmysql \e[90m-u \e[mroot \e[90m-p\e[?25h"
+  - delay: 18
+    content: "\e[m"
+  - delay: 3536
+    content: "\r\n"
+  - delay: 204
+    content: 'Enter password: '
+  - delay: 856
+    content: '*'
+  - delay: 747
+    content: '*'
+  - delay: 283
+    content: '*'
+  - delay: 381
+    content: '*'
+  - delay: 230
+    content: '*'
+  - delay: 277
+    content: '*'
+  - delay: 708
+    content: "\r\n"
+  - delay: 269
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n"
+  - delay: 18
+    content: "\e[?25lYour MariaDB connection id is 9\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[13;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[15;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[18;1HMariaDB [(none)]> \e[?25h"
+  - delay: 12364
+    content: CREATE DATABASE toko_jajanan;
+  - delay: 13462
+    content: "\r\n"
+  - delay: 22
+    content: "\e[?25lQuery OK, 1 row affected (0.011 sec)\e[21;1HMariaDB [(none)]> \e[?25h"
+  - delay: 19329
+    content: USE toko_jajanan;
+  - delay: 4339
+    content: "\r\nDatabase changed\r\nMariaDB [toko_jajanan]> "
+  - delay: 12681
+    content: "CREATE TABLE pembeli (\r\n    ->     id_pembeli INT AUTO_INCREMENT,\r\n    ->     nama_pembeli VARCHAR(100) NOT NULL,\r\n    ->     kota VARCHAR(50) NOT NULL,\r\n    ->     PRIMARY KEY (id_pembeli)\r\n    -> );"
+  - delay: 1515
+    content: "\r\n"
+  - delay: 185
+    content: "\e[?25lQuery OK, 0 rows affected (0.133 sec)\e[31;1HMariaDB [toko_jajanan]> \e[?25h"
+  - delay: 10789
+    content: "CREATE TABLE jajanan (\r\n    ->     id_jajanan INT AUTO_INCREMENT,\r\n    ->     nama_jajanan VARCHAR(100) NOT NULL,\r\n    ->     harga INT NOT NULL,\r\n    ->     PRIMARY KEY (id_jajanan)\r"
+  - delay: 7
+    content: |2-
+
+          -> );
+  - delay: 1281
+    content: "\r"
+  - delay: 21
+    content: |+
+
+  - delay: 17
+    content: "Query OK, 0 rows affected (0.033 sec)\r\n"
+  - delay: 15
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 12642
+    content: "CREATE TABLE transaksi (\r"
+  - delay: 41
+    content: "\n    ->     id_transaksi INT AUTO_INCREMENT,\r\n    ->     id_pembeli INT NOT NULL,\r\n    ->     tanggal DATE NOT NULL,\r\n    ->     PRIMARY KEY (id_transaksi),\r\n    ->     FOREIGN KEY (id_pembeli) REFERENCES pembeli(id_pembeli)       \r"
+  - delay: 16
+    content: |2-
+
+          -> );
+  - delay: 1338
+    content: "\r"
+  - delay: 18
+    content: |+
+
+  - delay: 63
+    content: "Query OK, 0 rows affected (0.052 sec)\r\n\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 18770
+    content: "CREATE TABLE detail_transaksi (\r"
+  - delay: 6
+    content: "\n    ->     id_detail INT AUTO_INCREMENT,\r\n    ->     id_transaksi INT NOT NULL,\r\n    ->     id_jajanan INT NOT NULL,\r\n    ->     jumlah INT NOT NULL,\r\n    ->     PRIMARY KEY (id_detail),\r\n    ->     FOREIGN KEY (id_transaksi) REFERENCES transaksi(id_transaksi),\r\n\e[33;73H,\r\n\n    ->     FOREIGN KEY (id_jajanan) REFERENCES jajanan(id_jajanan)       \r\n    -> );"
+  - delay: 1188
+    content: "\r"
+  - delay: 15
+    content: |+
+
+  - delay: 35
+    content: "Query OK, 0 rows affected (0.049 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 21934
+    content: "INSERT INTO pembeli (nama_pembeli, kota) VALUES\r\n    -> ('Ayu', 'Jakarta'),\r\n    -> ('Bima', 'Bandung'),\r\n    -> ('Caca', 'Depok'),\r\n    -> ('Dino', 'Bogor'),\r"
+  - delay: 6
+    content: |2-
+
+          -> ('Eka', 'Bekasi');
+  - delay: 4532
+    content: "\r"
+  - delay: 13
+    content: |+
+
+  - delay: 48
+    content: "Query OK, 5 rows affected (0.055 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 5
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 14772
+    content: "INSERT INTO jajanan (nama_jajanan, harga) VALUES\e[34;1H"
+  - delay: 6
+    content: "\n    -> ('Cilok', 5000),\r\n    -> ('Seblak', 12000),\r\n    -> ('Es Teh', 4000),\r\n    -> ('Bakso Goreng', 8000),\r"
+  - delay: 15
+    content: |2-
+
+          -> ('Donat', 7000);
+  - delay: 920
+    content: "\r"
+  - delay: 9
+    content: "\nQuery OK, 5 rows affected (0.008 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 13024
+    content: "INSERT INTO transaksi (id_pembeli, tanggal) VALUE\r\n\e[33;73HES\r"
+  - delay: 5
+    content: "\n    -> (1, '2025-01-01'),\r\n    -> (2, '2025-01-02'),\r\n    -> (3, '2025-01-03'),\r\n    -> (4, '2025-01-04'),\r\n    -> (5, '2025-01-05');"
+  - delay: 1612
+    content: "\r"
+  - delay: 13
+    content: |+
+
+  - delay: 33
+    content: "Query OK, 5 rows affected (0.045 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 19
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 12848
+    content: "INSERT INTO detail_transaksi (id_transaksi, id_ja\r\n\e[33;73Hajanan, jumlah) VALUES\r\n    -> (1, 1, 2),\r\n    -> (2, 2, 1),\r\n    -> (3, 3, 3),\r\n    -> (4, 4, 2),\r"
+  - delay: 9
+    content: |2-
+
+          -> (5, 5, 1);
+  - delay: 1205
+    content: "\r"
+  - delay: 22
+    content: |+
+
+  - delay: 23
+    content: "Query OK, 5 rows affected (0.044 sec)\r\nRecords: 5  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 22
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 12493
+    content: SELECT * FROM pembeli;
+  - delay: 1338
+    content: "\r"
+  - delay: 11
+    content: |+
+
+  - delay: 41
+    content: +------------+--------------+---------+
+  - delay: 6
+    content: "\r\n| id_pembeli | nama_pembeli | kota    |\r\n+------------+--------------+---------+\r\n|          1 | Ayu          | Jakarta |\r\n|          2 | Bima         | Bandung |\r\n|          3 | Caca         | Depok   |\r\n|          4 | Dino         | Bogor   |\r\n|          5 | Eka          | Bekasi  |\r\n+------------+--------------+---------+\r\n5 rows in set (0.047 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 10231
+    content: 'SELECT nama_jajanan, harga FROM jajanan;'
+  - delay: 2270
+    content: "\r\n"
+  - delay: 52
+    content: "+--------------+-------+\r\n| nama_jajanan | harga |\r\n+--------------+-------+\r\n| Cilok        |  5000 |\r\n| Seblak       | 12000 |\r\n| Es Teh       |  4000 |\r\n| Bakso Goreng |  8000 |\r\n| Donat        |  7000 |\r\n+--------------+-------+\r\n5 rows in set (0.039 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 11281
+    content: SELECT * FROM jajanan WHERE harga > 7000;
+  - delay: 1503
+    content: "\r"
+  - delay: 15
+    content: "\n+------------+--------------+-------+\r\n| id_jajanan | nama_jajanan | harga |\r\n+------------+--------------+-------+\r\n|          2 | Seblak       | 12000 |\r\n|          4 | Bakso Goreng |  8000 |\r\n+------------+--------------+-------+\r\n2 rows in set (0.007 sec)\r\n"
+  - delay: 12
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 10054
+    content: SELECT * FROM jajanan WHERE harga < 7000;
+  - delay: 1745
+    content: "\r"
+  - delay: 10
+    content: "\n+------------+--------------+-------+\r\n| id_jajanan | nama_jajanan | harga |\r\n+------------+--------------+-------+\r\n|          1 | Cilok        |  5000 |\r\n|          3 | Es Teh       |  4000 |\r\n+------------+--------------+-------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 82
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 10113
+    content: SELECT * FROM pembeli WHERE kota = 'Jakarta';
+  - delay: 2480
+    content: "\r"
+  - delay: 50
+    content: |+
+
+  - delay: 19
+    content: "+------------+--------------+---------+\r\n| id_pembeli | nama_pembeli | kota    |\r\n+------------+--------------+---------+\r\n|          1 | Ayu          | Jakarta |\r\n+------------+--------------+---------+\r\n1 row in set (0.172 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 26888
+    content: "SELECT * FROM pembeli\r"
+  - delay: 145
+    content: "\n    ->\e[1C"
+  - delay: 53
+    content: 'WHERE id_pembeli IN (1, 3, 5);'
+  - delay: 1222
+    content: "\r\n"
+  - delay: 74
+    content: "+------------+--------------+---------+\r\n| id_pembeli | nama_pembeli | kota    |\r\n+------------+--------------+---------+\r\n|          1 | Ayu          | Jakarta |\r\n|          3 | Caca         | Depok   |\r\n|          5 | Eka          | Bekasi  |\r\n+------------+--------------+---------+\r\n3 rows in set (0.181 sec)\r\n\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 12369
+    content: "SELECT * FROM jajanan\r\n    -> ORDER BY harga DESC;\r"
+  - delay: 14
+    content: "\n+------------+--------------+-------+\r\n| id_jajanan | nama_jajanan | harga |\r\n+------------+--------------+-------+\r\n|          2 | Seblak       | 12000 |\r\n|          4 | Bakso Goreng |  8000 |\r\n|          5 | Donat        |  7000 |\r\n|          1 | Cilok        |  5000 |\r\n|          3 | Es Teh\e[1C      |  4000 |\r\n+------------+--------------+-------+\r\n5 rows in set (0.003 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 20468
+    content: S
+  - delay: 320
+    content: E
+  - delay: 195
+    content: L
+  - delay: 122
+    content: E
+  - delay: 770
+    content: C
+  - delay: 94
+    content: T
+  - delay: 254
+    content: ' '
+  - delay: 534
+    content: '*'
+  - delay: 392
+    content: ' '
+  - delay: 685
+    content: F
+  - delay: 358
+    content: R
+  - delay: 111
+    content: O
+  - delay: 319
+    content: M
+  - delay: 305
+    content: ' '
+  - delay: 3722
+    content: t
+  - delay: 184
+    content: r
+  - delay: 95
+    content: a
+  - delay: 333
+    content: 'n'
+  - delay: 197
+    content: s
+  - delay: 204
+    content: a
+  - delay: 143
+    content: k
+  - delay: 151
+    content: s
+  - delay: 144
+    content: i
+  - delay: 1500
+    content: ;
+  - delay: 652
+    content: "\r\n+--------------+------------+------------+\r\n| id_transaksi | id_pembeli | tanggal    |\r\n+--------------+------------+------------+\r\n|            1 |          1 | 2025-01-01 |"
+  - delay: 7
+    content: "\r\n|            2 |\e[4C      2 | 2025-01-02 |\r\n|            3 |          3 | 2025-01-03 |"
+  - delay: 6
+    content: "\r\n|            4 |          4 | 2025-01-04 |\r\n|            5 |          5 | 2025-01-05 |\r\n+--------------+------------+------------+\r\n5 rows in set (0.001 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 2031
+    content: S
+  - delay: 228
+    content: E
+  - delay: 129
+    content: L
+  - delay: 110
+    content: E
+  - delay: 311
+    content: C
+  - delay: 107
+    content: T
+  - delay: 301
+    content: ' '
+  - delay: 1000
+    content: '*'
+  - delay: 485
+    content: ' '
+  - delay: 513
+    content: F
+  - delay: 284
+    content: R
+  - delay: 89
+    content: O
+  - delay: 337
+    content: M
+  - delay: 304
+    content: ' '
+  - delay: 2537
+    content: d
+  - delay: 181
+    content: e
+  - delay: 143
+    content: t
+  - delay: 180
+    content: a
+  - delay: 436
+    content: i
+  - delay: 271
+    content: l
+  - delay: 2074
+    content: _
+  - delay: 728
+    content: t
+  - delay: 222
+    content: r
+  - delay: 103
+    content: a
+  - delay: 299
+    content: 'n'
+  - delay: 257
+    content: s
+  - delay: 2885
+    content: a
+  - delay: 312
+    content: k
+  - delay: 198
+    content: s
+  - delay: 98
+    content: i
+  - delay: 1596
+    content: ;
+  - delay: 6649
+    content: "\r"
+  - delay: 8
+    content: "\n+-----------+--------------+------------+--------+\r\n| id_detail | id_transaksi | id_jajanan | jumlah |\r\n+-----------+--------------+------------+--------+\r\n|         1 |            1 |          1 |      2 |\r\n|         2 |            2 |          2 |      1 |\r\n|         3 |            3 |          3 |      3 |\r\n|\e[4C"
+  - delay: 6
+    content: "     4 |            4 |          4 |      2 |\r\n|         5 |            5 |          5 |      1 |\r\n+-----------+--------------+------------+--------+\r\n5 rows in set (0.001 sec)\r\n"
+  - delay: 5
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 176618
+    content: "SELECT id_pembeli, COUNT(*) AS total_transaksi\r\n    -> FROM transaksi\r"
+  - delay: 6
+    content: |2-
+
+          -> GROUP BY id_pembeli;
+  - delay: 1459
+    content: "\r"
+  - delay: 25
+    content: |+
+
+  - delay: 28
+    content: "+------------+-----------------+\r\n| id_pembeli | total_transaksi |\r\n+------------+-----------------+\r\n|          1 |               1 |\r\n|          2 |               1 |\r\n|          3 |               1 |\r\n|          4 |               1 |\r\n|          5 |               1 |\r\n+------------+-----------------+\r\n5 rows in set (0.044 sec)\r\n\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 32783
+    content: "SELECT \r\n    ->     id_pembeli,\r\n    ->     COUNT(*) AS total_transaksi\r\n    -> FROM transaksi\r\n    -> GROUP BY id_pembeli\r"
+  - delay: 16
+    content: |2-
+
+          -> HAVING total_transaksi >= 1;
+  - delay: 1218
+    content: "\r"
+  - delay: 19
+    content: |+
+
+  - delay: 26
+    content: "+------------+-----------------+\r\n| id_pembeli | total_transaksi |\r\n+------------+-----------------+\r\n|          1 |               1 |\r\n|          2 |               1 |\r\n|          3 |               1 |\r\n|          4 |               1 |\r\n|          5 |               1 |\r\n+------------+-----------------+\r\n5 rows in set (0.043 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 1815
+    content: S
+  - delay: 739
+    content: H
+  - delay: 312
+    content: O
+  - delay: 246
+    content: W
+  - delay: 284
+    content: ' '
+  - delay: 5331
+    content: T
+  - delay: 263
+    content: A
+  - delay: 134
+    content: B
+  - delay: 430
+    content: L
+  - delay: 142
+    content: E
+  - delay: 403
+    content: S
+  - delay: 1003
+    content: ;
+  - delay: 726
+    content: "\r"
+  - delay: 22
+    content: |+
+
+  - delay: 36
+    content: "+------------------------+\r\n| Tables_in_toko_jajanan |\r\n+------------------------+\r\n| detail_transaksi       |\r\n| jajanan                |\r\n| pembeli                |"
+  - delay: 7
+    content: "\r\n| transaksi\e[12C  |\r\n+------------------------+\r\n4 rows in set (0.057 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [toko_jajanan]>\e[1C"
+  - delay: 3642
+    content: e
+  - delay: 405
+    content: x
+  - delay: 157
+    content: i
+  - delay: 299
+    content: t
+  - delay: 971
+    content: ;
+  - delay: 2569
+    content: "\r\nBye"
+  - delay: 13
+    content: "\r\n"
+  - delay: 461
+    content: 'PS C:\Users\emihi> '
+  - delay: 1264
+    content: "\e[93mE"
+  - delay: 16
+    content: "\e[m"
+  - delay: 373
+    content: "\e[93m\bEX"
+  - delay: 17
+    content: "\e[m"
+  - delay: 266
+    content: "\e[?25l\e[93m\e[34;20HEXI\e[?25h"
+  - delay: 17
+    content: "\e[m"
+  - delay: 320
+    content: "\e[?25l\e[92m\e[34;20HEXIT\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 968
+    content: "\r\n"
