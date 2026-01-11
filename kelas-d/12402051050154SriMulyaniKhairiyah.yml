@@ -1,0 +1,456 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ASUS
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1139
+    content: "\e[?9001h\e[?1004h"
+  - delay: 99
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 181
+    content: 'PS C:\Users\ASUS> '
+  - delay: 158353
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93mm\e[?25h"
+  - delay: 261
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 221
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[6;19Hmys\e[?25h"
+  - delay: 221
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;19Hmysq\e[?25h"
+  - delay: 423
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;19Hmysql\e[?25h"
+  - delay: 514
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;19Hmysql \e[?25h"
+  - delay: 427
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;19Hmysql \e[37m-\e[?25h"
+  - delay: 268
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;19Hmysql \e[90m-u\e[?25h"
+  - delay: 220
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[?25h"
+  - delay: 402
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 196
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 115
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 320
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 377
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 868
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 173
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;19Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 445
+    content: "\e[m"
+  - delay: 8
+    content: "\r\n"
+  - delay: 77
+    content: E
+  - delay: 22
+    content: 'nter password: '
+  - delay: 790
+    content: '*'
+  - delay: 110
+    content: '*'
+  - delay: 382
+    content: '*'
+  - delay: 332
+    content: '*'
+  - delay: 140
+    content: '*'
+  - delay: 205
+    content: '*'
+  - delay: 246
+    content: '*'
+  - delay: 167
+    content: '*'
+  - delay: 193
+    content: '*'
+  - delay: 484
+    content: '*'
+  - delay: 149
+    content: '*'
+  - delay: 710
+    content: "\r\n"
+  - delay: 109
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 11
+    content: "\e[?25l\r\nYour MariaDB connection id is 13\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 3303
+    content: C
+  - delay: 192
+    content: R
+  - delay: 275
+    content: E
+  - delay: 316
+    content: A
+  - delay: 306
+    content: T
+  - delay: 214
+    content: E
+  - delay: 361
+    content: ' '
+  - delay: 288
+    content: D
+  - delay: 159
+    content: A
+  - delay: 84
+    content: T
+  - delay: 176
+    content: A
+  - delay: 499
+    content: B
+  - delay: 166
+    content: A
+  - delay: 252
+    content: S
+  - delay: 260
+    content: E
+  - delay: 525
+    content: ' '
+  - delay: 1023
+    content: t
+  - delay: 293
+    content: o
+  - delay: 131
+    content: k
+  - delay: 88
+    content: o
+  - delay: 911
+    content: _
+  - delay: 560
+    content: t
+  - delay: 172
+    content: a
+  - delay: 437
+    content: 'n'
+  - delay: 146
+    content: a
+  - delay: 164
+    content: m
+  - delay: 102
+    content: a
+  - delay: 162
+    content: 'n'
+  - delay: 1265
+    content: ;
+  - delay: 1390
+    content: "\r\n"
+  - delay: 12
+    content: "\e[?25lQuery OK, 1 row affected (0.005 sec)\e[19;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1381
+    content: U
+  - delay: 194
+    content: S
+  - delay: 215
+    content: E
+  - delay: 1024
+    content: ' '
+  - delay: 815
+    content: t
+  - delay: 343
+    content: o
+  - delay: 143
+    content: k
+  - delay: 97
+    content: o
+  - delay: 925
+    content: _
+  - delay: 514
+    content: t
+  - delay: 133
+    content: a
+  - delay: 520
+    content: 'n'
+  - delay: 210
+    content: a
+  - delay: 173
+    content: m
+  - delay: 107
+    content: a
+  - delay: 611
+    content: 'n'
+  - delay: 358
+    content: ;
+  - delay: 569
+    content: "\r\n"
+  - delay: 11
+    content: "Database changed\r\nMariaDB [toko_tanaman]> "
+  - delay: 7830
+    content: "CREATE TABLE tanaman (\r\n"
+  - delay: 17
+    content: "    ->     id_tanaman INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_tanaman VARCHAR(100) NOT NULL,\r\n    ->     jenis_tanaman VARCHAR(50),\r\n    ->     harga DECIMAL(10,2) NOT NULL,\r\n    ->     stok INT NOT NULL\r\n    -> );\r\n"
+  - delay: 41
+    content: 'Query OK, 0 rows affected (0.055 sec)'
+  - delay: 15
+    content: "\e[?25l\e[30;1HMariaDB [toko_tanaman]> \e[?25h"
+  - delay: 9583
+    content: "CREATE TABLE pelanggan (\r\n    ->     id_pelanggan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_pelanggan VARCHAR(100) NOT NULL,\r\n    ->     no_hp VARCHAR(15)\r\n    -> );\r"
+  - delay: 21
+    content: |+
+
+  - delay: 36
+    content: "Query OK, 0 rows affected (0.057 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 7622
+    content: "CREATE TABLE transaksi (\r\n    ->     id_transaksi INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     id_pelanggan INT NOT NULL,\r\n    ->     tanggal_transaksi DATE NOT NULL,\r\n    ->     total_harga DECIMAL(12,2) NOT NULL,\r\n    ->\r\n    ->     FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelanggan)\r\n    -> );\r"
+  - delay: 19
+    content: "\nQuery OK, 0 rows affected (0.018 sec)\r\n\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 6564
+    content: "CREATE TABLE detail_transaksi (\r\n    ->     id_detail INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     id_transaksi INT NOT NULL,\r\n    ->     id_tanaman INT NOT NULL,\r\n    ->     jumlah INT NOT NULL,\r\n    ->     subtotal DECIMAL(12,2) NOT NULL,\r\n    ->\r\n    ->     FOREIGN KEY (id_transaksi) REFERENCES transaksi(id_transaksi),\r\n    ->     FOREIGN KEY (id_tanaman) REFERENCES tanaman(id_tanaman)\r\n    -> );\r"
+  - delay: 15
+    content: |+
+
+  - delay: 6
+    content: "Query OK, 0 rows affected (0.020 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 8256
+    content: "INSERT INTO tanaman (nama_tanaman, jenis_tanaman, harga, stok) VALUES\r\n    -> ('Monstera', 'Hias', 150000, 10),\r\n    -> ('Lidah Mertua', 'Hias', 80000, 20);\r"
+  - delay: 8
+    content: "\nQuery OK, 2 rows affected (0.007 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 5
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 6263
+    content: "INSERT INTO pelanggan (nama_pelanggan, no_hp) VALUES\r\n    -> ('Budi Santoso', '081234567890'),\r\n    -> ('Siti Aminah', '081298765432');\r"
+  - delay: 8
+    content: "\nQuery OK, 2 rows affected (0.007 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 13
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 7224
+    content: "INSERT INTO transaksi (id_pelanggan, tanggal_transaksi, total_harga) VALUES\r\n    -> (1, '2026-01-05', 150000),\r\n    -> (2, '2026-01-06', 160000);\r"
+  - delay: 7
+    content: "\nQuery OK, 2 rows affected (0.006 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 9388
+    content: "INSERT INTO detail_transaksi\r\n    -> (id_transaksi, id_tanaman, jumlah, subtotal)\r\n    -> VALUES\r\n    -> (1, 1, 1, 150000),\r\n    -> (2, 2, 2, 160000);\r\nQuery OK, 2 rows affected (0.004 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 9
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 8170
+    content: "SELECT p.nama_pelanggan, t.tanggal_transaksi, t.total_harga\r\n    -> FROM transaksi t\r\n    -> JOIN pelanggan p ON t.id_pelanggan = p.id_pelanggan\r\n    -> ORDER BY t.total_harga DESC;\r\n+----------------+-------------------+-------------+"
+  - delay: 8
+    content: "\r\n|"
+  - delay: 13
+    content: " nama_pelanggan | tanggal_transaksi | total_harga |\r\n+----------------+-------------------+-------------+\r\n| Siti Aminah    | 2026-01-06        |   160000.00 |\r\n| Budi Santoso   | 2026-01-05        |   150000.00 |\r\n+----------------+-------------------+-------------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 7015
+    content: "SELECT ta.nama_tanaman, SUM(dt.jumlah) AS total_terjual\r\n    -> FROM detail_transaksi dt\r\n    -> JOIN tanaman ta ON dt.id_tanaman = ta.id_tanaman\r\n    -> GROUP BY ta.nama_tanaman;\r"
+  - delay: 12
+    content: |+
+
+  - delay: 51
+    content: "+--------------+---------------+\r\n| nama_tanaman | total_terjual |\r\n+--------------+---------------+\r\n| Lidah Mertua |             2 |\r\n| Monstera     |             1 |\r\n+--------------+---------------+\r\n2 rows in set (0.061 sec)\r\n"
+  - delay: 5
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 8240
+    content: "SELECT * FROM tanaman;\r\n+------------+--------------+---------------+-----------+------+\r\n| id_tanaman | nama_tanaman | jenis_tanaman | harga     | stok |\r\n+------------+--------------+---------------+-----------+------+\r\n|          1 | Monstera     | Hias          | 150000.00 |   10 |\r\n|          2 | Lidah Mertua | Hias          |  80000.00 |   20 |\r\n+------------+--------------+---------------+-----------+------+\r\n2 rows in set (0.001 sec)\r\n\nMariaDB [toko_tanaman]> SELECT * FROM pelanggan;\r\n+--------------+----------------+--------------+\r\n| id_pelanggan | nama_pelanggan | no_hp        |\r\n+--------------+----------------+--------------+\r\n|            1 | Budi Santoso   | 081234567890 |\r\n|            2 | Siti Aminah    | 081298765432 |\r\n+--------------+----------------+--------------+\r\n2 rows in set (0.001 sec)\r\n\nMariaDB [toko_tanaman]> SELECT * FROM transaksi;\r\n+--------------+--------------+-------------------+-------------+\r\n| id_transaksi | id_pelanggan | tanggal_transaksi | total_harga |\r\n+--------------+--------------+-------------------+-------------+\r\n|            1 |            1 | 2026-01-05        |   150000.00 |\r\n|            2 |            2 | 2026-01-06        |   160000.00 |\r\n+--------------+--------------+-------------------+-------------+\r\n2 rows in set (0.001 sec)\r\n\nMariaDB [toko_tanaman]> SELECT * FROM detail_transaksi;\r\n+-----------+--------------+------------+--------+-----------+\r\n| id_detail | id_transaksi | id_tanaman | jumlah | subtotal  |\r\n+-----------+--------------+------------+--------+-----------+\r\n|         1 |            1 |          1 |      1 | 150000.00 |\r\n|         2 |            2 |          2 |\e[1C     2 | 160000.00 |\r\n+-----------+--------------+------------+--------+-----------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 15
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 12701
+    content: S
+  - delay: 280
+    content: H
+  - delay: 190
+    content: O
+  - delay: 200
+    content: W
+  - delay: 637
+    content: ' '
+  - delay: 290
+    content: T
+  - delay: 157
+    content: A
+  - delay: 169
+    content: B
+  - delay: 312
+    content: L
+  - delay: 96
+    content: E
+  - delay: 253
+    content: S
+  - delay: 1186
+    content: ;
+  - delay: 605
+    content: "\r\n+------------------------+\r\n| Tables_in_toko_tanaman |\r\n+------------------------+\r\n| detail_transaksi       |\r\n| pelanggan              |\r\n| tanaman                |\r\n| transaksi              |\r\n+------------------------+\r\n4 rows in set (0.001 sec)\r\n"
+  - delay: 18
+    content: "\nMariaDB [toko_tanaman]>\e[1C"
+  - delay: 27528
+    content: e
+  - delay: 898
+    content: x
+  - delay: 733
+    content: i
+  - delay: 209
+    content: t
+  - delay: 699
+    content: ;
+  - delay: 1032
+    content: "\r\nBye"
+  - delay: 8
+    content: "\r\n"
+  - delay: 255
+    content: 'PS C:\Users\ASUS> '
+  - delay: 1205
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93mE\e[?25h"
+  - delay: 219
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\bEX\e[?25h"
+  - delay: 312
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[30;19HEXI\e[?25h"
+  - delay: 207
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[92m\e[30;19HEXIT\e[?25h"
+  - delay: 1191
+    content: "\e[m"
+  - delay: 20
+    content: "\r\n"
