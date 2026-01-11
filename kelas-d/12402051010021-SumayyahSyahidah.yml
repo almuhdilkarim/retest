@@ -1,0 +1,302 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\LENOVO
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 72
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 34
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1773
+    content: "\e[?9001h\e[?1004h"
+  - delay: 180
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 16
+    content: "\e[?25l\e[7;1H\e[?25h"
+  - delay: 364
+    content: 'PS C:\Users\LENOVO> '
+  - delay: 1002
+    content: "\e[?25l"
+  - delay: 8
+    content: "\e[93mm\e[?25h"
+  - delay: 243
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 798
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;21Hmys\e[?25h"
+  - delay: 221
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;21Hmysq\e[?25h"
+  - delay: 746
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[7;21Hmysql\e[?25h"
+  - delay: 267
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;21Hmysql \e[?25h"
+  - delay: 411
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;21Hmysql \e[37m-\e[?25h"
+  - delay: 516
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;21Hmysql \e[90m-u\e[?25h"
+  - delay: 563
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[?25h"
+  - delay: 318
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 241
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 171
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 164
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 381
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 753
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 209
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;21Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 701
+    content: "\e[m"
+  - delay: 13
+    content: "\r\n"
+  - delay: 91
+    content: E
+  - delay: 19
+    content: 'nter password: '
+  - delay: 845
+    content: '*'
+  - delay: 167
+    content: '*'
+  - delay: 200
+    content: '*'
+  - delay: 219
+    content: '*'
+  - delay: 478
+    content: "\r\n"
+  - delay: 143
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 18
+    content: "\e[?25l\r\nYour MariaDB connection id is 5\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[13;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[15;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[18;1HMariaDB [(none)]> \e[?25h"
+  - delay: 52456
+    content: "CREATE DATABASE cafe;\r\n"
+  - delay: 11
+    content: "ERROR 1007 (HY000): Can't create database 'cafe'; database exists\r\nMariaDB [(none)]> USE cafe;\r\nDatabase changed\r\nMariaDB [cafe]> "
+  - delay: 11848
+    content: "CREATE DATABASE db_cafe;\r\n"
+  - delay: 13
+    content: "\e[?25lQuery OK, 1 row affected (0.004 sec)\e[25;1HMariaDB [cafe]> USE db_cafe;\r\nDatabase changed\r\nMariaDB [db_cafe]> \e[?25h"
+  - delay: 9316
+    content: "CREATE DATABASE db_cafe;\r\n"
+  - delay: 14
+    content: "ERROR 1007 (HY000): Can't create database 'db_cafe'; database exists\r\nMariaDB [db_cafe]> USE db_cafe;\r\nDatabase changed\r\nMariaDB [db_cafe]> "
+  - delay: 16166
+    content: "CREATE TABLE pelanggan (\r\n    ->     id_pelanggan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_pelanggan VARCHAR(100) NOT NULL,\r\n    ->     no_hp VARCHAR(15),\r\n    ->     tanggal_daftar DATE DEFAULT CURRENT_DATE\r\n    -> );\r"
+  - delay: 13
+    content: |+
+
+  - delay: 39
+    content: "Query OK, 0 rows affected (0.051 sec)\r\n"
+  - delay: 23
+    content: "\nMariaDB [db_cafe]>\e[1C"
+  - delay: 8425
+    content: "CREATE TABLE menu (\r\n    ->     id_menu INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     nama_menu VARCHAR(100) NOT NULL,\r\n    ->     harga INT NOT NULL,\r\n    ->     kategori VARCHAR(50)\r\n    -> );\r"
+  - delay: 17
+    content: |+
+
+  - delay: 6
+    content: "Query OK, 0 rows affected (0.022 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [db_cafe]>\e[1C"
+  - delay: 7184
+    content: "CREATE TABLE pesanan (\r\n    ->     id_pesanan INT AUTO_INCREMENT PRIMARY KEY,\r\n    ->     id_pelanggan INT,\r\n    ->     id_menu INT,\r\n    ->     jumlah INT NOT NULL,\r\n    ->     tanggal_pesanan DATE DEFAULT CURRENT_DATE,\r\n    ->\r\n    ->     FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelanggan)\r\n\e[33;72H),\r\n    ->     FOREIGN KEY (id_menu) REFERENCES menu(id_menu)\r\n    -> );\r"
+  - delay: 15
+    content: "\nQuery OK, 0 rows affected (0.017 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [db_cafe]>\e[1C"
+  - delay: 9198
+    content: "INSERT INTO pelanggan (nama_pelanggan, no_hp)\r\n    -> VALUES\r\n    -> ('Alya', '08123456789'),\r\n    -> ('Bima', '08987654321');\r"
+  - delay: 9
+    content: |+
+
+  - delay: 11
+    content: "Query OK, 2 rows affected (0.020 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 5
+    content: "\nMariaDB [db_cafe]>\e[1C"
+  - delay: 5699
+    content: "INSERT INTO menu (nama_menu, harga, kategori)\r\n    -> VALUES\r\n    -> ('Kopi Hitam', 15000, 'Minuman'),\r\n    -> ('Latte', 20000, 'Minuman'),\r\n    -> ('Roti Bakar', 18000, 'Makanan');\r"
+  - delay: 11
+    content: "\nQuery OK, 3 rows affected (0.011 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n\n"
+  - delay: 16
+    content: 'MariaDB [db_cafe]> '
+  - delay: 5961
+    content: "INSERT INTO pesanan (id_pelanggan, id_menu, jumlah)\r\n    -> VALUES\r\n    -> (1, 2, 1),\r\n    -> (2, 1, 2);\r\nQuery OK, 2 rows affected (0.003 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 14
+    content: "\nMariaDB [db_cafe]>\e[1C"
+  - delay: 3985
+    content: SELECT * FROM pesanan;
+  - delay: 2563
+    content: "\r\n"
+  - delay: 16
+    content: "+------------+--------------+---------+--------+-----------------+\e[?25l\r\n| id_pesanan | id_pelanggan | id_menu | jumlah | tanggal_pesanan |      \e[34;67H\e[?25h\e[?25l\r\n+------------+--------------+---------+--------+-----------------+      \e[34;67H\e[?25h\e[?25l\r\n|          1 |            1 |       2 |      1 | 2026-01-06      |      \e[34;67H\e[?25h\e[?25l\r\n|          2 |            2 |       1 |      2 | 2026-01-06      |      \e[34;67H\e[?25h\e[?25l\r\n+------------+--------------+---------+--------+-----------------+      \e[34;67H\e[?25h\r\n2 rows in set (0.015 sec)\r\n\nMariaDB [db_cafe]>\e[1C"
+  - delay: 2013
+    content: e
+  - delay: 299
+    content: x
+  - delay: 110
+    content: i
+  - delay: 424
+    content: t
+  - delay: 470
+    content: "\r\nBye"
+  - delay: 19
+    content: "\r\n"
+  - delay: 28
+    content: 'PS C:\Users\LENOVO> '
+  - delay: 645
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93me\e[?25h"
+  - delay: 250
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\bex\e[?25h"
+  - delay: 142
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[34;21Hexi\e[?25h"
+  - delay: 256
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[92m\e[34;21Hexit\e[?25h"
+  - delay: 607
+    content: "\e[m"
+  - delay: 16
+    content: "\r\n"
